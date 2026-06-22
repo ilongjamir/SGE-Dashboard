@@ -120,24 +120,6 @@
       "progress": ""
     },
     {
-      "id": "rep1",
-      "type": "repair",
-      "projectId": "",
-      "customName": "Sema Residence — inverter fault",
-      "site": "Purana Bazar, Dimapur",
-      "date": "2026-06-21",
-      "mode": "crew",
-      "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "12:30",
-      "assignments": [],
-      "notes": "Inverter alarm after heavy rain",
-      "completed": true,
-      "workDone": "Checked DC connections, reseated connectors. Inverter back online.",
-      "remarks": "Possible moisture ingress in junction box — flagged for sealant on next visit.",
-      "progress": ""
-    },
-    {
       "id": "mqorrtdn6rdui",
       "type": "project",
       "projectId": "mqorn3t3le48z",
