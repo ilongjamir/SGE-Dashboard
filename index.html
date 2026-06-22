@@ -1272,39 +1272,29 @@ render();
 setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
   <!-- =======================================================================
-     SGE Solar Ops — multi-device live sync fix  (paste before </body>)
+     SGE Solar Ops — fast multi-device sync  (paste before </body>)
 
-     Fixes the "schedule made on one device disappears" problem.
+     Replaces the previous sync block. Same safety (no clobber, never wipes
+     an open form), but much faster:
+       • Devices with a token read straight from the GitHub API (no CDN
+         cache), so changes from your other device appear in a few seconds.
+       • Polls every 5s, plus on focus / tab-switch.
+       • Plain viewers (no token) read the public file (may lag a little).
 
-     Cause: every device overwrites the WHOLE data file when it saves. A
-     device that's been sitting open with an old copy will overwrite the
-     newer data pushed from your other device. Whoever saves last wins.
-
-     This block makes every open device pull the latest data:
-        • on load,
-        • whenever you switch back to it (focus / tab becomes visible),
-        • and every 15 seconds while open,
-     so a device is never holding a stale copy when it saves. It NEVER
-     refreshes while a dialog is open or while a save is in progress, so it
-     can't wipe something you're typing.
-
-     Also shows "Synced ✓" on load when a token is saved on that device.
-
-     INSTALL: remove any earlier sync block you pasted, then paste THIS one
-     just before </body> and save / push. Put your token in Settings on each
-     device you want to edit from. Golden rule still applies: edit on one
-     device at a time and let it reach "Synced ✓".
+     NOTE: the "build and deployment" workflow you see in the Actions tab is
+     GitHub Pages rebuilding the SITE on each commit — it does NOT gate this
+     data sync, which reads the file directly. You can ignore it.
      ======================================================================= -->
 <script>
 (function () {
   "use strict";
   var GHKEY = "sge_gh_token";
   var KEY   = "sge_solar_ops_v1";
-  var DATA_URL = "https://raw.githubusercontent.com/ilongjamir/SGE-Dashboard/main/data.json";
-  var POLL_MS = 15000;
+  var REPO = "ilongjamir/SGE-Dashboard", BRANCH = "main", DATA_PATH = "data.json";
+  var RAW_URL = "https://raw.githubusercontent.com/" + REPO + "/" + BRANCH + "/" + DATA_PATH;
+  var POLL_MS = 5000;
   var pulling = false, lastApplied = "";
 
-  // Don't refresh while the user is mid-edit or a save is still in flight.
   function busy() {
     var s = document.getElementById("scrim");
     if (s && s.classList.contains("open")) return true;          // a dialog is open
@@ -1316,7 +1306,7 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     if (!remote || !Array.isArray(remote.projects)) return;
     var next = (typeof migrate === "function") ? migrate(remote) : remote;
     var nextStr = JSON.stringify(next);
-    if (nextStr === lastApplied) return;   // remote hasn't changed since last apply
+    if (nextStr === lastApplied) return;   // nothing changed since last apply
     if (busy()) return;                    // never clobber an in-progress / unsynced edit
     lastApplied = nextStr;
     state = next;
@@ -1328,10 +1318,20 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
   function pull() {
     if (pulling || busy()) return;
     pulling = true;
-    fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
-      .then(function (r) { return r.ok ? r.json() : null; })
+    var token = localStorage.getItem(GHKEY);
+    var url, opts;
+    if (token) {
+      // GitHub API = always the latest commit, no CDN delay
+      url = "https://api.github.com/repos/" + REPO + "/contents/" + DATA_PATH + "?ref=" + BRANCH + "&t=" + Date.now();
+      opts = { headers: { "Authorization": "token " + token, "Accept": "application/vnd.github.raw" }, cache: "no-store" };
+    } else {
+      url = RAW_URL + "?t=" + Date.now();
+      opts = { cache: "no-store" };
+    }
+    fetch(url, opts)
+      .then(function (r) { return r.ok ? r.json() : null; })   // raw body is the JSON file
       .then(function (remote) { pulling = false; applyRemote(remote); })
-      .catch(function () { pulling = false; });   // offline — keep what's shown
+      .catch(function () { pulling = false; });
   }
 
   document.addEventListener("DOMContentLoaded", function () {
