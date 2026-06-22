@@ -1272,24 +1272,54 @@ render();
 setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
   <!-- =======================================================================
-     FIX: keep the GitHub sync pill showing "Synced" after reload / new tab.
-     Your dashboard already has the auto-sync feature. The only bug is that
-     on page load nothing checks the saved token, so the pill always starts
-     at "Not connected" (even though syncing still works in the background).
+     SGE Solar Ops — multi-device sync fix
 
-     HOW TO INSTALL:
-     Paste this whole block on the line just before  </body>  in index.html,
-     then save and push. Nothing else needs to change.
+     What it does, on EVERY page load:
+       • Pulls the latest data.json from GitHub, so any device opening the
+         link (phone, laptop, anyone) shows your REAL data — not the samples.
+       • If a token is saved on that device, shows "Synced ✓" (instead of a
+         false "Not connected") so that device can edit and push changes.
+
+     HOW TO USE FROM BOTH PHONE AND LAPTOP:
+       1. Paste your token once in Settings on EACH device you want to edit
+          from (phone + laptop). Devices without a token are view-only.
+       2. Golden rule: edit on ONE device at a time, and wait for "Synced ✓"
+          before switching. (Simultaneous edits can't be merged — last save
+          wins.)
+
+     INSTALL:
+       • Delete the old big "GitHub cloud sync (drop-in block)" if it's still
+         in the file.
+       • Paste THIS block on the line just before  </body>  then save / push.
      ======================================================================= -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  try {
-    // sge_gh_token is the key the dashboard already uses to store your token
-    if (localStorage.getItem("sge_gh_token")) {
-      setSyncStatus("ok");   // show "Synced ✓" because a token is saved
+(function () {
+  "use strict";
+  var GHKEY = "sge_gh_token";
+  var KEY   = "sge_solar_ops_v1";
+  var DATA_URL = "https://raw.githubusercontent.com/ilongjamir/SGE-Dashboard/main/data.json";
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Editor devices (token saved): reflect connected state on load.
+    if (localStorage.getItem(GHKEY)) {
+      try { if (typeof setSyncStatus === "function") setSyncStatus("ok"); } catch (e) {}
     }
-  } catch (e) {}
-});
+
+    // Every device pulls the latest published data so all stay in step.
+    fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (remote) {
+        if (!remote || !Array.isArray(remote.projects)) return;
+        try {
+          state = (typeof migrate === "function") ? migrate(remote) : remote;
+          localStorage.setItem(KEY, JSON.stringify(state)); // cache only — no push
+          if (typeof buildNav === "function") buildNav();
+          if (typeof render === "function") render();
+        } catch (e) {}
+      })
+      .catch(function () { /* offline — keep what's already shown */ });
+  });
+})();
 </script>
 </body>
 </html>
