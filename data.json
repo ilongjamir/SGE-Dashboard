@@ -120,24 +120,6 @@
       "progress": ""
     },
     {
-      "id": "r1",
-      "type": "project",
-      "projectId": "p1",
-      "customName": "",
-      "site": "Purana Bazar, Dimapur",
-      "date": "2026-06-20",
-      "mode": "crew",
-      "crewName": "Install Team A",
-      "crewStart": "09:10",
-      "crewEnd": "17:00",
-      "assignments": [],
-      "notes": "",
-      "completed": true,
-      "workDone": "Mounting structure and rails fixed on rooftop. All 6 panels positioned and clamped.",
-      "remarks": "One rail arrived bent — replaced from local stock, lost ~30 min.",
-      "progress": 55
-    },
-    {
       "id": "rep1",
       "type": "repair",
       "projectId": "",
