@@ -296,24 +296,6 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
-    },
-    {
-      "id": "mqp1enmu49wqy",
-      "type": "project",
-      "projectId": "mqorn3t3le48z",
-      "customName": "",
-      "site": "",
-      "date": "2026-06-27",
-      "mode": "crew",
-      "notes": "",
-      "completed": false,
-      "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
-      "assignments": [],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
     }
   ]
 }
