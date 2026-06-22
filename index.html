@@ -1272,163 +1272,24 @@ render();
 setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
   <!-- =======================================================================
-     SGE Solar Ops — GitHub cloud sync (drop-in block)
-     Paste this ENTIRE block on the line just before  </body>  in index.html,
-     then save and push to GitHub.
-     It adds a "GitHub" status button under Backup / Restore / PIN that:
-       • stores your token in this browser (localStorage) so it STAYS connected
-         across reloads and new tabs,
-       • restores the connected state on every page load,
-       • auto-publishes your data to  data.json  in the repo on every change.
+     FIX: keep the GitHub sync pill showing "Synced" after reload / new tab.
+     Your dashboard already has the auto-sync feature. The only bug is that
+     on page load nothing checks the saved token, so the pill always starts
+     at "Not connected" (even though syncing still works in the background).
+
+     HOW TO INSTALL:
+     Paste this whole block on the line just before  </body>  in index.html,
+     then save and push. Nothing else needs to change.
      ======================================================================= -->
 <script>
-(function () {
-  "use strict";
-  if (window.__sgeSync) return;          // guard against double-paste
-  window.__sgeSync = true;
-
-  /* ---- where your data lives ---- */
-  var GH_OWNER  = "ilongjamir";
-  var GH_REPO   = "SGE-Dashboard";
-  var GH_BRANCH = "main";
-  var GH_PATH   = "data.json";           // the file the "brief" command reads
-  var GHKEY     = "sge_gh_token";        // localStorage key that keeps you logged in
-  var API = "https://api.github.com/repos/" + GH_OWNER + "/" + GH_REPO + "/contents/" + GH_PATH;
-
-  var fileSha = null, timer = null, busy = false;
-
-  /* ---- token persistence (the actual fix) ---- */
-  function getToken() { try { return localStorage.getItem(GHKEY) || ""; } catch (e) { return ""; } }
-  function setToken(t) { try { t ? localStorage.setItem(GHKEY, t) : localStorage.removeItem(GHKEY); } catch (e) {} }
-
-  /* ---- read the app's live data without depending on window.* ---- */
-  function appState() { try { return (typeof state !== "undefined") ? state : null; } catch (e) { return null; } }
-  function toastSafe(m) { try { if (typeof toast === "function") toast(m); } catch (e) {} }
-
-  /* ---- status pill in the sidebar ---- */
-  var pill = document.createElement("button");
-  pill.id = "ghPill";
-  pill.type = "button";
-  pill.style.cssText =
-    "display:block;width:100%;margin-top:8px;padding:7px 9px;border:1px solid var(--line,#26403b);" +
-    "border-radius:8px;background:transparent;color:inherit;font:inherit;font-size:12px;cursor:pointer;text-align:left";
-
-  function setStatus(s, msg) {
-    var map = { off: ["○", "Not connected"], ok: ["●", "Synced"], sync: ["⟳", "Syncing…"],
-                conn: ["⟳", "Connecting…"], err: ["⚠", "Sync error"] };
-    var m = map[s] || map.off;
-    pill.textContent = m[0] + "  GitHub — " + (msg || m[1]);
-    pill.dataset.state = s;
-  }
-
-  var util = document.querySelector(".util");
-  if (util && util.parentNode) util.parentNode.insertBefore(pill, util.nextSibling);
-  else document.body.appendChild(pill);
-
-  /* ---- connect / disconnect ---- */
-  pill.onclick = function () {
-    if (getToken()) {
-      if (confirm("GitHub sync is connected.\nDisconnect and remove the saved token from this browser?")) {
-        setToken(""); fileSha = null; setStatus("off"); toastSafe("Disconnected");
-      }
-      return;
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    // sge_gh_token is the key the dashboard already uses to store your token
+    if (localStorage.getItem("sge_gh_token")) {
+      setSyncStatus("ok");   // show "Synced ✓" because a token is saved
     }
-    var t = prompt(
-      "Paste your GitHub token.\n\n" +
-      "Recommended: a fine-grained token limited to the " + GH_REPO + " repo,\n" +
-      "with Contents = Read and write. It is stored only in this browser."
-    );
-    if (t === null) return;
-    t = t.trim();
-    if (!t) { toastSafe("No token entered"); return; }
-    setStatus("conn");
-    validate(t).then(function (ok) {
-      if (!ok) { setStatus("err", "invalid token"); toastSafe("Token rejected — check repo access / expiry"); return; }
-      setToken(t); setStatus("ok", "connected"); toastSafe("GitHub connected");
-      push(true);                         // publish immediately on connect
-    });
-  };
-
-  function validate(tok) {
-    return fetch("https://api.github.com/repos/" + GH_OWNER + "/" + GH_REPO,
-      { headers: { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" } })
-      .then(function (r) { return r.ok; })
-      .catch(function () { return false; });
-  }
-
-  /* ---- publish data.json via the GitHub Contents API ---- */
-  function b64(str) { return btoa(unescape(encodeURIComponent(str))); }
-
-  function fetchSha(tok) {
-    return fetch(API + "?ref=" + GH_BRANCH,
-      { headers: { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json" } })
-      .then(function (r) { return r.status === 404 ? null : r.json(); })
-      .then(function (j) { return (j && j.sha) ? j.sha : null; })
-      .catch(function () { return null; });
-  }
-
-  function push(initial) {
-    var tok = getToken();
-    if (!tok) { setStatus("off"); return; }
-    var data = appState();
-    if (!data) { setStatus("err", "no data yet"); return; }
-    if (busy) { schedule(); return; }     // a push is in flight; queue another
-    busy = true; setStatus("sync");
-
-    var body = {
-      message: "Update data.json from dashboard — " + new Date().toISOString(),
-      content: b64(JSON.stringify(data)),
-      branch: GH_BRANCH
-    };
-    var put = function (sha) {
-      if (sha) body.sha = sha;
-      return fetch(API, {
-        method: "PUT",
-        headers: { Authorization: "Bearer " + tok, Accept: "application/vnd.github+json", "Content-Type": "application/json" },
-        body: JSON.stringify(body)
-      });
-    };
-
-    (fileSha ? Promise.resolve(fileSha) : fetchSha(tok))
-      .then(put)
-      .then(function (r) {
-        if (r.status === 409) {           // our sha was stale — refetch once and retry
-          return fetchSha(tok).then(function (s) { body.sha = s; return put(s); });
-        }
-        return r;
-      })
-      .then(function (r) {
-        return r.json().catch(function () { return {}; }).then(function (j) {
-          busy = false;
-          if (r.ok) { fileSha = (j.content && j.content.sha) || fileSha; setStatus("ok"); }
-          else { setStatus("err", (j && j.message) || ("HTTP " + r.status)); }
-        });
-      })
-      .catch(function () { busy = false; setStatus("err", "network"); });
-  }
-
-  function schedule() {
-    if (!getToken()) return;
-    setStatus("sync", "pending…");
-    clearTimeout(timer);
-    timer = setTimeout(function () { push(false); }, 1500);   // debounce rapid edits
-  }
-
-  /* ---- wrap the app's save() so every change auto-publishes ---- */
-  (function hookSave() {
-    try {
-      if (typeof save === "function" && !save.__ghHooked) {
-        var orig = save;
-        var wrapped = function () { var r = orig.apply(this, arguments); schedule(); return r; };
-        wrapped.__ghHooked = true;
-        save = wrapped;                   // call sites use this updated binding
-      }
-    } catch (e) {}
-  })();
-
-  /* ---- restore connection on load / in every new tab (the fix) ---- */
-  setStatus(getToken() ? "ok" : "off", getToken() ? "connected" : null);
-})();
+  } catch (e) {}
+});
 </script>
 </body>
 </html>
