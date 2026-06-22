@@ -1272,25 +1272,28 @@ render();
 setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
   <!-- =======================================================================
-     SGE Solar Ops — multi-device sync fix
+     SGE Solar Ops — multi-device live sync fix  (paste before </body>)
 
-     What it does, on EVERY page load:
-       • Pulls the latest data.json from GitHub, so any device opening the
-         link (phone, laptop, anyone) shows your REAL data — not the samples.
-       • If a token is saved on that device, shows "Synced ✓" (instead of a
-         false "Not connected") so that device can edit and push changes.
+     Fixes the "schedule made on one device disappears" problem.
 
-     HOW TO USE FROM BOTH PHONE AND LAPTOP:
-       1. Paste your token once in Settings on EACH device you want to edit
-          from (phone + laptop). Devices without a token are view-only.
-       2. Golden rule: edit on ONE device at a time, and wait for "Synced ✓"
-          before switching. (Simultaneous edits can't be merged — last save
-          wins.)
+     Cause: every device overwrites the WHOLE data file when it saves. A
+     device that's been sitting open with an old copy will overwrite the
+     newer data pushed from your other device. Whoever saves last wins.
 
-     INSTALL:
-       • Delete the old big "GitHub cloud sync (drop-in block)" if it's still
-         in the file.
-       • Paste THIS block on the line just before  </body>  then save / push.
+     This block makes every open device pull the latest data:
+        • on load,
+        • whenever you switch back to it (focus / tab becomes visible),
+        • and every 15 seconds while open,
+     so a device is never holding a stale copy when it saves. It NEVER
+     refreshes while a dialog is open or while a save is in progress, so it
+     can't wipe something you're typing.
+
+     Also shows "Synced ✓" on load when a token is saved on that device.
+
+     INSTALL: remove any earlier sync block you pasted, then paste THIS one
+     just before </body> and save / push. Put your token in Settings on each
+     device you want to edit from. Golden rule still applies: edit on one
+     device at a time and let it reach "Synced ✓".
      ======================================================================= -->
 <script>
 (function () {
@@ -1298,27 +1301,48 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
   var GHKEY = "sge_gh_token";
   var KEY   = "sge_solar_ops_v1";
   var DATA_URL = "https://raw.githubusercontent.com/ilongjamir/SGE-Dashboard/main/data.json";
+  var POLL_MS = 15000;
+  var pulling = false, lastApplied = "";
+
+  // Don't refresh while the user is mid-edit or a save is still in flight.
+  function busy() {
+    var s = document.getElementById("scrim");
+    if (s && s.classList.contains("open")) return true;          // a dialog is open
+    try { if (typeof syncStatus !== "undefined" && syncStatus === "syncing") return true; } catch (e) {}
+    return false;
+  }
+
+  function applyRemote(remote) {
+    if (!remote || !Array.isArray(remote.projects)) return;
+    var next = (typeof migrate === "function") ? migrate(remote) : remote;
+    var nextStr = JSON.stringify(next);
+    if (nextStr === lastApplied) return;   // remote hasn't changed since last apply
+    if (busy()) return;                    // never clobber an in-progress / unsynced edit
+    lastApplied = nextStr;
+    state = next;
+    try { localStorage.setItem(KEY, nextStr); } catch (e) {}   // cache only — no push
+    if (typeof buildNav === "function") buildNav();
+    if (typeof render === "function") render();
+  }
+
+  function pull() {
+    if (pulling || busy()) return;
+    pulling = true;
+    fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
+      .then(function (r) { return r.ok ? r.json() : null; })
+      .then(function (remote) { pulling = false; applyRemote(remote); })
+      .catch(function () { pulling = false; });   // offline — keep what's shown
+  }
 
   document.addEventListener("DOMContentLoaded", function () {
-    // Editor devices (token saved): reflect connected state on load.
     if (localStorage.getItem(GHKEY)) {
       try { if (typeof setSyncStatus === "function") setSyncStatus("ok"); } catch (e) {}
     }
-
-    // Every device pulls the latest published data so all stay in step.
-    fetch(DATA_URL + "?t=" + Date.now(), { cache: "no-store" })
-      .then(function (r) { return r.ok ? r.json() : null; })
-      .then(function (remote) {
-        if (!remote || !Array.isArray(remote.projects)) return;
-        try {
-          state = (typeof migrate === "function") ? migrate(remote) : remote;
-          localStorage.setItem(KEY, JSON.stringify(state)); // cache only — no push
-          if (typeof buildNav === "function") buildNav();
-          if (typeof render === "function") render();
-        } catch (e) {}
-      })
-      .catch(function () { /* offline — keep what's already shown */ });
+    pull();
   });
+  document.addEventListener("visibilitychange", function () { if (!document.hidden) pull(); });
+  window.addEventListener("focus", pull);
+  setInterval(pull, POLL_MS);
 })();
 </script>
 </body>
