@@ -245,7 +245,7 @@
       "date": "2026-06-22",
       "mode": "crew",
       "notes": "SOLAR CONNECTION TO NET METER",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "12:30",
       "crewEnd": "13:30",
