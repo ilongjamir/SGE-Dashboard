@@ -10,7 +10,8 @@
       "status": "doing",
       "start": "2026-06-18",
       "end": "2026-07-22",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     },
     {
       "id": "mqoro8e5534i6",
@@ -127,8 +128,8 @@
       "site": "AIKO GREENS",
       "date": "2026-06-22",
       "mode": "crew",
-      "notes": "",
-      "completed": false,
+      "notes": "WORK REMAINING:\n-AC OUTPUT INCOMPLETE\n-BATTERY WIRING INCOMPLETE",
+      "completed": true,
       "crewName": "",
       "crewStart": "11:30",
       "crewEnd": "16:00",
@@ -149,9 +150,9 @@
           "personId": "mqorpuf1klkz1"
         }
       ],
-      "workDone": "",
+      "workDone": "-EARTHING DONE\n-LA INSTALLED\n-PANELS WIRING COMPLETED\n-AC/DC INVERTER WIRING COMPLETED",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     },
     {
       "id": "mqorwy8k1prfq",
