@@ -1357,88 +1357,102 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
   const DATA_KEY    = 'sge_solar_ops_v1';
   const WEBHOOK_KEY = 'sge_gsheets_webhook';
 
-  // ── Inject Settings field ──────────────────────────────────
-  // Waits for the Settings section to appear in the DOM, then
-  // adds a "Google Sheets Webhook URL" input below the GitHub token field.
-  function injectSettingsField() {
-    const existing = document.getElementById('sge-gsheets-field');
-    if (existing) return;
+  // ── Add "GSheets" button to the sidebar ──────────────────
+  function injectSidebarButton() {
+    if (document.getElementById('sge-gsheets-btn')) return;
 
-    // Try to find the settings form — adjust selector if your dashboard differs
-    const settingsForm =
-      document.querySelector('#settings-form') ||
-      document.querySelector('.settings-section') ||
-      document.querySelector('[data-section="settings"]') ||
-      document.querySelector('form');
+    const pinBtn = document.getElementById('pinBtn');
+    if (!pinBtn) { setTimeout(injectSidebarButton, 400); return; }
 
-    if (!settingsForm) {
-      // Retry until the modal/section is rendered
-      setTimeout(injectSettingsField, 500);
-      return;
-    }
+    const btn = document.createElement('button');
+    btn.id          = 'sge-gsheets-btn';
+    btn.textContent = 'GSheets';
+    btn.style.cssText = pinBtn.style.cssText; // match existing button style
+    btn.className   = pinBtn.className;
+    btn.onclick     = openGSheetsModal;
 
-    const saved = localStorage.getItem(WEBHOOK_KEY) || '';
-
-    const wrapper = document.createElement('div');
-    wrapper.id    = 'sge-gsheets-field';
-    wrapper.style.cssText = 'margin-top:16px;';
-    wrapper.innerHTML = `
-      <label style="display:block;font-weight:600;margin-bottom:4px;">
-        Google Sheets Webhook URL
-      </label>
-      <input
-        id="sge-gsheets-url"
-        type="url"
-        placeholder="Paste Apps Script Web App URL here"
-        value="${saved}"
-        style="width:100%;padding:8px;border:1px solid #ccc;border-radius:4px;font-size:14px;"
-      />
-      <p style="font-size:12px;color:#666;margin-top:4px;">
-        Get this URL from Extensions → Apps Script → Deploy → Web App URL
-      </p>
-      <button
-        id="sge-gsheets-save"
-        style="margin-top:8px;padding:6px 14px;background:#2ecc71;color:#fff;border:none;border-radius:4px;cursor:pointer;"
-      >Save Webhook URL</button>
-      <span id="sge-gsheets-status" style="margin-left:10px;font-size:13px;"></span>
-    `;
-
-    settingsForm.appendChild(wrapper);
-
-    document.getElementById('sge-gsheets-save').addEventListener('click', function () {
-      const url = document.getElementById('sge-gsheets-url').value.trim();
-      localStorage.setItem(WEBHOOK_KEY, url);
-      const status = document.getElementById('sge-gsheets-status');
-      status.textContent = url ? '✓ Saved' : 'Cleared';
-      status.style.color = url ? 'green' : '#999';
-      setTimeout(() => { status.textContent = ''; }, 3000);
-    });
+    // Insert after pinBtn
+    pinBtn.parentNode.insertBefore(btn, pinBtn.nextSibling);
   }
 
-  // ── Watch for data changes ─────────────────────────────────
-  // Intercepts localStorage.setItem so we catch every save the
-  // dashboard makes to sge_solar_ops_v1.
+  // ── Modal using the dashboard's own modal system ─────────
+  function openGSheetsModal() {
+    const scrim    = document.getElementById('scrim');
+    const modalEl  = document.getElementById('modal');
+    if (!scrim || !modalEl) return;
+
+    const saved = localStorage.getItem(WEBHOOK_KEY) || '';
+    const statusDot = saved ? '🟢 Connected' : '⚪ Not connected';
+
+    modalEl.innerHTML = `
+      <div class="mh">
+        <h3>Google Sheets Sync</h3>
+        <button class="x" onclick="closeModal()">×</button>
+      </div>
+      <div class="mb">
+        <p style="margin:0 0 12px;font-size:13px;color:var(--muted, #888)">
+          Paste your Apps Script Web App URL below. Every save in the dashboard
+          will automatically update your Google Sheet.
+        </p>
+        <div class="field">
+          <label style="font-weight:600">Apps Script Web App URL</label>
+          <input
+            id="sge-gsheets-url"
+            type="url"
+            placeholder="https://script.google.com/macros/s/…/exec"
+            value="${saved}"
+            style="width:100%;box-sizing:border-box"
+          />
+        </div>
+        <p id="sge-gsheets-status" style="margin:8px 0 0;font-size:13px">${statusDot}</p>
+      </div>
+      <div class="mf">
+        <button class="btn sm" style="color:var(--danger,#c0392b)" onclick="sgeClearWebhook()">Disconnect</button>
+        <div style="display:flex;gap:8px">
+          <button class="btn" onclick="closeModal()">Cancel</button>
+          <button class="btn primary" onclick="sgeSaveWebhook()">Save</button>
+        </div>
+      </div>
+    `;
+
+    scrim.classList.add('open');
+    setTimeout(() => {
+      const el = document.getElementById('sge-gsheets-url');
+      if (el) el.focus();
+    }, 50);
+  }
+
+  window.sgeSaveWebhook = function () {
+    const url = (document.getElementById('sge-gsheets-url').value || '').trim();
+    localStorage.setItem(WEBHOOK_KEY, url);
+    closeModal();
+    if (typeof toast === 'function') toast(url ? 'Google Sheets connected ✓' : 'Webhook URL cleared');
+  };
+
+  window.sgeClearWebhook = function () {
+    localStorage.removeItem(WEBHOOK_KEY);
+    closeModal();
+    if (typeof toast === 'function') toast('Google Sheets disconnected');
+  };
+
+  // ── Watch for data saves ──────────────────────────────────
   let _lastSyncedJSON = localStorage.getItem(DATA_KEY) || '{}';
 
   const _origSetItem = localStorage.setItem.bind(localStorage);
   localStorage.setItem = function (key, value) {
     _origSetItem(key, value);
-    if (key === DATA_KEY) {
-      scheduleGSheetsSync(value);
-    }
+    if (key === DATA_KEY) scheduleGSheetsSync(value);
   };
 
   let _syncTimer = null;
   function scheduleGSheetsSync(newJSON) {
-    // Debounce — wait 2 s after the last save before posting
     clearTimeout(_syncTimer);
     _syncTimer = setTimeout(() => pushToGSheets(newJSON), 2000);
   }
 
-  // ── Diff & push ───────────────────────────────────────────
   function pushToGSheets(newJSON) {
     const webhookUrl = localStorage.getItem(WEBHOOK_KEY);
-    if (!webhookUrl) return; // not configured
+    if (!webhookUrl) return;
 
     let newData, oldData;
     try {
@@ -1452,102 +1466,111 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     payloads.forEach(p => sendPayload(webhookUrl, p));
   }
 
-  // ── Build payloads by comparing old vs new ────────────────
+  // ── Build payloads (diff old vs new) ─────────────────────
   function buildPayloads(newData, oldData) {
     const payloads = [];
 
-    // --- Projects ---
-    const newProjects = newData.projects || [];
-    const oldProjects = oldData.projects || [];
-    const oldProjectMap = {};
-    oldProjects.forEach(p => { oldProjectMap[p.name || p.id] = p; });
-
-    newProjects.forEach(proj => {
-      const key = proj.name || proj.id;
-      const old = oldProjectMap[key];
+    // Projects
+    const oldProjMap = {};
+    (oldData.projects || []).forEach(p => { oldProjMap[p.id] = p; });
+    (newData.projects || []).forEach(proj => {
+      const old = oldProjMap[proj.id];
       if (!old || JSON.stringify(proj) !== JSON.stringify(old)) {
-        payloads.push({
-          type: 'project',
-          data: {
-            name:      proj.name      || proj.id   || '',
-            client:    proj.client    || proj.customer || '',
-            status:    proj.status    || '',
-            location:  proj.location  || proj.site || '',
-            startDate: proj.startDate || proj.start || '',
-            endDate:   proj.endDate   || proj.end   || proj.expectedEnd || '',
-            notes:     proj.notes     || ''
-          }
-        });
+        payloads.push({ type: 'project', data: mapProject(proj, newData) });
       }
     });
 
-    // --- Schedules ---
-    const newSchedules = newData.schedules || newData.schedule || [];
-    const oldSchedules = oldData.schedules || oldData.schedule || [];
-    const oldSchedSigs = new Set(oldSchedules.map(s => schedSig(s)));
-
-    newSchedules.forEach(sched => {
-      if (!oldSchedSigs.has(schedSig(sched))) {
-        payloads.push({
-          type: 'schedule',
-          data: {
-            date:   sched.date   || '',
-            time:   sched.time   || '',
-            member: sched.member || sched.assignee || sched.team || '',
-            site:   sched.site   || sched.client  || sched.location || '',
-            type:   sched.type   || sched.jobType || 'Visit',
-            notes:  sched.notes  || sched.description || ''
-          }
-        });
+    // Schedules (visits where completed === false)
+    const oldSchedIds = new Set((oldData.visits || []).filter(v => !v.completed).map(v => v.id));
+    (newData.visits || []).filter(v => !v.completed).forEach(v => {
+      if (!oldSchedIds.has(v.id)) {
+        payloads.push({ type: 'schedule', data: mapSchedule(v, newData) });
       }
     });
 
-    // --- Daily Reports ---
-    const newReports = newData.dailyReports || newData.reports || [];
-    const oldReports = oldData.dailyReports || oldData.reports || [];
-    const oldReportSigs = new Set(oldReports.map(r => reportSig(r)));
-
-    newReports.forEach(rep => {
-      if (!oldReportSigs.has(reportSig(rep))) {
-        payloads.push({
-          type: 'daily_report',
-          data: {
-            date:    rep.date    || '',
-            site:    rep.site    || rep.project || rep.location || '',
-            members: rep.members || rep.member  || rep.team    || '',
-            timeOut: rep.timeOut || rep.time    || '',
-            work:    rep.work    || rep.workDone || rep.description || '',
-            parts:   rep.parts   || rep.components || '',
-            notes:   rep.notes   || ''
-          }
-        });
+    // Daily reports (visits where completed === true)
+    const oldReportIds = new Set((oldData.visits || []).filter(v => v.completed).map(v => v.id));
+    (newData.visits || []).filter(v => v.completed).forEach(v => {
+      if (!oldReportIds.has(v.id)) {
+        payloads.push({ type: 'daily_report', data: mapReport(v, newData) });
       }
     });
 
     return payloads;
   }
 
-  function schedSig(s)  { return [s.date, s.member || s.assignee, s.site || s.client].join('|'); }
-  function reportSig(r) { return [r.date, r.site || r.project].join('|'); }
+  function mapProject(p, state) {
+    return {
+      name:      p.name      || p.id,
+      client:    p.client    || p.customer || '',
+      status:    p.status    || '',
+      location:  p.location  || p.site    || '',
+      startDate: p.start     || p.startDate || '',
+      endDate:   p.end       || p.endDate   || p.expectedEnd || '',
+      notes:     p.notes     || ''
+    };
+  }
 
-  // ── Send to Apps Script ───────────────────────────────────
+  function mapSchedule(v, state) {
+    const people = (v.assignments || [])
+      .map(a => {
+        const p = (state.people || []).find(x => x.id === a.personId);
+        return p ? p.name : '';
+      })
+      .filter(Boolean)
+      .join(', ');
+
+    const projName = v.projectId
+      ? ((state.projects || []).find(p => p.id === v.projectId) || {}).name || ''
+      : v.customName || '';
+
+    return {
+      date:   v.date || '',
+      time:   v.crewStart || '',
+      member: v.crewName  || people,
+      site:   v.site      || projName,
+      type:   v.type      || 'Visit',
+      notes:  v.notes     || ''
+    };
+  }
+
+  function mapReport(v, state) {
+    const people = (v.assignments || [])
+      .map(a => {
+        const p = (state.people || []).find(x => x.id === a.personId);
+        return p ? p.name : '';
+      })
+      .filter(Boolean)
+      .join(', ');
+
+    const projName = v.projectId
+      ? ((state.projects || []).find(p => p.id === v.projectId) || {}).name || ''
+      : v.customName || '';
+
+    return {
+      date:    v.date     || '',
+      site:    projName   || v.site || '',
+      members: v.crewName || people,
+      timeOut: v.crewStart || '',
+      work:    v.workDone  || '',
+      parts:   v.remarks   || '',
+      notes:   v.notes     || ''
+    };
+  }
+
   function sendPayload(url, payload) {
     fetch(url, {
       method:  'POST',
       headers: { 'Content-Type': 'application/json' },
       body:    JSON.stringify(payload),
-      mode:    'no-cors' // Apps Script web apps require no-cors from browsers
+      mode:    'no-cors'
     }).catch(err => console.warn('[SGE GSheets] Failed to post:', err));
   }
 
   // ── Init ─────────────────────────────────────────────────
-  // Try to inject settings field whenever something opens/closes in the UI
-  document.addEventListener('click', () => setTimeout(injectSettingsField, 300));
-  window.addEventListener('load',    injectSettingsField);
-
-  // Also do an initial full-sync on load (sends all current data)
-  // so the Sheet is up-to-date even if nothing changed today
   window.addEventListener('load', function () {
+    injectSidebarButton();
+    // Push all current data on first load
     const current = localStorage.getItem(DATA_KEY);
     if (current) scheduleGSheetsSync(current);
   });
