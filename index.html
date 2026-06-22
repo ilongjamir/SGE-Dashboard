@@ -27,8 +27,6 @@
   input,select,textarea{font-family:inherit;font-size:14px}
   .mono{font-family:var(--mono);font-variant-numeric:tabular-nums}
   .eyebrow{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--sidebar-muted);font-weight:600}
-
-  /* shell */
   .app{display:flex;min-height:100vh}
   .side{width:212px;flex:0 0 212px;background:var(--sidebar);color:var(--sidebar-ink);
     display:flex;flex-direction:column;position:sticky;top:0;height:100vh}
@@ -46,6 +44,9 @@
   nav button .ic{width:17px;height:17px;flex:0 0 17px;opacity:.85}
   nav button.on .ic{opacity:1}
   .side-foot{margin-top:auto;padding:12px;border-top:1px solid rgba(255,255,255,.07)}
+  .sync-pill{display:flex;align-items:center;gap:7px;padding:5px 2px 8px}
+  .sync-pill .sp-dot{width:6px;height:6px;border-radius:50%;background:var(--sidebar-muted);flex:0 0 6px;transition:.3s}
+  .sync-pill .sp-lbl{font-size:11px;font-weight:600;color:var(--sidebar-muted);transition:.3s}
   .mode-pill{display:flex;align-items:center;gap:8px;width:100%;justify-content:space-between;
     background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:8px;
     padding:9px 11px;color:var(--sidebar-ink);font-size:12.5px;font-weight:600}
@@ -55,16 +56,12 @@
   .side-foot .util button{flex:1;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);
     color:var(--sidebar-muted);border-radius:7px;padding:7px 4px;font-size:11px;font-weight:600}
   .side-foot .util button:hover{color:#fff}
-
-  /* main */
   .main{flex:1;min-width:0;display:flex;flex-direction:column}
   .topbar{display:flex;align-items:center;justify-content:space-between;padding:18px 26px 6px}
   .topbar .h{display:flex;flex-direction:column;gap:2px}
   .topbar h2{margin:0;font-size:21px;letter-spacing:-.02em;font-weight:700}
   .topbar .today{font-size:12.5px;color:var(--muted);font-weight:500}
   .content{padding:14px 26px 40px;flex:1}
-
-  /* buttons */
   .btn{border:1px solid var(--line);background:var(--panel);color:var(--ink);
     border-radius:var(--r-s);padding:8px 13px;font-size:13px;font-weight:600;display:inline-flex;
     align-items:center;gap:7px;transition:.12s}
@@ -77,8 +74,6 @@
   .btn.ghost{background:transparent;border-color:transparent;color:var(--muted)}
   .btn.ghost:hover{color:var(--ink);background:var(--line-2)}
   .row-actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
-
-  /* kpis */
   .kpis{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:18px}
   .kpi{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:15px 16px;box-shadow:var(--sh)}
   .kpi .lab{font-size:11px;color:var(--muted);font-weight:600;letter-spacing:.02em;text-transform:uppercase}
@@ -87,15 +82,11 @@
   .kpi .foot{font-size:11.5px;color:var(--muted);margin-top:6px}
   .kpi .bar-accent{height:3px;border-radius:3px;margin-top:11px;background:var(--line-2);overflow:hidden}
   .kpi .bar-accent i{display:block;height:100%;background:var(--green)}
-
-  /* panels */
   .panel{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh)}
   .panel .ph{display:flex;align-items:center;justify-content:space-between;padding:13px 16px;border-bottom:1px solid var(--line-2)}
   .panel .ph h3{margin:0;font-size:14px;font-weight:700;letter-spacing:-.01em}
   .panel .pb{padding:6px 16px 14px}
   .two-col{display:grid;grid-template-columns:1.15fr .85fr;gap:18px}
-
-  /* lists */
   .list-row{display:flex;align-items:center;gap:12px;padding:11px 0;border-bottom:1px solid var(--line-2)}
   .list-row:last-child{border-bottom:0}
   .list-row .when{font-size:12px;color:var(--muted);width:78px;flex:0 0 78px}
@@ -104,8 +95,6 @@
   .list-row .body .s{font-size:12px;color:var(--muted);margin-top:1px}
   .empty{color:var(--muted);font-size:13px;padding:18px 2px;text-align:center}
   .empty b{color:var(--ink)}
-
-  /* badges + chips */
   .badge{font-size:10.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:20px;white-space:nowrap}
   .b-todo{background:var(--slate-bg);color:#566159}
   .b-doing{background:var(--doing-bg);color:#8a5b06}
@@ -115,8 +104,6 @@
   .chip .av{width:18px;height:18px;border-radius:50%;background:var(--ink);color:#fff;font-size:9px;font-weight:700;
     display:flex;align-items:center;justify-content:center}
   .chip .tm{font-family:var(--mono);font-size:11px;color:var(--muted)}
-
-  /* kanban */
   .board{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
   .col{background:#F4F3EE;border:1px solid var(--line);border-radius:var(--r);min-height:120px}
   .col.drag-over{outline:2px dashed var(--amber);outline-offset:-3px}
@@ -133,13 +120,9 @@
   .card .cmeta .kw{font-family:var(--mono);color:var(--ink);font-weight:600}
   .card .cbar{height:5px;border-radius:4px;background:var(--line-2);margin-top:9px;overflow:hidden;position:relative}
   .card .cbar i{display:block;height:100%}
-
-  /* timeline switch */
   .seg{display:inline-flex;background:#E7E5DD;border-radius:8px;padding:3px;gap:2px}
   .seg button{border:0;background:transparent;padding:6px 14px;border-radius:6px;font-size:12.5px;font-weight:600;color:var(--muted)}
   .seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 2px rgba(0,0,0,.08)}
-
-  /* gantt */
   .gantt-wrap{overflow-x:auto;border-radius:var(--r)}
   .gantt{position:relative;min-width:640px}
   .g-head{display:flex;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--panel);z-index:3}
@@ -159,8 +142,6 @@
     transform:translateX(-50%);cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,.25)}
   .g-today{position:absolute;top:0;bottom:0;width:2px;background:var(--amber);z-index:2}
   .g-today::after{content:"TODAY";position:absolute;top:2px;left:4px;font-size:8.5px;font-weight:800;color:var(--amber-d);letter-spacing:.08em}
-
-  /* calendar */
   .cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
   .cal-head .nav{display:flex;align-items:center;gap:8px}
   .cal-head .ttl{font-size:16px;font-weight:700;min-width:170px;text-align:center}
@@ -176,8 +157,6 @@
   .v-chip{font-size:11px;border-radius:6px;padding:3px 6px;cursor:pointer;border-left:3px solid;line-height:1.25;background:#F4F3EE}
   .v-chip .vt{font-family:var(--mono);font-size:10px;color:var(--muted)}
   .v-chip .vn{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-
-  /* schedule */
   .sched-day{margin-bottom:12px}
   .sched-day .dh{display:flex;align-items:baseline;gap:10px;margin:0 0 8px}
   .sched-day .dh .dd{font-weight:700;font-size:14px}
@@ -200,7 +179,6 @@
   .done-badge{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#16613a;background:var(--green-bg);border-radius:20px;padding:3px 9px;margin-top:8px;display:inline-block}
   .repair-badge{font-size:10px;font-weight:800;letter-spacing:.05em;text-transform:uppercase;color:#7a1212;background:#fdecea;border-radius:20px;padding:3px 9px;margin-top:8px;display:inline-block}
   .b-repair{background:#fdecea;color:#7a1212}
-  /* monthly report calendar */
   .rpt-cal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:10px}
   .rpt-cal-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:5px;margin-bottom:14px}
   .rpt-cal-dow{font-size:10.5px;font-weight:700;color:var(--muted);text-align:center;letter-spacing:.06em;padding-bottom:2px}
@@ -215,7 +193,6 @@
   .rpt-dots{display:flex;flex-wrap:wrap;gap:3px;margin-top:2px}
   .rpt-dot{width:8px;height:8px;border-radius:50%;flex:0 0 8px}
   .rpt-count{font-size:10px;color:var(--muted);font-weight:600}
-  /* day detail panel */
   .day-detail{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);padding:16px 18px;margin-bottom:18px}
   .day-detail .ddh{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;flex-wrap:wrap;gap:8px}
   .day-detail .ddh h3{margin:0;font-size:15px;font-weight:700}
@@ -230,8 +207,6 @@
   .crew-pick{display:flex;flex-wrap:wrap;gap:9px 16px;margin-top:2px}
   .field .crew-pick label{display:inline-flex;align-items:center;gap:8px;margin:0;font-size:13px;font-weight:500;color:var(--ink);text-transform:none;letter-spacing:0;white-space:nowrap;cursor:pointer}
   .crew-pick input[type=checkbox]{width:16px;height:16px;flex:0 0 16px;margin:0;accent-color:var(--amber);cursor:pointer}
-
-  /* people */
   .people-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
   .pcard{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);padding:14px 15px;box-shadow:var(--sh);display:flex;gap:12px;align-items:center}
   .pcard .pav{width:42px;height:42px;flex:0 0 42px;border-radius:50%;background:var(--ink);color:#fff;
@@ -240,8 +215,6 @@
   .pcard .pr{font-size:12px;color:var(--muted)}
   .pcard .pph{font-size:12px;color:var(--muted);font-family:var(--mono);margin-top:2px}
   .pcard .pedit{margin-left:auto}
-
-  /* modal */
   .scrim{position:fixed;inset:0;background:rgba(18,32,25,.42);display:none;align-items:flex-start;
     justify-content:center;padding:40px 16px;z-index:50;overflow-y:auto}
   .scrim.open{display:flex}
@@ -266,13 +239,16 @@
   .mode-toggle button{flex:1;border:1px solid var(--line);background:#fff;border-radius:var(--r-s);padding:10px;font-size:12.5px;font-weight:600;color:var(--muted)}
   .mode-toggle button.on{border-color:var(--ink);background:var(--ink);color:#fff}
   .read-only-tag{font-size:11px;color:var(--muted)}
-
   .toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(20px);background:var(--ink);
     color:#fff;padding:11px 18px;border-radius:10px;font-size:13px;font-weight:600;opacity:0;transition:.25s;z-index:80;pointer-events:none}
   .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
-
   .view-only [data-edit]{display:none !important}
-
+  /* settings page */
+  .settings-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--sh);max-width:580px;margin-bottom:18px}
+  .settings-card .sc-head{padding:14px 18px;border-bottom:1px solid var(--line-2);font-size:14px;font-weight:700}
+  .settings-card .sc-body{padding:18px 18px 20px}
+  .settings-card .sc-body p{margin:0 0 16px;color:var(--muted);font-size:13.5px;line-height:1.55}
+  .settings-card code{font-family:var(--mono);font-size:12px;background:var(--line-2);border-radius:6px;padding:8px 11px;display:block;word-break:break-all;line-height:1.5;margin-top:6px}
   @media(max-width:900px){
     .kpis{grid-template-columns:repeat(2,1fr)}
     .two-col,.board,.people-grid{grid-template-columns:1fr}
@@ -296,6 +272,10 @@
     </div>
     <nav id="nav"></nav>
     <div class="side-foot">
+      <div class="sync-pill" id="syncPill">
+        <span class="sp-dot"></span>
+        <span class="sp-lbl">Not connected</span>
+      </div>
       <button class="mode-pill mode-view" id="modeBtn">
         <span style="display:flex;align-items:center;gap:8px"><span class="dot"></span><span id="modeLabel">View only</span></span>
         <span style="font-size:11px;color:var(--sidebar-muted)" id="modeHint">Tap to edit</span>
@@ -307,7 +287,6 @@
       </div>
     </div>
   </aside>
-
   <main class="main">
     <div class="topbar">
       <div class="h">
@@ -320,17 +299,21 @@
     <div class="content" id="content"></div>
   </main>
 </div>
-
 <div class="scrim" id="scrim"><div class="modal" id="modal"></div></div>
 <div class="toast" id="toast"></div>
 <input type="file" id="fileInput" accept="application/json" style="display:none">
-
 <script>
 "use strict";
 /* ---------- storage ---------- */
 const KEY="sge_solar_ops_v1";
 const PINKEY="sge_solar_ops_pin";
+const GHKEY="sge_gh_token";
+const REPO="ilongjamir/SGE-Dashboard";
+const BRANCH="main";
+const DATA_PATH="data.json";
+
 let state=load();
+
 function load(){
   let s;
   try{const r=localStorage.getItem(KEY);if(r)s=JSON.parse(r);}catch(e){}
@@ -349,7 +332,52 @@ function migrate(s){
   });
   return s;
 }
-function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){toast("Couldn't save — storage blocked");}}
+
+/* ---------- save + GitHub auto-sync ---------- */
+let syncTimer=null;
+let syncStatus="idle";
+
+function save(){
+  try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){toast("Couldn't save — storage blocked");}
+  githubSyncDebounced();
+}
+function githubSyncDebounced(){
+  clearTimeout(syncTimer);
+  setSyncStatus("syncing");
+  syncTimer=setTimeout(githubSync,1500);
+}
+async function githubSync(){
+  const token=localStorage.getItem(GHKEY);
+  if(!token){setSyncStatus("idle");return;}
+  try{
+    const headers={"Authorization":"token "+token,"Content-Type":"application/json","Accept":"application/vnd.github+json"};
+    // get current SHA so we can update (not create) the file
+    let sha=null;
+    const getR=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH+"?ref="+BRANCH,{headers});
+    if(getR.ok){const f=await getR.json();sha=f.sha;}
+    // encode state as base64 (handles UTF-8 correctly)
+    const json=JSON.stringify(state,null,2);
+    const encoded=btoa(unescape(encodeURIComponent(json)));
+    const body={message:"Auto-save "+new Date().toISOString().slice(0,16).replace("T"," ") + " IST",content:encoded,branch:BRANCH};
+    if(sha)body.sha=sha;
+    const putR=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH,{method:"PUT",headers,body:JSON.stringify(body)});
+    if(!putR.ok){const err=await putR.json();throw new Error(err.message||putR.status);}
+    setSyncStatus("ok");
+    toast("Synced to GitHub ✓");
+  }catch(e){
+    setSyncStatus("error");
+    console.error("GitHub sync error:",e);
+  }
+}
+function setSyncStatus(s){
+  syncStatus=s;
+  const pill=document.getElementById("syncPill");if(!pill)return;
+  const dot=pill.querySelector(".sp-dot");
+  const lbl=pill.querySelector(".sp-lbl");
+  const map={idle:{t:"Not connected",c:"var(--sidebar-muted)"},syncing:{t:"Syncing…",c:"var(--amber)"},ok:{t:"Synced ✓",c:"#52c27b"},error:{t:"Sync error ⚠",c:"#e87070"}};
+  const m=map[s]||map.idle;
+  dot.style.background=m.c;lbl.textContent=m.t;lbl.style.color=m.c;
+}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,7);}
 
 /* ---------- seed sample data ---------- */
@@ -389,7 +417,7 @@ function fmtD(s){const d=parse(s);return d?d.getDate()+" "+MON[d.getMonth()]:"";
 function fmtFull(s){const d=parse(s);return d?DOW[d.getDay()]+", "+d.getDate()+" "+MON[d.getMonth()]+" "+d.getFullYear():"";}
 function daysBetween(a,b){return Math.round((parse(b)-parse(a))/86400000);}
 function addDays(s,n){const d=parse(s);d.setDate(d.getDate()+n);return iso(d);}
-function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(0,0,0,0);return x;} // Monday
+function startOfWeek(d){const x=new Date(d);const day=(x.getDay()+6)%7;x.setDate(x.getDate()-day);x.setHours(0,0,0,0);return x;}
 function dur(a,b){if(!a||!b)return"";const[h1,m1]=a.split(":").map(Number);const[h2,m2]=b.split(":").map(Number);let m=(h2*60+m2)-(h1*60+m1);if(m<0)m+=1440;const h=Math.floor(m/60),mm=m%60;return h+"h"+(mm?" "+mm+"m":"");}
 function initials(n){return n.trim().split(/\s+/).slice(0,2).map(w=>w[0]).join("").toUpperCase();}
 
@@ -406,11 +434,7 @@ function applyMode(){
 function toggleMode(){
   if(editMode){editMode=false;applyMode();return;}
   const pin=localStorage.getItem(PINKEY);
-  if(pin){
-    const a=prompt("Enter edit PIN");
-    if(a===null)return;
-    if(a!==pin){toast("Wrong PIN");return;}
-  }
+  if(pin){const a=prompt("Enter edit PIN");if(a===null)return;if(a!==pin){toast("Wrong PIN");return;}}
   editMode=true;applyMode();
 }
 
@@ -438,7 +462,7 @@ function visitBadgeColor(v){return v.type==="repair"?REPAIR_COLOR:(proj(v.projec
 let calReportMonth=startOfMonth(new Date());
 let calReportDay="";
 let reportFilter="all";
-let reportTypeFilter="all"; // "all"|"project"|"repair"
+let reportTypeFilter="all";
 
 /* ---------- routing ---------- */
 const PAGES=[
@@ -447,13 +471,19 @@ const PAGES=[
   {id:"timeline",label:"Timeline",ic:'<path d="M3 5h12v3H3zM3 10.5h16v3H3zM3 16h9v3H3z"/>'},
   {id:"schedule",label:"Schedule",ic:'<path d="M7 2v3M17 2v3M3 8h18M5 5h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V6a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="2"/>'},
   {id:"reports",label:"Daily reports",ic:'<path d="M7 3h8l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M9 12l1.5 1.5L13 11M9 16h5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>'},
-  {id:"people",label:"People",ic:'<path d="M12 12a4 4 0 100-8 4 4 0 000 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/>'}
+  {id:"people",label:"People",ic:'<path d="M12 12a4 4 0 100-8 4 4 0 000 8zm0 2c-4 0-8 2-8 5v1h16v-1c0-3-4-5-8-5z"/>'},
+  {id:"settings",label:"Settings",ic:'<path d="M12 15a3 3 0 100-6 3 3 0 000 6z"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15a1.65 1.65 0 00-1.51-1H3a2 2 0 010-4h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 012.83-2.83l.06.06A1.65 1.65 0 009 4.68a1.65 1.65 0 001-1.51V3a2 2 0 014 0v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 2.83l-.06.06A1.65 1.65 0 0019.4 9a1.65 1.65 0 001.51 1H21a2 2 0 010 4h-.09a1.65 1.65 0 00-1.51 1z" fill="none" stroke="currentColor" stroke-width="2"/>'}
 ];
 let page="overview";
 function buildNav(){
   const nav=document.getElementById("nav");
   nav.innerHTML="";
   PAGES.forEach(p=>{
+    if(p.id==="settings"){
+      const sep=document.createElement("div");
+      sep.style.cssText="height:1px;background:rgba(255,255,255,.07);margin:6px 8px 4px";
+      nav.appendChild(sep);
+    }
     const b=document.createElement("button");
     b.className=p.id===page?"on":"";
     b.innerHTML=`<svg class="ic" viewBox="0 0 24 24" fill="currentColor">${p.ic}</svg>${p.label}`;
@@ -464,22 +494,95 @@ function buildNav(){
 
 /* ---------- render ---------- */
 function render(){
-  document.getElementById("pageTitle").textContent=PAGES.find(p=>p.id===page).label;
-  document.getElementById("todayLabel").textContent=fmtFull(todayISO());
+  const pg=PAGES.find(p=>p.id===page)||PAGES[0];
+  document.getElementById("pageTitle").textContent=pg.label;
+  document.getElementById("todayLabel").textContent=page==="settings"?"":fmtFull(todayISO());
   const c=document.getElementById("content");
   const act=document.getElementById("pageActions");
   act.innerHTML="";
+  c.innerHTML="";
   if(page==="overview")renderOverview(c);
-  if(page==="projects"){addAction(act,"+ Project",()=>openProject());renderProjects(c);}
-  if(page==="timeline")renderTimeline(c,act);
-  if(page==="schedule"){addAction(act,"+ Site visit",()=>openVisit());renderSchedule(c,act);}
-  if(page==="reports"){addAction(act,"+ New report",()=>openVisit(null,true));renderReports(c,act);}
-  if(page==="people"){addAction(act,"+ Person",()=>openPerson());renderPeople(c);}
+  else if(page==="projects"){addAction(act,"+ Project",()=>openProject());renderProjects(c);}
+  else if(page==="timeline")renderTimeline(c,act);
+  else if(page==="schedule"){addAction(act,"+ Site visit",()=>openVisit());renderSchedule(c,act);}
+  else if(page==="reports"){addAction(act,"+ New report",()=>openVisit(null,true));renderReports(c,act);}
+  else if(page==="people"){addAction(act,"+ Person",()=>openPerson());renderPeople(c);}
+  else if(page==="settings")renderSettings(c);
 }
 function addAction(host,label,fn){
   const b=document.createElement("button");
   b.className="btn amber";b.textContent=label;b.setAttribute("data-edit","");b.onclick=fn;
   host.appendChild(b);
+}
+
+/* ---------- SETTINGS ---------- */
+function renderSettings(c){
+  const token=localStorage.getItem(GHKEY)||"";
+  c.innerHTML=`
+  <div class="settings-card">
+    <div class="sc-head">GitHub Auto-Sync</div>
+    <div class="sc-body">
+      <p>Every change you save is written to GitHub automatically. Claude reads your live data from there. Enter your token once below — you never need to touch it again.</p>
+      <div class="field">
+        <label>Personal Access Token</label>
+        <input id="gh_token" type="password" value="${attr(token)}" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx">
+        <div style="font-size:12px;color:var(--muted);margin-top:7px;line-height:1.6">
+          Create one at <b>github.com → Settings → Developer settings → Personal access tokens (classic) → Generate new token</b>.
+          Tick the <b>repo</b> scope (or just <b>public_repo</b> if this repo is public). Copy the token here.
+        </div>
+      </div>
+      <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+        <button class="btn primary" onclick="saveGHToken()">Save &amp; connect</button>
+        ${token?`<button class="btn" style="color:var(--danger);border-color:#e8c8c4" onclick="clearGHToken()">Remove token</button>`:""}
+        <span id="gh_status" style="font-size:13px"></span>
+      </div>
+    </div>
+  </div>
+  ${token?`<div class="settings-card">
+    <div class="sc-head">Where Claude reads your data</div>
+    <div class="sc-body">
+      <p>After each save, your data is available at this URL. Claude in Mission Control fetches it automatically.</p>
+      <code>https://raw.githubusercontent.com/${REPO}/${BRANCH}/${DATA_PATH}</code>
+      <div style="margin-top:10px">
+        <button class="btn sm" onclick="githubSync();toast('Syncing now…')">Force sync now</button>
+      </div>
+    </div>
+  </div>`:""}`;
+}
+function saveGHToken(){
+  const t=document.getElementById("gh_token").value.trim();
+  if(!t){toast("Enter a token first");return;}
+  localStorage.setItem(GHKEY,t);
+  const el=document.getElementById("gh_status");
+  if(el){el.textContent="Testing…";el.style.color="var(--muted)";}
+  testGHToken(t);
+}
+async function testGHToken(t){
+  try{
+    const r=await fetch("https://api.github.com/repos/"+REPO,{headers:{"Authorization":"token "+t,"Accept":"application/vnd.github+json"}});
+    if(r.ok){
+      const el=document.getElementById("gh_status");
+      if(el){el.textContent="✓ Connected!";el.style.color="var(--green)";}
+      setSyncStatus("ok");
+      toast("Connected ✓ — syncing now…");
+      await githubSync();
+      render(); // refresh settings to show data URL section
+    }else{
+      const err=await r.json();
+      throw new Error(err.message||r.status);
+    }
+  }catch(e){
+    const el=document.getElementById("gh_status");
+    if(el){el.textContent="⚠ Failed: "+e.message;el.style.color="var(--danger)";}
+    setSyncStatus("error");
+  }
+}
+function clearGHToken(){
+  if(!confirm("Remove token? Auto-sync will stop."))return;
+  localStorage.removeItem(GHKEY);
+  setSyncStatus("idle");
+  render();
+  toast("Token removed");
 }
 
 /* ---------- OVERVIEW ---------- */
@@ -493,7 +596,6 @@ function renderOverview(c){
   const totKw=state.projects.reduce((s,p)=>s+(+p.capacityKw||0),0);
   const doneKw=state.projects.filter(p=>p.status==="done").reduce((s,p)=>s+(+p.capacityKw||0),0);
   const pct=totKw?Math.round(doneKw/totKw*100):0;
-
   c.innerHTML=`
   <div class="kpis">
     <div class="kpi"><div class="lab">Active projects</div><div class="num">${active.length}</div><div class="foot">${state.projects.length} total · ${state.projects.filter(p=>p.status==="doing").length} in progress</div></div>
@@ -502,20 +604,12 @@ function renderOverview(c){
     <div class="kpi"><div class="lab">Capacity commissioned</div><div class="num">${doneKw}<small> / ${totKw} kWp</small></div><div class="bar-accent"><i style="width:${pct}%"></i></div></div>
   </div>
   <div class="two-col">
-    <div class="panel">
-      <div class="ph"><h3>On site today</h3><span class="read-only-tag">${fmtFull(t)}</span></div>
-      <div class="pb" id="ov-today"></div>
-    </div>
-    <div class="panel">
-      <div class="ph"><h3>Coming up this week</h3></div>
-      <div class="pb" id="ov-upcoming"></div>
-    </div>
+    <div class="panel"><div class="ph"><h3>On site today</h3><span class="read-only-tag">${fmtFull(t)}</span></div><div class="pb" id="ov-today"></div></div>
+    <div class="panel"><div class="ph"><h3>Coming up this week</h3></div><div class="pb" id="ov-upcoming"></div></div>
   </div>`;
-
   const tEl=c.querySelector("#ov-today");
   if(!onSiteToday.length)tEl.innerHTML=`<div class="empty">No site visits scheduled today.<br><b>Open Schedule</b> to add one.</div>`;
   else onSiteToday.sort(byTime).forEach(v=>tEl.appendChild(visitRow(v)));
-
   const upc=state.visits.filter(v=>v.date>t&&v.date<=wkEnd).sort((a,b)=>a.date.localeCompare(b.date)||cmpTime(a,b));
   const uEl=c.querySelector("#ov-upcoming");
   if(!upc.length)uEl.innerHTML=`<div class="empty">Nothing scheduled for the rest of the week.</div>`;
@@ -525,8 +619,7 @@ function peopleToday(vs){const set=new Set();vs.forEach(v=>v.assignments.forEach
 function visitRow(v,showDate){
   const p=proj(v.projectId);const isRepair=v.type==="repair";
   const row=document.createElement("div");row.className="list-row";
-  const r=visitRange(v);
-  const name=visitDisplayName(v);
+  const r=visitRange(v);const name=visitDisplayName(v);
   const badgeCls=isRepair?"b-repair":(p?STATUS[p.status].cls:"b-todo");
   const badgeLbl=isRepair?"Repair":(p?STATUS[p.status].label:"—");
   row.innerHTML=`<div class="when mono">${showDate?fmtD(v.date)+" · ":""}${r||"—"}</div>
@@ -557,7 +650,6 @@ function renderProjects(c){
       <div class="cards" data-cards="${s}"></div>
     </div>`;
   }).join("")}</div>`;
-
   cols.forEach(s=>{
     const host=c.querySelector(`[data-cards="${s}"]`);
     const items=state.projects.filter(p=>p.status===s);
@@ -573,27 +665,17 @@ function renderProjects(c){
 function projectCard(p){
   const el=document.createElement("div");el.className="card";
   if(editMode){el.draggable=true;el.ondragstart=e=>{e.dataTransfer.setData("id",p.id);el.classList.add("dragging");};el.ondragend=()=>el.classList.remove("dragging");}
-  const prog=projProgress(p);
-  const la=projLastActivity(p);const rc=reportsFor(p.id).length;
+  const prog=projProgress(p);const la=projLastActivity(p);const rc=reportsFor(p.id).length;
   el.innerHTML=`<div class="ct"><span>${esc(p.name)}</span></div>
-    <div class="cmeta">
-      <span class="kw">${p.capacityKw||"?"} kWp</span>
-      <span>📍 ${esc(p.site||"—")}</span>
-      <span class="mono">${p.start?fmtD(p.start):"—"} → ${p.end?fmtD(p.end):"—"}</span>
-    </div>
+    <div class="cmeta"><span class="kw">${p.capacityKw||"?"} kWp</span><span>📍 ${esc(p.site||"—")}</span><span class="mono">${p.start?fmtD(p.start):"—"} → ${p.end?fmtD(p.end):"—"}</span></div>
     <div class="cbar"><i style="width:${prog}%;background:${STATUS[p.status].sw}"></i></div>
-    <div class="cmeta" style="margin-top:7px">
-      <span class="mono" style="font-weight:600;color:var(--ink)">${prog}%</span>
-      <span>${rc?rc+" report"+(rc>1?"s":""):"no reports"}</span>
-      ${la?`<span>last: ${fmtD(la)}</span>`:""}
-    </div>`;
-  el.style.cursor="pointer";
-  el.onclick=ev=>{if(el.classList.contains("dragging"))return;openProject(p.id);};
+    <div class="cmeta" style="margin-top:7px"><span class="mono" style="font-weight:600;color:var(--ink)">${prog}%</span><span>${rc?rc+" report"+(rc>1?"s":""):"no reports"}</span>${la?`<span>last: ${fmtD(la)}</span>`:""}</div>`;
+  el.style.cursor="pointer";el.onclick=ev=>{if(el.classList.contains("dragging"))return;openProject(p.id);};
   return el;
 }
 
 /* ---------- TIMELINE ---------- */
-let tlView="gantt", calCursor=startOfMonth(new Date()), calMode="month", calWeek=startOfWeek(new Date());
+let tlView="gantt",calCursor=startOfMonth(new Date()),calMode="month",calWeek=startOfWeek(new Date());
 function startOfMonth(d){return new Date(d.getFullYear(),d.getMonth(),1);}
 function renderTimeline(c,act){
   const seg=document.createElement("div");seg.className="seg";
@@ -612,7 +694,6 @@ function renderGantt(c){
   const total=daysBetween(min,max)+1;
   const dayW=Math.max(20,Math.min(40,Math.floor(900/total)));
   const axisW=total*dayW;
-  // month markers
   let months="";let cur=parse(min);
   while(iso(cur)<=max){
     const first=(cur.getDate()===1)||iso(cur)===min;
@@ -622,20 +703,17 @@ function renderGantt(c){
   const todayOff=(todayISO()>=min&&todayISO()<=max)?daysBetween(min,todayISO())*dayW+dayW/2:-1;
   let rows="";
   ps.forEach(p=>{
-    const left=daysBetween(min,p.start)*dayW;
-    const w=(daysBetween(p.start,p.end)+1)*dayW;
+    const left=daysBetween(min,p.start)*dayW;const w=(daysBetween(p.start,p.end)+1)*dayW;
     const pins=state.visits.filter(v=>v.projectId===p.id).map(v=>{
       const off=daysBetween(min,v.date)*dayW+dayW/2;
       return `<div class="g-pin" style="left:${off}px;background:${STATUS[p.status].sw}" title="${esc(v.site)} ${visitRange(v)}" data-vid="${v.id}"></div>`;
     }).join("");
     rows+=`<div class="g-row"><div class="g-rl"><span class="nm">${esc(p.name)}</span><span class="st">${p.capacityKw||"?"} kWp · ${STATUS[p.status].label}</span></div>
       <div class="g-track" style="width:${axisW}px">
-        <div class="g-bar" style="left:${left}px;width:${w}px;background:${STATUS[p.status].sw}" data-pid="${p.id}">${fmtD(p.start)}\u2013${fmtD(p.end)}</div>
-        ${pins}
-        ${todayOff>=0?`<div class="g-today" style="left:${todayOff}px"></div>`:""}
+        <div class="g-bar" style="left:${left}px;width:${w}px;background:${STATUS[p.status].sw}" data-pid="${p.id}">${fmtD(p.start)}–${fmtD(p.end)}</div>
+        ${pins}${todayOff>=0?`<div class="g-today" style="left:${todayOff}px"></div>`:""}
       </div></div>`;
   });
-  // Repair pins row
   const repairs=state.visits.filter(v=>v.type==="repair"&&v.date>=min&&v.date<=max);
   if(repairs.length){
     const rpins=repairs.map(v=>{const off=daysBetween(min,v.date)*dayW+dayW/2;return `<div class="g-pin" style="left:${off}px;background:${REPAIR_COLOR};border-color:#fff" title="${esc(visitDisplayName(v))}" data-vid="${v.id}"></div>`;}).join("");
@@ -656,7 +734,7 @@ function renderCalendar(c,act){
   act.appendChild(seg);
   if(calMode==="month")renderCalMonth(c);else renderCalWeek(c);
 }
-function calNav(title,prev,next,todayFn){
+function calNav(title){
   return `<div class="cal-head"><div class="nav">
     <button class="btn sm" id="calPrev">‹</button>
     <button class="btn sm" id="calToday">Today</button>
@@ -673,22 +751,20 @@ function renderCalMonth(c){
     const ds=iso(d);const out=d.getMonth()!==m;const isT=ds===todayISO();
     const vs=state.visits.filter(v=>v.date===ds).sort(byTime);
     cells+=`<div class="cal-cell ${out?"out":""} ${isT?"today":""}"><div class="dn">${d.getDate()}</div>
-      ${vs.map(v=>{const col=visitBadgeColor(v);return `<div class="v-chip" style="border-left-color:${col}" data-vid="${v.id}"><div class="vn">${esc(visitDisplayName(v))}</div><div class="vt">${visitRange(v)||"all day"}</div></div>`;}).join("")}
-    </div>`;
+      ${vs.map(v=>{const col=visitBadgeColor(v);return `<div class="v-chip" style="border-left-color:${col}" data-vid="${v.id}"><div class="vn">${esc(visitDisplayName(v))}</div><div class="vt">${visitRange(v)||"all day"}</div></div>`;}).join("")}</div>`;
   }
   c.innerHTML=calNav(title)+`<div class="cal-grid">${DOW.map((_,i)=>`<div class="cal-dow">${DOW[(i+1)%7]}</div>`).join("")}</div><div class="cal-grid" style="margin-top:7px">${cells}</div>`;
   wireCal(c,()=>{calCursor=new Date(y,m-1,1);},()=>{calCursor=new Date(y,m+1,1);},()=>{calCursor=startOfMonth(new Date());});
 }
 function renderCalWeek(c){
-  const start=new Date(calWeek);
-  const end=new Date(start);end.setDate(end.getDate()+6);
+  const start=new Date(calWeek);const end=new Date(start);end.setDate(end.getDate()+6);
   const title=fmtD(iso(start))+" – "+fmtD(iso(end))+", "+end.getFullYear();
   let cells="";
   for(let i=0;i<7;i++){
     const d=new Date(start);d.setDate(d.getDate()+i);const ds=iso(d);const isT=ds===todayISO();
     const vs=state.visits.filter(v=>v.date===ds).sort(byTime);
     cells+=`<div class="cal-cell ${isT?"today":""}"><div class="dn">${DOW[d.getDay()]} ${d.getDate()}</div>
-      ${vs.map(v=>{const col=visitBadgeColor(v);return `<div class="v-chip" style="border-left-color:${col}" data-vid="${v.id}"><div class="vt">${visitRange(v)||"all day"}</div><div class="vn">${esc(visitDisplayName(v))}</div><div class="vt">${esc(v.site||"")}</div></div>`;}).join("")||'<div class="read-only-tag" style="margin-top:6px">\u2014</div>'}
+      ${vs.map(v=>{const col=visitBadgeColor(v);return `<div class="v-chip" style="border-left-color:${col}" data-vid="${v.id}"><div class="vt">${visitRange(v)||"all day"}</div><div class="vn">${esc(visitDisplayName(v))}</div><div class="vt">${esc(v.site||"")}</div></div>`;}).join("")||'<div class="read-only-tag" style="margin-top:6px">—</div>'}
     </div>`;
   }
   c.innerHTML=calNav(title)+`<div class="cal-week">${cells}</div>`;
@@ -702,9 +778,7 @@ function wireCal(c,prev,next,today){
 }
 
 /* ---------- SCHEDULE ---------- */
-let calSchedMonth=startOfMonth(new Date());
-let calSchedDay="";
-let schedTypeFilter="all"; // "all"|"project"|"repair"
+let calSchedMonth=startOfMonth(new Date());let calSchedDay="";let schedTypeFilter="all";
 function filteredPlanned(){
   let vs=state.visits.filter(v=>!v.completed);
   if(schedTypeFilter==="project")vs=vs.filter(v=>v.type==="project");
@@ -714,34 +788,24 @@ function filteredPlanned(){
 function renderSchedule(c,act){
   const y=calSchedMonth.getFullYear(),m=calSchedMonth.getMonth();
   const monthName=calSchedMonth.toLocaleString("en",{month:"long"})+" "+y;
-  // Filter bar
   const bar=document.createElement("div");bar.style.cssText="display:flex;align-items:center;gap:8px;flex-wrap:wrap";
   const segEl=document.createElement("div");segEl.className="seg";
   ["all","project","repair"].forEach(t=>{
     const b=document.createElement("button");b.className=schedTypeFilter===t?"on":"";
     b.textContent=t==="all"?"All":(t==="project"?"Projects":"Repairs");
     b.onclick=()=>{schedTypeFilter=t;calSchedDay="";render();};segEl.appendChild(b);});
-  bar.appendChild(segEl);
-  act.appendChild(bar);
-
+  bar.appendChild(segEl);act.appendChild(bar);
   const first=new Date(y,m,1);const startGrid=startOfWeek(first);
   c.innerHTML=`<div class="rpt-cal-head">
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="btn sm" id="scPrev">‹</button>
-      <button class="btn sm" id="scToday">This month</button>
-      <button class="btn sm" id="scNext">›</button>
-    </div>
+    <div style="display:flex;align-items:center;gap:8px"><button class="btn sm" id="scPrev">‹</button><button class="btn sm" id="scToday">This month</button><button class="btn sm" id="scNext">›</button></div>
     <div class="ttl" style="font-size:17px;font-weight:700">${monthName}</div>
     <div style="min-width:120px;text-align:right;font-size:12px;color:var(--muted)">Click a day to view visits</div>
   </div>
   <div class="rpt-cal-grid">${DOW.map((_,i)=>`<div class="rpt-cal-dow">${DOW[(i+1)%7]}</div>`).join("")}</div>
-  <div class="rpt-cal-grid" id="sc-grid"></div>
-  <div id="sc-detail"></div>`;
-
+  <div class="rpt-cal-grid" id="sc-grid"></div><div id="sc-detail"></div>`;
   c.querySelector("#scPrev").onclick=()=>{calSchedMonth=new Date(y,m-1,1);calSchedDay="";render();};
   c.querySelector("#scNext").onclick=()=>{calSchedMonth=new Date(y,m+1,1);calSchedDay="";render();};
   c.querySelector("#scToday").onclick=()=>{calSchedMonth=startOfMonth(new Date());calSchedDay="";render();};
-
   const grid=c.querySelector("#sc-grid");
   for(let i=0;i<42;i++){
     const d=new Date(startGrid);d.setDate(d.getDate()+i);
@@ -757,7 +821,7 @@ function renderSchedule(c,act){
   renderSchedDayDetail(c.querySelector("#sc-detail"));
 }
 function renderSchedDayDetail(host){
-  if(!calSchedDay){host.innerHTML=`<div style="text-align:center;color:var(--muted);font-size:13px;padding:18px 0">\u2190 Click a day on the calendar to see planned visits</div>`;return;}
+  if(!calSchedDay){host.innerHTML=`<div style="text-align:center;color:var(--muted);font-size:13px;padding:18px 0">← Click a day on the calendar to see planned visits</div>`;return;}
   const vs=filteredPlanned().filter(v=>v.date===calSchedDay).sort(byTime);
   const panel=document.createElement("div");panel.className="day-detail";
   panel.innerHTML=`<div class="ddh"><h3>${fmtFull(calSchedDay)}</h3>
@@ -771,8 +835,7 @@ function renderSchedDayDetail(host){
 function visitCard(v){
   const p=proj(v.projectId);const isRepair=v.type==="repair";
   const el=document.createElement("div");el.className="visit";
-  const rng=visitRange(v);
-  const name=visitDisplayName(v);
+  const rng=visitRange(v);const name=visitDisplayName(v);
   const badgeCls=isRepair?"b-repair":(p?STATUS[p.status].cls:"b-todo");
   const badgeLbl=isRepair?"Repair / Maintenance":(p?STATUS[p.status].label:"—");
   const ppl=v.assignments.map(a=>{const pp=person(a.personId);if(!pp)return"";
@@ -795,7 +858,6 @@ function visitCard(v){
 function renderReports(c,act){
   const y=calReportMonth.getFullYear(),m=calReportMonth.getMonth();
   const monthName=calReportMonth.toLocaleString("en",{month:"long"})+" "+y;
-  // Filter bar
   const bar=document.createElement("div");bar.style.cssText="display:flex;align-items:center;gap:8px;flex-wrap:wrap";
   const segEl=document.createElement("div");segEl.className="seg";
   ["all","project","repair"].forEach(t=>{
@@ -810,26 +872,17 @@ function renderReports(c,act){
     dd.value=reportFilter;dd.onchange=()=>{reportFilter=dd.value;render();};bar.appendChild(dd);
   }
   act.appendChild(bar);
-
-  // Build nav + grid
   const first=new Date(y,m,1);const startGrid=startOfWeek(first);
   c.innerHTML=`<div class="rpt-cal-head">
-    <div style="display:flex;align-items:center;gap:8px">
-      <button class="btn sm" id="rcPrev">‹</button>
-      <button class="btn sm" id="rcToday">This month</button>
-      <button class="btn sm" id="rcNext">›</button>
-    </div>
+    <div style="display:flex;align-items:center;gap:8px"><button class="btn sm" id="rcPrev">‹</button><button class="btn sm" id="rcToday">This month</button><button class="btn sm" id="rcNext">›</button></div>
     <div class="ttl" style="font-size:17px;font-weight:700">${monthName}</div>
     <div style="min-width:120px;text-align:right;font-size:12px;color:var(--muted)">Click a day to view reports</div>
   </div>
   <div class="rpt-cal-grid">${DOW.map((_,i)=>`<div class="rpt-cal-dow">${DOW[(i+1)%7]}</div>`).join("")}</div>
-  <div class="rpt-cal-grid" id="rpt-grid"></div>
-  <div id="rpt-detail"></div>`;
-
+  <div class="rpt-cal-grid" id="rpt-grid"></div><div id="rpt-detail"></div>`;
   c.querySelector("#rcPrev").onclick=()=>{calReportMonth=new Date(y,m-1,1);calReportDay="";render();};
   c.querySelector("#rcNext").onclick=()=>{calReportMonth=new Date(y,m+1,1);calReportDay="";render();};
   c.querySelector("#rcToday").onclick=()=>{calReportMonth=startOfMonth(new Date());calReportDay="";render();};
-
   const grid=c.querySelector("#rpt-grid");
   for(let i=0;i<42;i++){
     const d=new Date(startGrid);d.setDate(d.getDate()+i);
@@ -866,8 +919,7 @@ function renderDayDetail(host){
 function reportCard(v){
   const p=proj(v.projectId);const isRepair=v.type==="repair";
   const el=document.createElement("div");el.className="visit";
-  const rng=visitRange(v);
-  const name=visitDisplayName(v);
+  const rng=visitRange(v);const name=visitDisplayName(v);
   const ppl=v.assignments.map(a=>{const pp=person(a.personId);if(!pp)return"";
     const tm=v.mode==="person"&&a.start?`<span class="tm">${a.start}–${a.end||"?"}</span>`:"";
     return `<span class="chip"><span class="av">${initials(pp.name)}</span>${esc(pp.name)} ${tm}</span>`;}).join("");
@@ -953,9 +1005,7 @@ function delProject(id){
 }
 function gotoProjectReports(pid){closeModal();page="reports";reportFilter=pid;buildNav();render();}
 
-let vType="project";
-let draftAssign=[];
-let vCompleted=false;
+let vType="project",draftAssign=[],vCompleted=false;
 function openVisit(id,forceComplete,prefillDate){
   if(!editMode){toast("View only — switch to Edit mode to change");return;}
   id=id||"";
@@ -1001,11 +1051,7 @@ function openVisit(id,forceComplete,prefillDate){
 }
 function renderVNameBox(v){
   const box=document.getElementById("v_namebox");
-  if(vType==="repair"){
-    box.innerHTML=`<div class="field"><label>Job / repair name</label><input id="v_customname" value="${attr(v.customName||"")}" placeholder="e.g. Sema Residence \u2014 inverter fault, Kohima panel cleaning"></div>`;
-    return;
-  }
-  // Project type — existing project OR custom name
+  if(vType==="repair"){box.innerHTML=`<div class="field"><label>Job / repair name</label><input id="v_customname" value="${attr(v.customName||"")}" placeholder="e.g. Sema Residence — inverter fault"></div>`;return;}
   const isCustom=v.projectId==="__custom__"||(!v.projectId&&!!v.customName);
   const selVal=isCustom?"__custom__":(v.projectId||"");
   const opts=state.projects.map(p=>`<option value="${p.id}" ${selVal===p.id?"selected":""}>${esc(p.name)}</option>`).join("");
@@ -1017,30 +1063,24 @@ function renderVNameBox(v){
       </select>
     </div>
     <div id="v_customproj_box" style="${isCustom?"":"display:none"}">
-      <div class="field"><label>Custom project name</label>
-        <input id="v_customname" value="${attr(isCustom?v.customName:"")}" placeholder="e.g. Dimapur Office Block \u2014 phase 2">
-      </div>
+      <div class="field"><label>Custom project name</label><input id="v_customname" value="${attr(isCustom?v.customName:"")}" placeholder="e.g. Dimapur Office Block — phase 2"></div>
     </div>`;
 }
 function onProjSelectChange(){
   const sel=document.getElementById("v_proj");
   const box=document.getElementById("v_customproj_box");
   if(box)box.style.display=sel&&sel.value==="__custom__"?"":"none";
-  // also refresh progress slider default when project changes
   if(sel&&sel.value!=="__custom__")renderReportBox(collectVisitDraft());
 }
 function setVType(t){
   vType=t;
   document.getElementById("vt_proj").classList.toggle("on",t==="project");
   document.getElementById("vt_rep").classList.toggle("on",t==="repair");
-  const cur=collectVisitDraft();renderVNameBox(cur);
-  // hide progress slider for repairs
-  renderReportBox(cur);
+  const cur=collectVisitDraft();renderVNameBox(cur);renderReportBox(cur);
 }
 function collectVisitDraft(){
   const g=x=>{const e=document.getElementById(x);return e?e.value:undefined;};
-  const rawProj=g("v_proj")||"";
-  const isCustomProj=rawProj==="__custom__";
+  const rawProj=g("v_proj")||"";const isCustomProj=rawProj==="__custom__";
   return {mode:curVMode,projectId:isCustomProj?"":rawProj,customName:g("v_customname")||"",
     crewName:g("v_crewname")||"",crewStart:g("v_cs")||"09:00",crewEnd:g("v_ce")||"16:00",
     workDone:g("v_workdone")||"",remarks:g("v_remarks")||"",progress:g("v_progress")||""};
@@ -1051,8 +1091,7 @@ function setVStatus(done){
   document.getElementById("vs_done").classList.toggle("on",done);
   document.getElementById("v_title").textContent=done?"Daily work report":"New entry";
   document.getElementById("v_hourslabel").textContent=done?"Who went, and their hours":"How are hours tracked?";
-  const cur=collectVisitDraft();
-  renderVMode(cur);renderReportBox(cur);
+  const cur=collectVisitDraft();renderVMode(cur);renderReportBox(cur);
 }
 function renderReportBox(v){
   const box=document.getElementById("v_reportbox");
@@ -1065,7 +1104,7 @@ function renderReportBox(v){
   box.innerHTML=`
     <div class="field" style="margin-top:6px"><label>Work done</label><textarea id="v_workdone" placeholder="What was completed on site today">${esc(v.workDone||"")}</textarea></div>
     <div class="field"><label>Remarks</label><textarea id="v_remarks" placeholder="Issues, delays, materials found, follow-ups">${esc(v.remarks||"")}</textarea></div>
-    ${!isRepair?`<div class="field"><label>Project progress after this visit \u2014 <span id="v_progval" class="mono">${pr}%</span></label>
+    ${!isRepair?`<div class="field"><label>Project progress after this visit — <span id="v_progval" class="mono">${pr}%</span></label>
       <input id="v_progress" type="range" min="0" max="100" step="5" value="${pr}" oninput="document.getElementById('v_progval').textContent=this.value+'%'"></div>`:""}`;
 }
 let curVMode="crew";
@@ -1077,8 +1116,7 @@ function setVMode(m){
 }
 function renderVMode(v){
   const box=document.getElementById("v_modebox");
-  const startLab=vCompleted?"Reached at":"Start time";
-  const endLab=vCompleted?"Left at":"End time";
+  const startLab=vCompleted?"Reached at":"Start time";const endLab=vCompleted?"Left at":"End time";
   if(curVMode==="crew"){
     box.innerHTML=`
       <div class="field"><label>Crew name (optional)</label><input id="v_crewname" value="${attr(v.crewName)}" placeholder="e.g. Install Team A"></div>
@@ -1120,8 +1158,7 @@ function rmAssign(i){draftAssign.splice(i,1);renderAssignRows();}
 function saveVisit(id){
   const g=x=>{const e=document.getElementById(x);return e?e.value:"";};
   const prev=id?state.visits.find(v=>v.id===id):null;const prevPid=prev?prev.projectId:null;
-  const rawProj=vType==="project"?g("v_proj"):"";
-  const isCustomProj=rawProj==="__custom__";
+  const rawProj=vType==="project"?g("v_proj"):"";const isCustomProj=rawProj==="__custom__";
   const o={id:id||uid(),type:vType,
     projectId:vType==="project"&&!isCustomProj?rawProj:"",
     customName:vType==="repair"?g("v_customname").trim():(isCustomProj?g("v_customname").trim():""),
@@ -1139,8 +1176,7 @@ function saveVisit(id){
   if(o.type==="project"&&o.projectId){recalcProjectProgress(o.projectId);if(prevPid&&prevPid!==o.projectId)recalcProjectProgress(prevPid);}
   save();closeModal();
   if(o.completed&&page!=="reports"){page="reports";buildNav();}
-  render();
-  toast(o.completed?"Report saved":(id?"Saved":"Created"));
+  render();toast(o.completed?"Report saved":(id?"Saved":"Created"));
 }
 function recalcProjectProgress(pid){
   const pr=proj(pid);if(!pr)return;
@@ -1149,8 +1185,11 @@ function recalcProjectProgress(pid){
   reps.sort((a,b)=>a.date.localeCompare(b.date)||cmpTime(a,b));
   pr.progressManual=+reps[reps.length-1].progress;
 }
-function delVisit(id){const v=state.visits.find(x=>x.id===id);if(!confirm("Delete this entry?"))return;const pid=v?v.projectId:null;state.visits=state.visits.filter(x=>x.id!==id);if(pid)recalcProjectProgress(pid);save();closeModal();render();toast("Deleted");}
-
+function delVisit(id){
+  const v=state.visits.find(x=>x.id===id);if(!confirm("Delete this entry?"))return;
+  const pid=v?v.projectId:null;state.visits=state.visits.filter(x=>x.id!==id);
+  if(pid)recalcProjectProgress(pid);save();closeModal();render();toast("Deleted");
+}
 function openPerson(id){
   if(!editMode){toast("View only — switch to Edit mode to change");return;}
   id=id||"";
@@ -1173,10 +1212,12 @@ function savePerson(id){
   if(id)Object.assign(person(id),o);else state.people.push(o);
   save();closeModal();render();toast(id?"Saved":"Person added");
 }
-function delPerson(id){if(!confirm("Delete this person? They'll be removed from any assignments."))return;
+function delPerson(id){
+  if(!confirm("Delete this person? They'll be removed from any assignments."))return;
   state.people=state.people.filter(p=>p.id!==id);
   state.visits.forEach(v=>v.assignments=v.assignments.filter(a=>a.personId!==id));
-  save();closeModal();render();toast("Person deleted");}
+  save();closeModal();render();toast("Person deleted");
+}
 
 /* ---------- backup / restore / pin ---------- */
 document.getElementById("exportBtn").onclick=()=>{
@@ -1209,18 +1250,26 @@ document.getElementById("pinBtn").onclick=()=>{
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));}
 function attr(s){return esc(s);}
 let toastT;
-function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2200);}
+function toast(m){const t=document.getElementById("toast");t.textContent=m;t.classList.add("show");clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove("show"),2500);}
+
 document.getElementById("modeBtn").onclick=toggleMode;
 document.getElementById("menuBtn").onclick=()=>document.getElementById("side").classList.toggle("open");
+
 window.openProject=openProject;window.openVisit=openVisit;window.openPerson=openPerson;
 window.saveProject=saveProject;window.delProject=delProject;window.saveVisit=saveVisit;window.delVisit=delVisit;
 window.savePerson=savePerson;window.delPerson=delPerson;window.closeModal=closeModal;
-window.setVMode=setVMode;window.addAssignRow=addAssignRow;window.rmAssign=rmAssign;window.toggleCrew=toggleCrew;window.setAssign=setAssign;window.setVStatus=setVStatus;window.setVType=setVType;window.renderVNameBox=renderVNameBox;window.onProjSelectChange=onProjSelectChange;window.gotoProjectReports=gotoProjectReports;window.filteredReports=filteredReports;window.filteredPlanned=filteredPlanned;
+window.setVMode=setVMode;window.addAssignRow=addAssignRow;window.rmAssign=rmAssign;window.toggleCrew=toggleCrew;
+window.setAssign=setAssign;window.setVStatus=setVStatus;window.setVType=setVType;window.renderVNameBox=renderVNameBox;
+window.onProjSelectChange=onProjSelectChange;window.gotoProjectReports=gotoProjectReports;
+window.filteredReports=filteredReports;window.filteredPlanned=filteredPlanned;
+window.saveGHToken=saveGHToken;window.clearGHToken=clearGHToken;window.githubSync=githubSync;
 window.draftAssign=draftAssign;
-document.addEventListener("keydown",e=>{if(e.key==="Escape")closeModal();});
 
-/* ---------- boot ---------- */
-buildNav();applyMode();
+/* ---------- init ---------- */
+buildNav();
+render();
+// set initial sync status based on whether token exists
+setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
 </body>
 </html>
