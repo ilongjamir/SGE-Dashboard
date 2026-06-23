@@ -287,6 +287,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "20"
+    },
+    {
+      "id": "mqqyfwuehdb37",
+      "type": "project",
+      "projectId": "mqqtodeeo518p",
+      "customName": "",
+      "site": "",
+      "date": "2026-06-24",
+      "mode": "crew",
+      "notes": "-BATTERY CONNECTION",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
