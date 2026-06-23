@@ -212,7 +212,7 @@
       "date": "2026-06-23",
       "mode": "crew",
       "notes": "SOLAR CONNECTION TO NET METER",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "11:00",
       "crewEnd": "11:30",
@@ -221,7 +221,7 @@
           "personId": "mqorpn4i4jonr"
         }
       ],
-      "workDone": "",
+      "workDone": "-WIFI CONNECTED",
       "remarks": "",
       "progress": ""
     },
