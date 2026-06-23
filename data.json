@@ -85,7 +85,7 @@
       "site": "",
       "date": "2026-06-24",
       "mode": "crew",
-      "notes": "",
+      "notes": "-CHECK NET METER CONNECTION\n-IMPORT/EXPORT NOT MATCHING",
       "completed": false,
       "crewName": "",
       "crewStart": "10:00",
@@ -214,8 +214,8 @@
       "notes": "SOLAR CONNECTION TO NET METER",
       "completed": false,
       "crewName": "",
-      "crewStart": "12:30",
-      "crewEnd": "13:00",
+      "crewStart": "11:00",
+      "crewEnd": "11:30",
       "assignments": [
         {
           "personId": "mqorpn4i4jonr"
