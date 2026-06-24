@@ -292,8 +292,8 @@
     {
       "id": "mqqyfwuehdb37",
       "type": "project",
-      "projectId": "mqqtodeeo518p",
-      "customName": "",
+      "projectId": "",
+      "customName": "K T Wapang",
       "site": "",
       "date": "2026-06-24",
       "mode": "crew",
@@ -304,15 +304,15 @@
       "crewEnd": "16:00",
       "assignments": [
         {
-          "personId": "mqorp5sjp8179"
+          "personId": "mqorpkb0elkwu"
         },
         {
-          "personId": "mqorpn4i4jonr"
+          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
       "remarks": "-BATTERY ISSUE NOT RESOLVED\n-TERMINAL ISSUE\n-LOOSE CONNECTION",
-      "progress": "0"
+      "progress": ""
     },
     {
       "id": "mqrppclgqa0pd",
