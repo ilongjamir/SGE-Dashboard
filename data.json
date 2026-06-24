@@ -36,7 +36,8 @@
       "status": "doing",
       "start": "2026-06-05",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 0
     }
   ],
   "people": [
@@ -297,7 +298,7 @@
       "date": "2026-06-24",
       "mode": "crew",
       "notes": "-BATTERY CONNECTION",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "11:00",
       "crewEnd": "16:00",
@@ -310,8 +311,8 @@
         }
       ],
       "workDone": "",
-      "remarks": "",
-      "progress": ""
+      "remarks": "-BATTERY ISSUE NOT RESOLVED\n-TERMINAL ISSUE\n-LOOSE CONNECTION",
+      "progress": "0"
     },
     {
       "id": "mqrppclgqa0pd",
