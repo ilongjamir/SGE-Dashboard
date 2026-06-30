@@ -559,6 +559,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mr0dnt2txabld",
+      "type": "project",
+      "projectId": "",
+      "customName": "AZONO",
+      "site": "",
+      "date": "2026-07-01",
+      "mode": "crew",
+      "notes": "-NET METER CONNECTION",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
