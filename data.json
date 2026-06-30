@@ -438,6 +438,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr05umgazxx51",
+      "type": "repair",
+      "projectId": "",
+      "customName": "IMTIKUMLA",
+      "site": "",
+      "date": "2026-06-29",
+      "mode": "crew",
+      "notes": "-BILL SPIKE",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
