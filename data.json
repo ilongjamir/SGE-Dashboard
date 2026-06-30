@@ -416,6 +416,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr05qharlluct",
+      "type": "project",
+      "projectId": "",
+      "customName": "BUILDSMART",
+      "site": "",
+      "date": "2026-06-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "00:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
