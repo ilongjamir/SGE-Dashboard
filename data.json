@@ -497,6 +497,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mr07v1ekctpu5",
+      "type": "repair",
+      "projectId": "",
+      "customName": "SYMBIOS AUTO",
+      "site": "",
+      "date": "2026-06-26",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
