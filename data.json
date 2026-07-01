@@ -596,6 +596,56 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr1yw94yea7ig",
+      "type": "project",
+      "projectId": "mr1yvfk5jxooe",
+      "customName": "",
+      "site": "AOYIMTI",
+      "date": "2026-07-03",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "01:30",
+      "crewEnd": "14:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
+    },
+    {
+      "id": "mr1ywyd94fe0v",
+      "type": "project",
+      "projectId": "mr1yvfk5jxooe",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-02",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "02:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
