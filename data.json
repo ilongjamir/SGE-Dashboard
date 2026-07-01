@@ -598,12 +598,12 @@
       "progress": ""
     },
     {
-      "id": "mr1yw94yea7ig",
+      "id": "mr1ywyd94fe0v",
       "type": "project",
       "projectId": "mr1yvfk5jxooe",
       "customName": "",
       "site": "AOYIMTI",
-      "date": "2026-07-03",
+      "date": "2026-07-02",
       "mode": "crew",
       "notes": "",
       "completed": false,
@@ -623,24 +623,21 @@
       "progress": ""
     },
     {
-      "id": "mr1ywyd94fe0v",
+      "id": "mr1z7o0yakg94",
       "type": "project",
-      "projectId": "mr1yvfk5jxooe",
-      "customName": "",
+      "projectId": "",
+      "customName": "BUILDSMART",
       "site": "",
-      "date": "2026-07-02",
+      "date": "2026-07-01",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "02:00",
-      "crewEnd": "16:00",
+      "crewStart": "10:00",
+      "crewEnd": "18:00",
       "assignments": [
         {
-          "personId": "mqorpe5v0fd80"
-        },
-        {
-          "personId": "mqorpkb0elkwu"
+          "personId": "mqorp5sjp8179"
         }
       ],
       "workDone": "",
