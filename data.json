@@ -46,10 +46,11 @@
       "site": "AOYIMTI",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 0
     }
   ],
   "people": [
@@ -606,7 +607,7 @@
       "date": "2026-07-02",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "01:30",
       "crewEnd": "14:30",
@@ -620,7 +621,7 @@
       ],
       "workDone": "",
       "remarks": "",
-      "progress": ""
+      "progress": "0"
     },
     {
       "id": "mr1z7o0yakg94",
