@@ -669,6 +669,43 @@
       "workDone": "",
       "remarks": "- There is an issue with the inverter, so the inverter is not working.",
       "progress": ""
+    },
+    {
+      "id": "mr38xpobs8lm4",
+      "type": "project",
+      "projectId": "",
+      "customName": "BUILDSMART",
+      "site": "",
+      "date": "2026-07-02",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "02:30",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
