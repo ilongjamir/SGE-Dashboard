@@ -582,7 +582,7 @@
       "date": "2026-07-01",
       "mode": "crew",
       "notes": "-NET METER CONNECTION",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "10:00",
       "crewEnd": "16:00",
@@ -643,6 +643,31 @@
       ],
       "workDone": "",
       "remarks": "",
+      "progress": ""
+    },
+    {
+      "id": "mr38tp5i74gu5",
+      "type": "project",
+      "projectId": "",
+      "customName": "SYMBIOS CREATION OFFICE SOLAR",
+      "site": "",
+      "date": "2026-07-02",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "00:00",
+      "crewEnd": "13:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "- There is an issue with the inverter, so the inverter is not working.",
       "progress": ""
     }
   ]
