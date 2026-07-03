@@ -852,6 +852,24 @@
       "workDone": "",
       "remarks": "- Panels not clean. There are dried leaves on the panel.",
       "progress": ""
+    },
+    {
+      "id": "mr4qvecu14pn8",
+      "type": "project",
+      "projectId": "",
+      "customName": "MOALIBA",
+      "site": "AOYIMTI, LANE 7",
+      "date": "2026-07-03",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
