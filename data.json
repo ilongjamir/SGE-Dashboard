@@ -781,6 +781,24 @@
       "workDone": "- Temporary battery installed for use in off-grid mode.",
       "remarks": "-Replacement battery needed.",
       "progress": "10"
+    },
+    {
+      "id": "mr4oqo9qkubw7",
+      "type": "project",
+      "projectId": "",
+      "customName": "DR. NEWTO",
+      "site": "",
+      "date": "2026-07-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "12:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
