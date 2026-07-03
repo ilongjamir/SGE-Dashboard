@@ -1370,6 +1370,7 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 
   const DATA_KEY    = 'sge_solar_ops_v1';
   const WEBHOOK_KEY = 'sge_gsheets_webhook';
+  const LAST_KEY    = 'sge_gsheets_last'; // result of the last push on this device
 
   // ── Add "GSheets" button to sidebar ──────────────────────
   function injectSidebarButton() {
@@ -1391,6 +1392,11 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     if (!scrim || !modalEl) return;
 
     const saved = localStorage.getItem(WEBHOOK_KEY) || '';
+    let last = null;
+    try { last = JSON.parse(localStorage.getItem(LAST_KEY) || 'null'); } catch (_) {}
+    const lastLine = !saved ? '⚪ Not connected'
+      : !last ? '🟡 URL saved — no push attempted yet on this device'
+      : (last.ok ? '🟢 Last push OK — ' + last.at : '🔴 Last push FAILED — ' + last.at + '<br>' + esc(last.msg));
     modalEl.innerHTML = `
       <div class="mh">
         <h3>Google Sheets Sync</h3>
@@ -1398,8 +1404,8 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
       </div>
       <div class="mb">
         <p style="margin:0 0 12px;font-size:13px;color:var(--muted,#888)">
-          Paste your Apps Script Web App URL. Every save pushes all data to your Sheet.
-          Open the URL in a browser first — it should say "SGE sync endpoint OK".
+          Paste your Apps Script Web App URL, then hit <b>Test connection</b> —
+          it will tell you exactly what's wrong if the Sheet isn't updating.
         </p>
         <div class="field">
           <label style="font-weight:600">Apps Script Web App URL</label>
@@ -1407,13 +1413,12 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
             placeholder="https://script.google.com/macros/s/…/exec"
             value="${saved.replace(/"/g,'&quot;')}" style="width:100%;box-sizing:border-box"/>
         </div>
-        <p id="sge-gsheets-msg" style="margin:8px 0 0;font-size:13px">
-          ${saved ? '🟢 URL saved' : '⚪ Not connected'}
-        </p>
+        <p id="sge-gsheets-msg" style="margin:8px 0 0;font-size:13px;line-height:1.5">${lastLine}</p>
       </div>
       <div class="mf">
         <button class="btn sm" style="color:var(--danger,#c0392b)" onclick="sgeClearWebhook()">Disconnect</button>
         <div style="display:flex;gap:8px">
+          <button class="btn" onclick="sgeTestWebhook()">Test connection</button>
           <button class="btn" onclick="closeModal()">Cancel</button>
           <button class="btn primary" onclick="sgeSaveWebhook()">Save & Sync Now</button>
         </div>
@@ -1436,11 +1441,43 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 
   window.sgeClearWebhook = function () {
     localStorage.removeItem(WEBHOOK_KEY);
+    localStorage.removeItem(LAST_KEY);
     closeModal();
     if (typeof toast === 'function') toast('Google Sheets disconnected');
   };
 
-  // ── Full-state push ───────────────────────────────────────
+  // ── Test connection: GET the endpoint and diagnose ────────
+  window.sgeTestWebhook = function () {
+    const url = (document.getElementById('sge-gsheets-url').value || '').trim();
+    const msg = document.getElementById('sge-gsheets-msg');
+    if (!url) { if (msg) msg.innerHTML = '⚠️ Paste the /exec URL first.'; return; }
+    if (msg) msg.innerHTML = 'Testing…';
+    fetch(url, { redirect: 'follow' })
+      .then(r => r.text())
+      .then(text => {
+        if (!msg) return;
+        if (text.indexOf('SGE sync endpoint OK') !== -1) {
+          msg.innerHTML = '✅ Endpoint OK — v3 script is live. Hit <b>Save &amp; Sync Now</b> to push everything.';
+        } else {
+          msg.innerHTML = '⚠️ The URL responds, but the OLD script is still deployed.<br>' +
+            'In the Sheet: Extensions → Apps Script → paste the new code → ' +
+            '<b>Deploy → Manage deployments → ✏️ → New version → Deploy</b>.';
+        }
+      })
+      .catch(() => {
+        if (msg) msg.innerHTML = '❌ Can’t reach the endpoint. Either the URL is wrong, ' +
+          'or the deployment’s "Who has access" isn’t set to <b>Anyone</b>. ' +
+          'Open the URL in a browser tab — it must show "SGE sync endpoint OK" without asking you to log in.';
+      });
+  };
+
+  // ── Full-state push (verified — records success/failure) ──
+  function recordResult(ok, msgText) {
+    const at = new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
+    try { localStorage.setItem(LAST_KEY, JSON.stringify({ ok: ok, msg: msgText || '', at: at })); } catch (_) {}
+    if (!ok && typeof toast === 'function') toast('Sheet sync failed — open GSheets and hit Test connection');
+  }
+
   function pushFullState() {
     const webhookUrl = localStorage.getItem(WEBHOOK_KEY);
     if (!webhookUrl) return;
@@ -1454,11 +1491,22 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
       schedule: visits.filter(v => !v.completed).map(v => mapSchedule(v, data)),
       daily_reports: visits.filter(v => v.completed).map(v => mapReport(v, data))
     };
-    fetch(webhookUrl, {
-      method: 'POST',
-      body: JSON.stringify(payload),
-      mode: 'no-cors'
-    }).catch(err => console.warn('[SGE GSheets] send error:', err));
+    // plain-text body = "simple" CORS request; Apps Script's redirect target
+    // sends Access-Control-Allow-Origin:*, so the response is readable and
+    // failures are no longer silent
+    fetch(webhookUrl, { method: 'POST', body: JSON.stringify(payload), redirect: 'follow' })
+      .then(r => r.text())
+      .then(text => {
+        let resp = null;
+        try { resp = JSON.parse(text); } catch (_) {}
+        if (resp && resp.ok) {
+          recordResult(true);
+          if (typeof toast === 'function') toast('Synced to Google Sheet ✓');
+        } else {
+          recordResult(false, (resp && resp.error) || 'Old script deployed — it doesn’t understand full_sync. Redeploy the new Apps Script.');
+        }
+      })
+      .catch(() => recordResult(false, 'Endpoint unreachable — wrong URL, or access isn’t set to "Anyone".'));
   }
 
   // Push (debounced) whenever the dashboard saves — but not when the
