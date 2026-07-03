@@ -855,7 +855,7 @@
     },
     {
       "id": "mr4qvecu14pn8",
-      "type": "project",
+      "type": "repair",
       "projectId": "",
       "customName": "MOALIBA",
       "site": "AOYIMTI, LANE 7",
@@ -866,7 +866,17 @@
       "crewName": "",
       "crewStart": "09:00",
       "crewEnd": "16:00",
-      "assignments": [],
+      "assignments": [
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
       "workDone": "",
       "remarks": "",
       "progress": ""
