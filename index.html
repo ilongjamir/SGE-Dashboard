@@ -339,6 +339,7 @@ let syncStatus="idle";
 
 function save(){
   try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){toast("Couldn't save — storage blocked");}
+  window._sgeDirty=true; // local edits not yet pushed — the puller must not overwrite them
   githubSyncDebounced();
 }
 function githubSyncDebounced(){
@@ -351,23 +352,31 @@ async function githubSync(){
   if(!token){setSyncStatus("idle");return;}
   try{
     const headers={"Authorization":"token "+token,"Content-Type":"application/json","Accept":"application/vnd.github+json"};
-    // get current SHA so we can update (not create) the file
-    let sha=null;
-    const getR=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH+"?ref="+BRANCH,{headers});
-    if(getR.ok){const f=await getR.json();sha=f.sha;}
     // encode state as base64 (handles UTF-8 correctly)
     const json=JSON.stringify(state,null,2);
     const encoded=btoa(unescape(encodeURIComponent(json)));
-    const body={message:"Auto-save "+new Date().toISOString().slice(0,16).replace("T"," ") + " IST",content:encoded,branch:BRANCH};
-    if(sha)body.sha=sha;
-    const putR=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH,{method:"PUT",headers,body:JSON.stringify(body)});
+    let putR=await githubPut(headers,encoded);
+    // 409/422 = the SHA we sent is stale (another save landed first) — refetch and retry once
+    if(putR.status===409||putR.status===422)putR=await githubPut(headers,encoded);
     if(!putR.ok){const err=await putR.json();throw new Error(err.message||putR.status);}
+    window._sgeDirty=false;
     setSyncStatus("ok");
     toast("Synced to GitHub ✓");
   }catch(e){
     setSyncStatus("error");
     console.error("GitHub sync error:",e);
   }
+}
+async function githubPut(headers,encoded){
+  // get current SHA so we can update (not create) the file.
+  // cache-buster + no-store: the browser caches GitHub API GETs for 60s,
+  // and a stale SHA makes the PUT fail with a conflict.
+  let sha=null;
+  const getR=await fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH+"?ref="+BRANCH+"&t="+Date.now(),{headers,cache:"no-store"});
+  if(getR.ok){const f=await getR.json();sha=f.sha;}
+  const body={message:"Auto-save "+new Date().toISOString().slice(0,16).replace("T"," ") + " IST",content:encoded,branch:BRANCH};
+  if(sha)body.sha=sha;
+  return fetch("https://api.github.com/repos/"+REPO+"/contents/"+DATA_PATH,{method:"PUT",headers,body:JSON.stringify(body)});
 }
 function setSyncStatus(s){
   syncStatus=s;
@@ -1271,20 +1280,15 @@ render();
 // set initial sync status based on whether token exists
 setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 </script>
-  <!-- =======================================================================
-     SGE Solar Ops — fast multi-device sync  (paste before </body>)
+<!-- =======================================================================
+   SGE Solar Ops — fast multi-device sync  (v2, fixed)
 
-     Replaces the previous sync block. Same safety (no clobber, never wipes
-     an open form), but much faster:
-       • Devices with a token read straight from the GitHub API (no CDN
-         cache), so changes from your other device appear in a few seconds.
-       • Polls every 5s, plus on focus / tab-switch.
-       • Plain viewers (no token) read the public file (may lag a little).
-
-     NOTE: the "build and deployment" workflow you see in the Actions tab is
-     GitHub Pages rebuilding the SITE on each commit — it does NOT gate this
-     data sync, which reads the file directly. You can ignore it.
-     ======================================================================= -->
+   • Devices with a token read straight from the GitHub API (no CDN
+     cache), so changes from your other device appear in a few seconds.
+   • Polls every 5s, plus on focus / tab-switch.
+   • NEVER overwrites local edits that haven't been pushed yet
+     (window._sgeDirty). If a push failed, it retries instead of pulling.
+   ======================================================================= -->
 <script>
 (function () {
   "use strict";
@@ -1298,6 +1302,7 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
   function busy() {
     var s = document.getElementById("scrim");
     if (s && s.classList.contains("open")) return true;          // a dialog is open
+    if (window._sgeDirty) return true;                           // local edits not pushed yet
     try { if (typeof syncStatus !== "undefined" && syncStatus === "syncing") return true; } catch (e) {}
     return false;
   }
@@ -1310,15 +1315,22 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     if (busy()) return;                    // never clobber an in-progress / unsynced edit
     lastApplied = nextStr;
     state = next;
-    try { localStorage.setItem(KEY, nextStr); } catch (e) {}   // cache only — no push
+    window._sgeApplyingRemote = true;      // tell the GSheets hook this is not a local edit
+    try { localStorage.setItem(KEY, nextStr); } catch (e) {}
+    window._sgeApplyingRemote = false;
     if (typeof buildNav === "function") buildNav();
     if (typeof render === "function") render();
   }
 
   function pull() {
+    var token = localStorage.getItem(GHKEY);
+    // local edits waiting? push them (retries automatically after a failed sync)
+    if (window._sgeDirty) {
+      if (token && typeof syncStatus !== "undefined" && syncStatus !== "syncing" && typeof githubSync === "function") githubSync();
+      return;
+    }
     if (pulling || busy()) return;
     pulling = true;
-    var token = localStorage.getItem(GHKEY);
     var url, opts;
     if (token) {
       // GitHub API = always the latest commit, no CDN delay
@@ -1346,9 +1358,11 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
 })();
 </script>
 <!-- ============================================================
-  SGE Solar Ops — Google Sheets Sync Snippet v2
-  Paste this block just before </body> in index.html,
-  AFTER the existing dashboard-sync-fix block.
+  SGE Solar Ops — Google Sheets Sync v3 (full-state)
+  Every save pushes the COMPLETE current state to the Apps Script,
+  which rewrites the three Sheet tabs. No diffs, no duplicates,
+  edits and deletions always propagate.
+  Requires the matching Apps Script (see apps-script-code.gs).
   ============================================================ -->
 <script>
 (function () {
@@ -1384,16 +1398,17 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
       </div>
       <div class="mb">
         <p style="margin:0 0 12px;font-size:13px;color:var(--muted,#888)">
-          Paste your Apps Script Web App URL. Every save will push to your Sheet automatically.
+          Paste your Apps Script Web App URL. Every save pushes all data to your Sheet.
+          Open the URL in a browser first — it should say "SGE sync endpoint OK".
         </p>
         <div class="field">
           <label style="font-weight:600">Apps Script Web App URL</label>
           <input id="sge-gsheets-url" type="url"
             placeholder="https://script.google.com/macros/s/…/exec"
-            value="${saved}" style="width:100%;box-sizing:border-box"/>
+            value="${saved.replace(/"/g,'&quot;')}" style="width:100%;box-sizing:border-box"/>
         </div>
         <p id="sge-gsheets-msg" style="margin:8px 0 0;font-size:13px">
-          ${saved ? '🟢 Connected' : '⚪ Not connected'}
+          ${saved ? '🟢 URL saved' : '⚪ Not connected'}
         </p>
       </div>
       <div class="mf">
@@ -1412,7 +1427,7 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     localStorage.setItem(WEBHOOK_KEY, url);
     closeModal();
     if (url) {
-      pushAllToGSheets(); // immediately push everything
+      pushFullState();
       if (typeof toast === 'function') toast('Google Sheets connected — syncing all data…');
     } else {
       if (typeof toast === 'function') toast('Webhook URL cleared');
@@ -1425,77 +1440,43 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     if (typeof toast === 'function') toast('Google Sheets disconnected');
   };
 
-  // ── FULL push — sends every project, schedule, report ────
-  function pushAllToGSheets() {
+  // ── Full-state push ───────────────────────────────────────
+  function pushFullState() {
     const webhookUrl = localStorage.getItem(WEBHOOK_KEY);
     if (!webhookUrl) return;
     let data;
     try { data = JSON.parse(localStorage.getItem(DATA_KEY) || '{}'); } catch (_) { return; }
 
-    const payloads = [];
-
-    (data.projects || []).forEach(p => payloads.push({ type: 'project',      data: mapProject(p, data) }));
-    (data.visits   || []).filter(v => !v.completed).forEach(v => payloads.push({ type: 'schedule',     data: mapSchedule(v, data) }));
-    (data.visits   || []).filter(v =>  v.completed).forEach(v => payloads.push({ type: 'daily_report', data: mapReport(v, data) }));
-
-    // Stagger sends so we don't flood the Apps Script
-    payloads.forEach((p, i) => setTimeout(() => sendPayload(webhookUrl, p), i * 300));
+    const visits = (data.visits || []).slice().sort((a, b) => String(a.date).localeCompare(String(b.date)));
+    const payload = {
+      type: 'full_sync',
+      projects: (data.projects || []).map(p => mapProject(p)),
+      schedule: visits.filter(v => !v.completed).map(v => mapSchedule(v, data)),
+      daily_reports: visits.filter(v => v.completed).map(v => mapReport(v, data))
+    };
+    fetch(webhookUrl, {
+      method: 'POST',
+      body: JSON.stringify(payload),
+      mode: 'no-cors'
+    }).catch(err => console.warn('[SGE GSheets] send error:', err));
   }
 
-  // ── DIFF push — only what changed since last save ────────
-  let _lastJSON = '{}'; // starts empty so first real save always pushes
-
+  // Push (debounced) whenever the dashboard saves — but not when the
+  // puller is just caching data that came FROM the server.
   const _origSetItem = localStorage.setItem.bind(localStorage);
   localStorage.setItem = function (key, value) {
     _origSetItem(key, value);
-    if (key === DATA_KEY) scheduleDiffSync(value);
+    if (key === DATA_KEY && !window._sgeApplyingRemote) scheduleFullSync();
   };
 
   let _debounce = null;
-  function scheduleDiffSync(newJSON) {
+  function scheduleFullSync() {
     clearTimeout(_debounce);
-    _debounce = setTimeout(() => {
-      const webhookUrl = localStorage.getItem(WEBHOOK_KEY);
-      if (!webhookUrl) return;
-
-      let newData, oldData;
-      try { newData = JSON.parse(newJSON); oldData = JSON.parse(_lastJSON); } catch (_) { return; }
-      _lastJSON = newJSON;
-
-      const payloads = buildDiffPayloads(newData, oldData);
-      payloads.forEach((p, i) => setTimeout(() => sendPayload(webhookUrl, p), i * 300));
-    }, 1500);
+    _debounce = setTimeout(pushFullState, 2000);
   }
 
-  function buildDiffPayloads(newData, oldData) {
-    const payloads = [];
-
-    // Projects — push any that are new or changed
-    const oldProjMap = {};
-    (oldData.projects || []).forEach(p => { oldProjMap[p.id] = JSON.stringify(p); });
-    (newData.projects || []).forEach(p => {
-      if (oldProjMap[p.id] !== JSON.stringify(p)) {
-        payloads.push({ type: 'project', data: mapProject(p, newData) });
-      }
-    });
-
-    // Schedules (not completed) — push new ones
-    const oldSchedIds = new Set((oldData.visits || []).filter(v => !v.completed).map(v => v.id));
-    (newData.visits || []).filter(v => !v.completed).forEach(v => {
-      if (!oldSchedIds.has(v.id)) payloads.push({ type: 'schedule', data: mapSchedule(v, newData) });
-    });
-
-    // Daily reports (completed) — push new ones
-    const oldReportIds = new Set((oldData.visits || []).filter(v => v.completed).map(v => v.id));
-    (newData.visits || []).filter(v => v.completed).forEach(v => {
-      if (!oldReportIds.has(v.id)) payloads.push({ type: 'daily_report', data: mapReport(v, newData) });
-    });
-
-    return payloads;
-  }
-
-  // ── Field mappers ─────────────────────────────────────────
-  function mapProject(p, state) {
+  // ── Field mappers (columns match the "SGE Solar Ops" Sheet) ──
+  function mapProject(p) {
     return {
       name:      p.name      || p.id   || '',
       client:    p.client    || p.customer || '',
@@ -1508,30 +1489,31 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
   }
 
   function mapSchedule(v, state) {
-    const members = resolvePeople(v, state);
-    const projName = resolveProjectName(v, state);
     return {
-      date:   v.date       || '',
-      time:   v.crewStart  || '',
-      member: v.crewName   || members,
-      site:   v.site       || projName,
-      type:   v.type       || 'Visit',
-      notes:  v.notes      || ''
+      date:   v.date || '',
+      time:   v.crewStart || earliestStart(v),
+      member: v.crewName || resolvePeople(v, state),
+      site:   v.site || resolveProjectName(v, state),
+      type:   v.type || 'Visit',
+      notes:  v.notes || ''
     };
   }
 
   function mapReport(v, state) {
-    const members  = resolvePeople(v, state);
-    const projName = resolveProjectName(v, state);
     return {
-      date:    v.date      || '',
-      site:    projName    || v.site || '',
-      members: v.crewName  || members,
-      timeOut: v.crewStart || '',
-      work:    v.workDone  || '',
-      parts:   v.remarks   || '',
-      notes:   v.notes     || ''
+      date:    v.date || '',
+      site:    resolveProjectName(v, state) || v.site || '',
+      members: v.crewName || resolvePeople(v, state),
+      timeOut: v.crewStart || earliestStart(v),
+      work:    v.workDone || '',
+      parts:   v.remarks || '',
+      notes:   v.notes || ''
     };
+  }
+
+  function earliestStart(v) {
+    const times = (v.assignments || []).map(a => a.start).filter(Boolean).sort();
+    return times[0] || '';
   }
 
   function resolvePeople(v, state) {
@@ -1549,24 +1531,9 @@ setSyncStatus(localStorage.getItem(GHKEY)?"idle":"idle");
     return '';
   }
 
-  function sendPayload(url, payload) {
-    fetch(url, {
-      method:  'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body:    JSON.stringify(payload),
-      mode:    'no-cors'
-    }).catch(err => console.warn('[SGE GSheets] send error:', err));
-  }
-
   // ── Init ─────────────────────────────────────────────────
-  window.addEventListener('load', function () {
-    injectSidebarButton();
-    // Snapshot current data as baseline for diff (don't push on load —
-    // user must click "Save & Sync Now" in GSheets modal for first full push)
-    _lastJSON = localStorage.getItem(DATA_KEY) || '{}';
-  });
-
-  console.log('[SGE GSheets] Sync v2 loaded.');
+  window.addEventListener('load', injectSidebarButton);
+  console.log('[SGE GSheets] Sync v3 (full-state) loaded.');
 })();
 </script>
 </body>
