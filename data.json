@@ -824,6 +824,34 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr4quyxjgm3hf",
+      "type": "repair",
+      "projectId": "",
+      "customName": "MOAYANGER",
+      "site": "AOYIMTI, LANE 7",
+      "date": "2026-07-03",
+      "mode": "crew",
+      "notes": "- Customer has no Wi-Fi.",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "01:00",
+      "crewEnd": "14:00",
+      "assignments": [
+        {
+          "personId": "mqorppq0rzeuo"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "- Panels not clean. There are dried leaves on the panel.",
+      "progress": ""
     }
   ]
 }
