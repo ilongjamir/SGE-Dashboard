@@ -905,6 +905,34 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr66b9g7fuoxe",
+      "type": "project",
+      "projectId": "",
+      "customName": "AOYIMTI",
+      "site": "",
+      "date": "2026-07-04",
+      "mode": "crew",
+      "notes": "100 W peak solar panel installed to charge clients hybrid inverter battery",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:30",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
+      "workDone": "100 W peak panel installed.",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
