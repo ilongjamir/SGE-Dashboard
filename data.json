@@ -880,6 +880,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr5x42drcictb",
+      "type": "project",
+      "projectId": "",
+      "customName": "SYMBIOS AUTO",
+      "site": "",
+      "date": "2026-07-04",
+      "mode": "crew",
+      "notes": "- To collect STABLIZER",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:30",
+      "crewEnd": "13:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
