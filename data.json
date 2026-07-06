@@ -967,6 +967,24 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr9py0vu08v4l",
+      "type": "project",
+      "projectId": "",
+      "customName": "PHINO",
+      "site": "",
+      "date": "2026-07-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "-Not yet completed. There was no CURRENT.",
+      "remarks": "-Wi-Fi got disconnected on the inverter, so they could not move their system.",
+      "progress": ""
     }
   ]
 }
