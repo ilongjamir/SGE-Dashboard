@@ -999,7 +999,11 @@
       "crewName": "",
       "crewStart": "09:00",
       "crewEnd": "16:00",
-      "assignments": [],
+      "assignments": [
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
       "workDone": "- Connected Wi-Fi to the inverter \n- Now they can monitor the system.",
       "remarks": "- Wi-Fi got disconnected on the inverter, so they could not monitor the system.",
       "progress": ""
