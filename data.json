@@ -979,9 +979,13 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
-      "assignments": [],
+      "crewStart": "03:00",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
       "workDone": "-Not yet completed. There was no CURRENT.",
       "remarks": "-Wi-Fi got disconnected on the inverter, so they could not move their system.",
       "progress": ""
