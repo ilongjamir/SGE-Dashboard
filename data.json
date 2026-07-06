@@ -933,6 +933,40 @@
       "workDone": "100 W peak panel installed.",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mr9puai4gv5q2",
+      "type": "project",
+      "projectId": "",
+      "customName": "BUILDSMART",
+      "site": "",
+      "date": "2026-07-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
