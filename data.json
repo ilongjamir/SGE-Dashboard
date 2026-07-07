@@ -1011,6 +1011,37 @@
       "workDone": "- Connected Wi-Fi to the inverter \n- Now they can monitor the system.",
       "remarks": "- Wi-Fi got disconnected on the inverter, so they could not monitor the system.",
       "progress": ""
+    },
+    {
+      "id": "mran3hdv2myc6",
+      "type": "project",
+      "projectId": "",
+      "customName": "BUILDSMART",
+      "site": "",
+      "date": "2026-07-07",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
