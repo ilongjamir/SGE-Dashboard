@@ -1117,6 +1117,28 @@
       "workDone": "",
       "remarks": "-WIFI CONNECTION ISSUE WITH INVERTER",
       "progress": ""
+    },
+    {
+      "id": "mrbty06nkiqe9",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-07-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
