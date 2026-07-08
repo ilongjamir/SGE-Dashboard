@@ -1069,28 +1069,6 @@
       "progress": ""
     },
     {
-      "id": "mrbsqigc77srv",
-      "type": "project",
-      "projectId": "mrbso3zharyy1",
-      "customName": "",
-      "site": "",
-      "date": "2026-07-08",
-      "mode": "crew",
-      "notes": "",
-      "completed": true,
-      "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
-      "assignments": [
-        {
-          "personId": "mqorp5sjp8179"
-        }
-      ],
-      "workDone": "SITE VISIT DONE",
-      "remarks": "",
-      "progress": "10"
-    },
-    {
       "id": "mrbsshw08eic5",
       "type": "project",
       "projectId": "mrbso3zharyy1",
