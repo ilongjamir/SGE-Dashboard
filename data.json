@@ -1092,6 +1092,31 @@
       "workDone": "SITE VISIT DONE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrbtxh5nanl8y",
+      "type": "project",
+      "projectId": "",
+      "customName": "PHINO",
+      "site": "",
+      "date": "2026-07-08",
+      "mode": "crew",
+      "notes": "- Will need to check with a new inverter, and if the Wi-Fi is showing, then we'll have to replace.",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "14:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "-WIFI CONNECTION ISSUE WITH INVERTER",
+      "progress": ""
     }
   ]
 }
