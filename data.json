@@ -64,6 +64,18 @@
       "end": "2026-07-03",
       "notes": "",
       "progressManual": 10
+    },
+    {
+      "id": "mrbso3zharyy1",
+      "name": "RENBENTHUNG",
+      "customer": "RENBENTHUNG",
+      "site": "PADUMPUKHURI",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "todo",
+      "start": "2026-07-09",
+      "end": "",
+      "notes": "-SITE VISIT DONE\n-STRUCTURE"
     }
   ],
   "people": [
