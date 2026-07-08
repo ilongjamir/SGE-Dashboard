@@ -1139,6 +1139,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrbtyhopiqj3r",
+      "type": "project",
+      "projectId": "",
+      "customName": "BAMBOO RESOURCE",
+      "site": "",
+      "date": "2026-07-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
