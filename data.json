@@ -1245,6 +1245,40 @@
       "workDone": "-PARLING CUT\n-MARKING DONE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrdgrrmngifhk",
+      "type": "project",
+      "projectId": "mqoro8e5534i6",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-10",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
