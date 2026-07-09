@@ -1164,6 +1164,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrd1kpizmw6c4",
+      "type": "project",
+      "projectId": "",
+      "customName": "Obed Jami & KONTHUNGLO NGULLIE",
+      "site": "",
+      "date": "2026-07-09",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "11:30",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
