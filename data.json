@@ -1279,6 +1279,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrdgs223mmth2",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-10",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
