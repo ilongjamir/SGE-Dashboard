@@ -72,7 +72,7 @@
       "site": "PADUMPUKHURI",
       "capacityKw": "3300",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "2026-07-09",
       "end": "",
       "notes": "-SITE VISIT DONE\n-STRUCTURE",
@@ -1208,6 +1208,40 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrd2hr47ie2pg",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-09",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorppq0rzeuo"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
