@@ -1295,7 +1295,7 @@
       "date": "2026-07-10",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "10:30",
       "crewEnd": "12:30",
@@ -1307,9 +1307,9 @@
           "personId": "mqorpwby6y00f"
         }
       ],
-      "workDone": "",
+      "workDone": "-STRUCTURE WELDING DONE",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     }
   ]
 }
