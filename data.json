@@ -1310,6 +1310,31 @@
       "workDone": "-STRUCTURE WELDING DONE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrf7gcg1xph8a",
+      "type": "project",
+      "projectId": "mqoro8e5534i6",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-11",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "13:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
