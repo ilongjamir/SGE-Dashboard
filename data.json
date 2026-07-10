@@ -1255,9 +1255,9 @@
       "date": "2026-07-10",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "11:00",
+      "crewStart": "01:30",
       "crewEnd": "17:00",
       "assignments": [
         {
@@ -1273,12 +1273,18 @@
           "personId": "mqorppq0rzeuo"
         },
         {
-          "personId": "mqorpuf1klkz1"
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorp5sjp8179"
         }
       ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
+      "workDone": "-PANELS INSTALLED",
+      "remarks": "-NO ELECTRICITY",
+      "progress": "10"
     },
     {
       "id": "mrdgs223mmth2",
