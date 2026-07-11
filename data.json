@@ -1441,6 +1441,31 @@
       "workDone": "-STABLIZER REPAIRING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrgc9jp0783tc",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-13",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
