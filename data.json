@@ -1323,7 +1323,7 @@
       "completed": true,
       "crewName": "",
       "crewStart": "11:00",
-      "crewEnd": "13:00",
+      "crewEnd": "16:30",
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
@@ -1332,7 +1332,7 @@
           "personId": "mqorpn4i4jonr"
         }
       ],
-      "workDone": "",
+      "workDone": "-ACDB AND DCDB CONNECTION\n-INVERTER CONNECTION\n-EARTHING WIRING\n-TEST DONE",
       "remarks": "",
       "progress": "10"
     },
