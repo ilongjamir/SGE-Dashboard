@@ -1413,6 +1413,34 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrgafgozmdvbx",
+      "type": "repair",
+      "projectId": "",
+      "customName": "AOYIMTI AO CHURCH",
+      "site": "",
+      "date": "2026-07-11",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "04:30",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "-STABLIZER REPAIRING",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
