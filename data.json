@@ -1345,7 +1345,7 @@
       "date": "2026-07-11",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "11:00",
       "crewEnd": "17:00",
@@ -1365,7 +1365,7 @@
       ],
       "workDone": "",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     }
   ]
 }
