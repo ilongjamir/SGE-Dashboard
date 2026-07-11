@@ -1366,6 +1366,28 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrg3e2jbyjdk0",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "AIKO GREENS",
+      "date": "2026-07-11",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:45",
+      "crewEnd": "14:45",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "METER CONNECTION",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
