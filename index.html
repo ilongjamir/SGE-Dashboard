@@ -259,6 +259,7 @@
   }
   .menu-btn{display:none}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 </head>
 <body>
 <div class="app" id="app">
@@ -919,9 +920,13 @@ function filteredReports(){
 function renderDayDetail(host){
   if(!calReportDay){host.innerHTML=`<div style="text-align:center;color:var(--muted);font-size:13px;padding:18px 0">← Click a day on the calendar to see its reports</div>`;return;}
   const vs=filteredReports().filter(v=>v.date===calReportDay).sort(byTime);
+  const allVs=state.visits.filter(v=>v.completed&&v.date===calReportDay);
   const panel=document.createElement("div");panel.className="day-detail";
   panel.innerHTML=`<div class="ddh"><h3>${fmtFull(calReportDay)}</h3>
-    <button class="btn amber" data-edit onclick="openVisit(null,true,'${calReportDay}')">+ Add report for this day</button></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      ${allVs.length?`<button class="btn sm" onclick="exportDayPDF('${calReportDay}')">⬇ Export PDF</button>`:""}
+      <button class="btn amber" data-edit onclick="openVisit(null,true,'${calReportDay}')">+ Add report for this day</button>
+    </div></div>
     <div id="dd-list"></div>`;
   host.appendChild(panel);
   const list=panel.querySelector("#dd-list");
@@ -948,6 +953,60 @@ function reportCard(v){
     </div>
     <div class="vact"><button class="btn sm" data-edit onclick="openVisit('${v.id}')">Edit</button></div>`;
   return el;
+}
+
+/* ---------- PDF EXPORT ---------- */
+function exportDayPDF(dateStr){
+  if(!window.jspdf){toast("PDF library didn't load — check your connection and retry");return;}
+  const vs=state.visits.filter(v=>v.completed&&v.date===dateStr).sort(byTime);
+  if(!vs.length){toast("No reports logged for this day");return;}
+  const {jsPDF}=window.jspdf;
+  const doc=new jsPDF({unit:"pt",format:"a4"});
+  const pageW=595.28,pageH=841.89,mgn=48,maxW=pageW-mgn*2;
+  let y=58;
+  const newPageIfNeeded=need=>{if(y+need>pageH-50){doc.addPage();y=56;}};
+  doc.setFont("helvetica","bold");doc.setFontSize(15);
+  doc.text("Symbios Green Energy — Daily Work Report",mgn,y);y+=20;
+  doc.setFont("helvetica","normal");doc.setFontSize(11);doc.setTextColor(110);
+  doc.text(fmtFull(dateStr),mgn,y);doc.setTextColor(20);y+=10;
+  doc.setDrawColor(210);doc.line(mgn,y,pageW-mgn,y);y+=22;
+
+  vs.forEach((v,i)=>{
+    newPageIfNeeded(90);
+    const p=proj(v.projectId);const isRepair=v.type==="repair";
+    const name=visitDisplayName(v);
+    const site=v.site||(!isRepair&&p?p.site:"")||"—";
+    const rng=visitRange(v)||"—";
+    const crew=v.assignments.map(a=>{const pp=person(a.personId);return pp?pp.name:null;}).filter(Boolean).join(", ")||"—";
+
+    doc.setFont("helvetica","bold");doc.setFontSize(12.5);
+    newPageIfNeeded(18);
+    doc.text(`${i+1}. ${name}${isRepair?"  (Repair / Maintenance)":""}`,mgn,y);y+=17;
+
+    doc.setFont("helvetica","normal");doc.setFontSize(10.5);
+    newPageIfNeeded(14);doc.text(`Location: ${site}`,mgn,y);y+=14;
+    newPageIfNeeded(14);doc.text(`Time on site: ${rng}`,mgn,y);y+=14;
+    newPageIfNeeded(14);doc.text(`Crew: ${crew}`,mgn,y);y+=16;
+
+    doc.setFont("helvetica","bold");newPageIfNeeded(13);doc.text("Work carried out:",mgn,y);y+=13;
+    doc.setFont("helvetica","normal");
+    const workLines=doc.splitTextToSize(v.workDone||"—",maxW);
+    newPageIfNeeded(workLines.length*13);doc.text(workLines,mgn,y);y+=workLines.length*13+6;
+
+    if(v.remarks){
+      doc.setFont("helvetica","bold");newPageIfNeeded(13);doc.text("Remarks:",mgn,y);y+=13;
+      doc.setFont("helvetica","normal");
+      const remLines=doc.splitTextToSize(v.remarks,maxW);
+      newPageIfNeeded(remLines.length*13);doc.text(remLines,mgn,y);y+=remLines.length*13+6;
+    }
+    y+=8;newPageIfNeeded(1);doc.setDrawColor(232);doc.line(mgn,y,pageW-mgn,y);y+=18;
+  });
+
+  const dObj=parse(dateStr);
+  const monthFolder=dObj.toLocaleString("en",{month:"long"})+" "+dObj.getFullYear();
+  const filename=`${monthFolder}/${dateStr} SGE Daily Report.pdf`;
+  doc.save(filename);
+  toast("PDF exported");
 }
 
 /* ---------- PEOPLE ---------- */
