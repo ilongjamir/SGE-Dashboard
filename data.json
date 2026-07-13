@@ -1522,6 +1522,43 @@
       "workDone": "-SOLAR INVERTER REPAIRING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mriulq64s9slo",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
