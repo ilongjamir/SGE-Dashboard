@@ -1451,10 +1451,10 @@
       "date": "2026-07-13",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
+      "crewStart": "13:00",
+      "crewEnd": "17:00",
       "assignments": [
         {
           "personId": "mqorpn4i4jonr"
@@ -1468,7 +1468,7 @@
       ],
       "workDone": "",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     },
     {
       "id": "mrgcafz1j4m5l",
