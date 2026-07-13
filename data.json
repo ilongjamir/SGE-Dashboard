@@ -1471,31 +1471,6 @@
       "progress": "10"
     },
     {
-      "id": "mrgcafz1j4m5l",
-      "type": "project",
-      "projectId": "mrbso3zharyy1",
-      "customName": "",
-      "site": "",
-      "date": "2026-07-14",
-      "mode": "crew",
-      "notes": "",
-      "completed": false,
-      "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
-      "assignments": [
-        {
-          "personId": "mqorpwby6y00f"
-        },
-        {
-          "personId": "mqorq03mdy6ja"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
-    },
-    {
       "id": "mrhuzzmpnrj2m",
       "type": "project",
       "projectId": "",
