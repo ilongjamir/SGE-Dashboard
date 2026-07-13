@@ -1534,6 +1534,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrivd89vjck96",
+      "type": "project",
+      "projectId": "",
+      "customName": "MEYITOSHI",
+      "site": "",
+      "date": "2026-07-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
