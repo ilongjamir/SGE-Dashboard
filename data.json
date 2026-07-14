@@ -1507,10 +1507,10 @@
       "date": "2026-07-14",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
+      "crewStart": "11:30",
+      "crewEnd": "17:00",
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
@@ -1533,7 +1533,7 @@
       ],
       "workDone": "",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     },
     {
       "id": "mrivd89vjck96",
