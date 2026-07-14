@@ -1587,6 +1587,34 @@
       "workDone": "-INVERTER PROBLEM RESOLVED",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrkm2k9q5ha1w",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-15",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
