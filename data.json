@@ -118,12 +118,6 @@
       "phone": ""
     },
     {
-      "id": "mqorppq0rzeuo",
-      "name": "ANGULIE",
-      "role": "SOLAR TECHNICIAN",
-      "phone": ""
-    },
-    {
       "id": "mqorpuf1klkz1",
       "name": "SAMUEL",
       "role": "SOLAR TECHNICIAN",
@@ -222,9 +216,6 @@
           "personId": "mqorq03mdy6ja"
         },
         {
-          "personId": "mqorppq0rzeuo"
-        },
-        {
           "personId": "mqorpuf1klkz1"
         }
       ],
@@ -266,9 +257,6 @@
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         },
         {
           "personId": "mqorpkb0elkwu"
@@ -319,9 +307,6 @@
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
@@ -369,9 +354,6 @@
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
@@ -578,9 +560,6 @@
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
@@ -640,9 +619,6 @@
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
@@ -748,9 +724,6 @@
           "personId": "mqorpn4i4jonr"
         },
         {
-          "personId": "mqorppq0rzeuo"
-        },
-        {
           "personId": "mqorpuf1klkz1"
         }
       ],
@@ -783,9 +756,6 @@
         },
         {
           "personId": "mqorpn4i4jonr"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         },
         {
           "personId": "mqorpuf1klkz1"
@@ -878,9 +848,6 @@
       "crewEnd": "14:00",
       "assignments": [
         {
-          "personId": "mqorppq0rzeuo"
-        },
-        {
           "personId": "mqorpwby6y00f"
         },
         {
@@ -907,9 +874,6 @@
       "assignments": [
         {
           "personId": "mqorpn4i4jonr"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         },
         {
           "personId": "mqorpwby6y00f"
@@ -963,9 +927,6 @@
         },
         {
           "personId": "mqorq03mdy6ja"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "100 W peak panel installed.",
@@ -1019,11 +980,7 @@
       "crewName": "",
       "crewStart": "03:00",
       "crewEnd": "16:30",
-      "assignments": [
-        {
-          "personId": "mqorppq0rzeuo"
-        }
-      ],
+      "assignments": [],
       "workDone": "-Not yet completed. There was no CURRENT.",
       "remarks": "-Wi-Fi got disconnected on the inverter, so they could not move their system.",
       "progress": ""
@@ -1041,11 +998,7 @@
       "crewName": "",
       "crewStart": "03:00",
       "crewEnd": "16:30",
-      "assignments": [
-        {
-          "personId": "mqorppq0rzeuo"
-        }
-      ],
+      "assignments": [],
       "workDone": "- Connected Wi-Fi to the inverter \n- Now they can monitor the system.",
       "remarks": "- Wi-Fi got disconnected on the inverter, so they could not monitor the system.",
       "progress": ""
@@ -1169,9 +1122,6 @@
       "assignments": [
         {
           "personId": "mqorpwby6y00f"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         }
       ],
       "workDone": "",
@@ -1249,9 +1199,6 @@
           "personId": "mqorpwby6y00f"
         },
         {
-          "personId": "mqorppq0rzeuo"
-        },
-        {
           "personId": "mqorq03mdy6ja"
         }
       ],
@@ -1281,9 +1228,6 @@
         },
         {
           "personId": "mqorpn4i4jonr"
-        },
-        {
-          "personId": "mqorppq0rzeuo"
         },
         {
           "personId": "mqorq03mdy6ja"
