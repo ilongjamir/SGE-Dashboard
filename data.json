@@ -77,6 +77,18 @@
       "end": "2026-07-15",
       "notes": "-SITE VISIT DONE\n-STRUCTURE",
       "progressManual": 10
+    },
+    {
+      "id": "mrn8l4sa84ydl",
+      "name": "WT LOTHA",
+      "customer": "WT LOTHA",
+      "site": "PADUMPHUKRI",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "doing",
+      "start": "2026-07-16",
+      "end": "2026-07-13",
+      "notes": ""
     }
   ],
   "people": [
