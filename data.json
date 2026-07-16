@@ -1671,7 +1671,7 @@
       "site": "",
       "date": "2026-07-15",
       "mode": "crew",
-      "notes": "",
+      "notes": "WORK IS NOW COMPLETED",
       "completed": true,
       "crewName": "",
       "crewStart": "10:00",
@@ -1684,7 +1684,7 @@
           "personId": "mqorpn4i4jonr"
         }
       ],
-      "workDone": "",
+      "workDone": "EARTHING WIRING",
       "remarks": "",
       "progress": "10"
     }
