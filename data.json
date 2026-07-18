@@ -1758,11 +1758,11 @@
       "site": "",
       "date": "2026-07-18",
       "mode": "crew",
-      "notes": "",
+      "notes": "Wiring left",
       "completed": true,
       "crewName": "",
-      "crewStart": "12:00",
-      "crewEnd": "17:00",
+      "crewStart": "10:30",
+      "crewEnd": "17:30",
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
@@ -1777,7 +1777,7 @@
           "personId": "mqorq03mdy6ja"
         }
       ],
-      "workDone": "",
+      "workDone": "-Earthing Installed\n-Wiring \n-Panels Installed",
       "remarks": "",
       "progress": "10"
     }
