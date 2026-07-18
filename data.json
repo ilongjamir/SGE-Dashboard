@@ -1699,8 +1699,8 @@
       "notes": "PROJECT IS NOW COMPLETED",
       "completed": true,
       "crewName": "",
-      "crewStart": "00:00",
-      "crewEnd": "17:00",
+      "crewStart": "11:30",
+      "crewEnd": "16:30",
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
