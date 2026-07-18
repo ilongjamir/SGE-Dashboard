@@ -1687,6 +1687,37 @@
       "workDone": "EARTHING WIRING",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrpxfw3211ofa",
+      "type": "project",
+      "projectId": "",
+      "customName": "MEYTOSHI",
+      "site": "",
+      "date": "2026-07-17",
+      "mode": "crew",
+      "notes": "PROJECT IS NOW COMPLETED",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "00:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "-MPPT INSTALLED\n-PANEL INSTALLED\n-WIRING DONE",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
