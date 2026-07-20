@@ -1727,6 +1727,40 @@
       "workDone": "-Earthing Installed\n-Wiring \n-Panels Installed",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrstpcx9s3y9e",
+      "type": "project",
+      "projectId": "mrn8l4sa84ydl",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-20",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
