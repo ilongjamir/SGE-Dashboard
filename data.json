@@ -1611,31 +1611,6 @@
       "progress": "10"
     },
     {
-      "id": "mrn9ddnw7wwni",
-      "type": "project",
-      "projectId": "",
-      "customName": "MEYTOSHI",
-      "site": "",
-      "date": "2026-07-17",
-      "mode": "crew",
-      "notes": "",
-      "completed": false,
-      "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
-      "assignments": [
-        {
-          "personId": "mqorpkb0elkwu"
-        },
-        {
-          "personId": "mqorp5sjp8179"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
-    },
-    {
       "id": "mrndlhlf612e0",
       "type": "project",
       "projectId": "mrbso3zharyy1",
