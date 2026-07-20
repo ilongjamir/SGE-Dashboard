@@ -1347,34 +1347,6 @@
       "progress": "10"
     },
     {
-      "id": "mrg5jy588a1ud",
-      "type": "project",
-      "projectId": "",
-      "customName": "NUILAND MEDICAL",
-      "site": "",
-      "date": "2026-07-15",
-      "mode": "crew",
-      "notes": "-DISCONNECT SOLAR",
-      "completed": false,
-      "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
-      "assignments": [
-        {
-          "personId": "mqorpe5v0fd80"
-        },
-        {
-          "personId": "mqorpuf1klkz1"
-        },
-        {
-          "personId": "mqorp5sjp8179"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
-    },
-    {
       "id": "mrgafgozmdvbx",
       "type": "repair",
       "projectId": "",
