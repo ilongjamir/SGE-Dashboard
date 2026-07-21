@@ -90,6 +90,18 @@
       "end": "2026-07-22",
       "notes": "",
       "progressManual": 10
+    },
+    {
+      "id": "mrul09lumioxb",
+      "name": "MAPUMENLA",
+      "customer": "MAPUMENLA",
+      "site": "LUNGWIRAM",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "doing",
+      "start": "2026-07-21",
+      "end": "2026-08-04",
+      "notes": ""
     }
   ],
   "people": [
