@@ -1851,8 +1851,8 @@
       "notes": "INVERTER REPLACEMENT",
       "completed": false,
       "crewName": "",
-      "crewStart": "15:00",
-      "crewEnd": "16:00",
+      "crewStart": "14:00",
+      "crewEnd": "15:00",
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
