@@ -1805,6 +1805,37 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mrw1oj0tfi7nj",
+      "type": "project",
+      "projectId": "mrn8l4sa84ydl",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-22",
+      "mode": "crew",
+      "notes": "PROJECT IS NOW COMPLETED",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:20",
+      "crewEnd": "16:45",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "-DC wiring connection\n-Earthing wiring\n-Test done",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
