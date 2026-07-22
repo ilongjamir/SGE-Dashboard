@@ -1920,6 +1920,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrw1yzuj639ij",
+      "type": "project",
+      "projectId": "",
+      "customName": "PHINO",
+      "site": "",
+      "date": "2026-07-23",
+      "mode": "crew",
+      "notes": "CHECK INVERTER",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "13:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
