@@ -1787,7 +1787,7 @@
       "completed": true,
       "crewName": "",
       "crewStart": "11:00",
-      "crewEnd": "16:00",
+      "crewEnd": "16:30",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
@@ -1800,9 +1800,12 @@
         },
         {
           "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
         }
       ],
-      "workDone": "",
+      "workDone": "-MATERIALS DROPPED\n-STRUCTURE PLASTERING",
       "remarks": "",
       "progress": "10"
     },
