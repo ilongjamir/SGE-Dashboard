@@ -1864,6 +1864,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mrw1xx79jp5ee",
+      "type": "project",
+      "projectId": "",
+      "customName": "KAJENSANGLA",
+      "site": "",
+      "date": "2026-07-23",
+      "mode": "crew",
+      "notes": "INVERTER REPLACEMENT",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "16:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
