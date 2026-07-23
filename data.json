@@ -1899,14 +1899,11 @@
       "date": "2026-07-23",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "11:00",
-      "crewEnd": "16:00",
+      "crewEnd": "17:30",
       "assignments": [
-        {
-          "personId": "mqorp5sjp8179"
-        },
         {
           "personId": "mqorpe5v0fd80"
         },
@@ -1915,11 +1912,14 @@
         },
         {
           "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
         }
       ],
-      "workDone": "",
+      "workDone": "PANEL WIRE\nPANELS INSTALLED\nEARTHING DUGGED\nPANEL EARTHING, LA INSTALLED AND WIRING DONE",
       "remarks": "",
-      "progress": ""
+      "progress": "10"
     },
     {
       "id": "mrw1yzuj639ij",
