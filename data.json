@@ -1930,7 +1930,7 @@
       "date": "2026-07-24",
       "mode": "crew",
       "notes": "CHECK INVERTER",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "12:00",
       "crewEnd": "13:00",
@@ -1942,8 +1942,8 @@
           "personId": "mqorpuf1klkz1"
         }
       ],
-      "workDone": "",
-      "remarks": "",
+      "workDone": "NEED RC INTERNET CABLE AND CHECK IF IT SHOWS ON THE APP/SOFTWARE",
+      "remarks": "INVERTER NOT SHOWING ON APP/SOFTWARE",
       "progress": ""
     },
     {
