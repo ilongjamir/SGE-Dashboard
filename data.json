@@ -114,7 +114,8 @@
       "status": "doing",
       "start": "2026-07-25",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -2033,6 +2034,31 @@
         }
       ],
       "workDone": "NET METER CONNECTION DONE",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "ms08ypjwn368p",
+      "type": "project",
+      "projectId": "ms08x8d5togao",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-25",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "14:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "DROPPED MATERIALS AND STRUCTURE",
       "remarks": "",
       "progress": "10"
     }
