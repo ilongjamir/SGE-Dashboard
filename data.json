@@ -103,6 +103,18 @@
       "end": "2026-08-04",
       "notes": "",
       "progressManual": 10
+    },
+    {
+      "id": "ms08x8d5togao",
+      "name": "AWANGLA",
+      "customer": "AWANGLA",
+      "site": "AOYIMTI",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "doing",
+      "start": "2026-07-25",
+      "end": "",
+      "notes": ""
     }
   ],
   "people": [
