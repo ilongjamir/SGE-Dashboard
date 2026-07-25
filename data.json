@@ -1986,7 +1986,7 @@
       "completed": true,
       "crewName": "",
       "crewStart": "10:45",
-      "crewEnd": "",
+      "crewEnd": "16:00",
       "assignments": [
         {
           "personId": "mqorpkb0elkwu"
@@ -1999,7 +1999,7 @@
         }
       ],
       "workDone": "",
-      "remarks": "",
+      "remarks": "INVERTER NOT WORKING\nNEED TO REPLACE",
       "progress": "10"
     }
   ]
