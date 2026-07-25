@@ -2001,6 +2001,28 @@
       "workDone": "",
       "remarks": "INVERTER NOT WORKING\nNEED TO REPLACE",
       "progress": "10"
+    },
+    {
+      "id": "ms08ru50al173",
+      "type": "project",
+      "projectId": "mqoro8e5534i6",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-25",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "15:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "NET METER CONNECTION DONE",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
