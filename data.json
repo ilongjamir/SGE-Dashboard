@@ -2102,13 +2102,10 @@
       "completed": true,
       "crewName": "",
       "crewStart": "10:00",
-      "crewEnd": "",
+      "crewEnd": "19:00",
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
-        },
-        {
-          "personId": "mqorpkb0elkwu"
         },
         {
           "personId": "mqorpuf1klkz1"
@@ -2118,10 +2115,16 @@
         },
         {
           "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
         }
       ],
-      "workDone": "",
-      "remarks": "",
+      "workDone": "-EARTHING DONE\n-STRUCTURE MOUNTING AND PLASTERING\n-AC AND DC WIRING",
+      "remarks": "ELECTRICITY DELAY",
       "progress": "10"
     },
     {
