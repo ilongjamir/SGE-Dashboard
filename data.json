@@ -2064,6 +2064,31 @@
       "workDone": "DROPPED MATERIALS AND STRUCTURE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "ms2r24mzlwup3",
+      "type": "project",
+      "projectId": "",
+      "customName": "DR. NEWTO",
+      "site": "",
+      "date": "2026-07-28",
+      "mode": "crew",
+      "notes": "100WP SOLAR PANEL/PWM CHARGE CONTROLLER",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
