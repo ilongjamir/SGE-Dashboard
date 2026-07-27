@@ -2089,6 +2089,40 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "ms2reutciie10",
+      "type": "project",
+      "projectId": "ms08x8d5togao",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-27",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
