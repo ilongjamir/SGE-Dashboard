@@ -124,10 +124,11 @@
       "site": "",
       "capacityKw": "3300",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "2026-07-28",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -2163,6 +2164,28 @@
       "workDone": "LOAD CHECKED\n\nTotal Load - 7.6kw\n2AC + 1 motor\n33 amp x 230v = 7.6kw",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "ms4in06216euo",
+      "type": "project",
+      "projectId": "ms4im19yzgd7l",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-28",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "14:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "SITE VISIT DONE",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
