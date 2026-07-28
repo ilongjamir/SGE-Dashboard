@@ -116,6 +116,18 @@
       "end": "",
       "notes": "",
       "progressManual": 10
+    },
+    {
+      "id": "ms4im19yzgd7l",
+      "name": "TSUKJEN HYBRID",
+      "customer": "TSUKJEN",
+      "site": "",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "todo",
+      "start": "2026-07-28",
+      "end": "",
+      "notes": ""
     }
   ],
   "people": [
