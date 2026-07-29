@@ -2220,6 +2220,43 @@
       "workDone": "PANEL WIRING AND PIPING COMPLETED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "ms5yvsszzcl9z",
+      "type": "project",
+      "projectId": "",
+      "customName": "SYMBIOS CREATION OFFICE",
+      "site": "",
+      "date": "2026-07-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "02:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "PANEL CLEANING",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
