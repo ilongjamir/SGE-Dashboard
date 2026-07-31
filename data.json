@@ -2297,6 +2297,24 @@
       "workDone": "",
       "remarks": "WAITING FOR FUND",
       "progress": ""
+    },
+    {
+      "id": "ms8lqa89clx7k",
+      "type": "project",
+      "projectId": "",
+      "customName": "NO MATERIALS FOR INSTALLATION",
+      "site": "",
+      "date": "2026-07-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "18:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR FUND",
+      "progress": ""
     }
   ]
 }
