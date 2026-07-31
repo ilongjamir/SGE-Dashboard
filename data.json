@@ -2279,6 +2279,24 @@
       "workDone": "SWITCH BOARD REPLACEMENT",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "ms8lpjmk6e9bw",
+      "type": "project",
+      "projectId": "",
+      "customName": "NO MATERIALS FOR INSTALLATION",
+      "site": "",
+      "date": "2026-07-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "18:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR FUND",
+      "progress": ""
     }
   ]
 }
