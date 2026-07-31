@@ -2365,10 +2365,13 @@
       "completed": false,
       "crewName": "",
       "crewStart": "11:00",
-      "crewEnd": "",
+      "crewEnd": "16:00",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
         }
       ],
       "workDone": "",
