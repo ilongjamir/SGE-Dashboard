@@ -2352,6 +2352,28 @@
       "workDone": "NET METER CONNECTION AND REGISTRATION",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "ms8x3f1hylbr8",
+      "type": "project",
+      "projectId": "ms8x2dt5o34kj",
+      "customName": "",
+      "site": "PADUMPUKHRI",
+      "date": "2026-08-03",
+      "mode": "crew",
+      "notes": "SITE VISIT",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
