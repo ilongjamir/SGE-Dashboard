@@ -2315,6 +2315,31 @@
       "workDone": "",
       "remarks": "WAITING FOR FUND",
       "progress": ""
+    },
+    {
+      "id": "ms8wji4cpr17v",
+      "type": "project",
+      "projectId": "mrn8l4sa84ydl",
+      "customName": "",
+      "site": "",
+      "date": "2026-07-31",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "22:30",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "NET METER CONNECTION AND REGISTRATION",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
