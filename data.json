@@ -137,10 +137,11 @@
       "site": "PADUMPUKHRI",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 0
     }
   ],
   "people": [
@@ -2362,18 +2363,21 @@
       "date": "2026-08-03",
       "mode": "crew",
       "notes": "SITE VISIT",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "11:00",
       "crewEnd": "16:00",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
         }
       ],
       "workDone": "",
       "remarks": "",
-      "progress": ""
+      "progress": "0"
     }
   ]
 }
