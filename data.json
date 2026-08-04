@@ -2366,7 +2366,7 @@
       "completed": true,
       "crewName": "",
       "crewStart": "11:00",
-      "crewEnd": "16:00",
+      "crewEnd": "13:00",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
@@ -2375,7 +2375,7 @@
           "personId": "mqorpe5v0fd80"
         }
       ],
-      "workDone": "",
+      "workDone": "SITE VISIT",
       "remarks": "",
       "progress": "0"
     },
