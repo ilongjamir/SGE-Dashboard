@@ -2406,6 +2406,28 @@
       "workDone": "CONFIGURATION RESETTING",
       "remarks": "NEED RE-WIRING",
       "progress": ""
+    },
+    {
+      "id": "mseiqkd2jdeca",
+      "type": "repair",
+      "projectId": "",
+      "customName": "System Check",
+      "site": "",
+      "date": "2026-08-05",
+      "mode": "crew",
+      "notes": "Inspection",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "12:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
