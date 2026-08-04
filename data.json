@@ -2391,20 +2391,20 @@
       "completed": true,
       "crewName": "",
       "crewStart": "13:30",
-      "crewEnd": "18:00",
+      "crewEnd": "18:45",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
         },
         {
-          "personId": "mqorpe5v0fd80"
+          "personId": "mqorpwby6y00f"
         },
         {
-          "personId": "mqorpwby6y00f"
+          "personId": "mqorpn4i4jonr"
         }
       ],
-      "workDone": "",
-      "remarks": "",
+      "workDone": "CONFIGURATION RESETTING",
+      "remarks": "NEED RE-WIRING",
       "progress": ""
     }
   ]
