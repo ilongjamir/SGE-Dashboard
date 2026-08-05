@@ -2493,6 +2493,31 @@
       "workDone": "PANEL INSTALLED\nLA INSTALLED\nPANEL WIRING\nLA WIRING\nPANEL EARTHING",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "msfnvbnbatoe3",
+      "type": "project",
+      "projectId": "",
+      "customName": "AOYIMTI NEW CHURCH",
+      "site": "",
+      "date": "2026-08-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "11:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "WATER PUMP STARTER CONNECTED",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
