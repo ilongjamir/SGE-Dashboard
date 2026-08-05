@@ -2518,6 +2518,24 @@
       "workDone": "WATER PUMP STARTER CONNECTED",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msfoj2w8ulq76",
+      "type": "project",
+      "projectId": "",
+      "customName": "MOARENBA",
+      "site": "AOYIMTI, LANE 2",
+      "date": "2026-08-06",
+      "mode": "crew",
+      "notes": "FINAL SITE VISIT",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
