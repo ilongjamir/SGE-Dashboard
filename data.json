@@ -142,6 +142,18 @@
       "end": "",
       "notes": "",
       "progressManual": 0
+    },
+    {
+      "id": "msfw8h15z5432",
+      "name": "ALEMJUNGSHI",
+      "customer": "ALEMJUNGSHI",
+      "site": "5TH MILE",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "todo",
+      "start": "2026-08-05",
+      "end": "",
+      "notes": "SITE VERIFIED\nSTRUCURE NEEDED - HIGH ELEVATION"
     }
   ],
   "people": [
