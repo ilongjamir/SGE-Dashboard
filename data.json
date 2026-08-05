@@ -150,10 +150,11 @@
       "site": "5TH MILE",
       "capacityKw": "3300",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "2026-08-05",
       "end": "",
-      "notes": "SITE VERIFIED\nSTRUCURE NEEDED - HIGH ELEVATION"
+      "notes": "SITE VERIFIED\nSTRUCURE NEEDED - HIGH ELEVATION",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -2548,6 +2549,31 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msfw9l0v6ti1j",
+      "type": "project",
+      "projectId": "msfw8h15z5432",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-05",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:00",
+      "crewEnd": "14:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "SITE VISIT",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
