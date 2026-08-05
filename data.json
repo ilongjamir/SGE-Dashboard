@@ -2421,28 +2421,6 @@
       "progress": ""
     },
     {
-      "id": "mseiqkd2jdeca",
-      "type": "repair",
-      "projectId": "",
-      "customName": "System Check",
-      "site": "",
-      "date": "2026-08-05",
-      "mode": "crew",
-      "notes": "Inspection",
-      "completed": true,
-      "crewName": "",
-      "crewStart": "12:30",
-      "crewEnd": "13:00",
-      "assignments": [
-        {
-          "personId": "mqorp5sjp8179"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
-    },
-    {
       "id": "msek1pl3mbxij",
       "type": "project",
       "projectId": "",
