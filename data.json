@@ -2574,6 +2574,31 @@
       "workDone": "SITE VISIT",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "msfwat699pq1h",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-05",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "14:30",
+      "crewEnd": "15:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "SYSTEM CHECK",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
