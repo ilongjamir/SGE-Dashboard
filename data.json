@@ -2416,10 +2416,10 @@
       "date": "2026-08-05",
       "mode": "crew",
       "notes": "Inspection",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "10:30",
-      "crewEnd": "12:00",
+      "crewStart": "12:30",
+      "crewEnd": "13:00",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
