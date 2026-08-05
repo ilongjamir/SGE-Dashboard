@@ -2453,6 +2453,46 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msflyxmqpo803",
+      "type": "project",
+      "projectId": "ms08x8d5togao",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "01:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "PANEL INSTALLED\nLA INSTALLED\nPANEL WIRING\nLA WIRING\nPANEL EARTHING",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
