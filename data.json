@@ -2663,6 +2663,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mshgqr4jplqmc",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "12:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "INVERTER REPLACEMENT",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
