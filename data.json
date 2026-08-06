@@ -2633,7 +2633,7 @@
       "completed": true,
       "crewName": "",
       "crewStart": "10:00",
-      "crewEnd": "17:00",
+      "crewEnd": "17:45",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
@@ -2660,8 +2660,8 @@
           "personId": "mqorpe5v0fd80"
         }
       ],
-      "workDone": "",
-      "remarks": "",
+      "workDone": "INVERTER WIRING COMPLETE\nACDB AND DCDB INSTALLED\nEARTHING WIRING DONE",
+      "remarks": "STRUCTURE LEFT",
       "progress": "10"
     },
     {
