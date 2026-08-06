@@ -2525,12 +2525,16 @@
       "date": "2026-08-06",
       "mode": "crew",
       "notes": "FINAL SITE VISIT",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "10:00",
-      "crewEnd": "16:00",
-      "assignments": [],
-      "workDone": "",
+      "crewEnd": "11:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "3KW\nHIGH ELEVATION - 10-11FT",
       "remarks": "",
       "progress": ""
     },
