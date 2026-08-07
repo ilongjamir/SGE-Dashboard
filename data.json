@@ -2707,8 +2707,8 @@
       "crewStart": "09:00",
       "crewEnd": "16:00",
       "assignments": [],
-      "workDone": "WAITING FOR FUNDS",
-      "remarks": "",
+      "workDone": "",
+      "remarks": "WAITING FOR FUNDS",
       "progress": ""
     }
   ]
