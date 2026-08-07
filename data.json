@@ -2811,6 +2811,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msj5cw7hwwxmr",
+      "type": "project",
+      "projectId": "mrbso3zharyy1",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-07",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "14:00",
+      "crewEnd": "15:30",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "INVERTER REPLACED\nTESTING DONE",
+      "remarks": "- NO WIFI AT CLIENTS RESIDENCE\n- CAN SUGGEST SYMBIOS INTERNET FOR DATA MONITORING",
+      "progress": "10"
     }
   ]
 }
