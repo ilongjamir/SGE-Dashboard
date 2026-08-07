@@ -2793,6 +2793,24 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msigpgfjslrab",
+      "type": "project",
+      "projectId": "",
+      "customName": "MATERIALS ARRIVED",
+      "site": "",
+      "date": "2026-08-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "13:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
