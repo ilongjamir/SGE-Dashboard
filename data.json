@@ -2728,6 +2728,43 @@
       "workDone": "",
       "remarks": "WAITING FOR FUNDS",
       "progress": ""
+    },
+    {
+      "id": "msigh950n0i29",
+      "type": "project",
+      "projectId": "msfw8h15z5432",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
