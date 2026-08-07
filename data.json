@@ -2692,6 +2692,24 @@
       "workDone": "INVERTER REPLACEMENT",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "msifa8d2oesak",
+      "type": "project",
+      "projectId": "",
+      "customName": "NO MATERIALS FOR INSTALLATION",
+      "site": "",
+      "date": "2026-07-31",
+      "mode": "crew",
+      "notes": "WAITING FOR FUNDS",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
