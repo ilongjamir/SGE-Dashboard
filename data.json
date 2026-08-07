@@ -2701,13 +2701,13 @@
       "site": "",
       "date": "2026-07-31",
       "mode": "crew",
-      "notes": "WAITING FOR FUNDS",
+      "notes": "",
       "completed": true,
       "crewName": "",
       "crewStart": "09:00",
       "crewEnd": "16:00",
       "assignments": [],
-      "workDone": "",
+      "workDone": "WAITING FOR FUNDS",
       "remarks": "",
       "progress": ""
     }
