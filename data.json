@@ -2765,6 +2765,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "msigijmmkrwqy",
+      "type": "project",
+      "projectId": "",
+      "customName": "DR. NEWTO",
+      "site": "",
+      "date": "2026-08-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
