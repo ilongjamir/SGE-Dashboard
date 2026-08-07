@@ -2524,7 +2524,7 @@
       "site": "AOYIMTI, LANE 2",
       "date": "2026-08-06",
       "mode": "crew",
-      "notes": "FINAL SITE VISIT",
+      "notes": "",
       "completed": true,
       "crewName": "",
       "crewStart": "10:00",
@@ -2534,7 +2534,7 @@
           "personId": "mqorpe5v0fd80"
         }
       ],
-      "workDone": "3KW\nHIGH ELEVATION - 10-11FT",
+      "workDone": "SITE VISIT:\n3KW\nHIGH ELEVATION - 10-11FT",
       "remarks": "",
       "progress": ""
     },
