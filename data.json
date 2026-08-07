@@ -2710,6 +2710,24 @@
       "workDone": "",
       "remarks": "WAITING FOR FUNDS",
       "progress": ""
+    },
+    {
+      "id": "msifcajk55ffh",
+      "type": "project",
+      "projectId": "",
+      "customName": "NO MATERIALS FOR INSTALLATION",
+      "site": "",
+      "date": "2026-08-03",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR FUNDS",
+      "progress": ""
     }
   ]
 }
