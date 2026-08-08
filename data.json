@@ -155,6 +155,18 @@
       "end": "2026-08-07",
       "notes": "SITE VERIFIED\nSTRUCURE NEEDED - HIGH ELEVATION",
       "progressManual": 10
+    },
+    {
+      "id": "msk0rnts0wnam",
+      "name": "NINGKATONGBA",
+      "customer": "NINGKATONGBA",
+      "site": "NAGARJAN, KUDA VILLAGE",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "doing",
+      "start": "2026-08-08",
+      "end": "2026-08-22",
+      "notes": ""
     }
   ],
   "people": [
