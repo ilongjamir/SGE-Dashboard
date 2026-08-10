@@ -179,7 +179,8 @@
       "status": "done",
       "start": "2026-08-10",
       "end": "2026-08-10",
-      "notes": "PWM INSTALLATION"
+      "notes": "PWM INSTALLATION",
+      "progressManual": 0
     }
   ],
   "people": [
@@ -2794,13 +2795,13 @@
     {
       "id": "msigijmmkrwqy",
       "type": "project",
-      "projectId": "",
-      "customName": "DR. NEWTO",
+      "projectId": "msn3e23uqadz7",
+      "customName": "",
       "site": "",
-      "date": "2026-08-08",
+      "date": "2026-08-10",
       "mode": "crew",
       "notes": "PWM INSTALLATION",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "10:00",
       "crewEnd": "16:00",
@@ -2809,15 +2810,27 @@
           "personId": "mqorp5sjp8179"
         },
         {
-          "personId": "mqorpkb0elkwu"
+          "personId": "mqorpuf1klkz1"
         },
         {
-          "personId": "mqorpuf1klkz1"
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
         }
       ],
-      "workDone": "",
+      "workDone": "PWM INSTALLATION\nWIRING\nTESTING",
       "remarks": "",
-      "progress": ""
+      "progress": "0"
     },
     {
       "id": "msigpgfjslrab",
