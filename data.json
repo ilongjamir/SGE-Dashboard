@@ -168,6 +168,18 @@
       "end": "2026-08-22",
       "notes": "",
       "progressManual": 10
+    },
+    {
+      "id": "msn3e23uqadz7",
+      "name": "DR. NEWTO",
+      "customer": "DR. NEWTO",
+      "site": "",
+      "capacityKw": "",
+      "discom": "",
+      "status": "done",
+      "start": "2026-08-10",
+      "end": "2026-08-10",
+      "notes": "PWM INSTALLATION"
     }
   ],
   "people": [
