@@ -2944,6 +2944,24 @@
       "workDone": "AC WIRING\nLA AND PANEL EARTHING\nACDB AND DCDB EARTHING\nEARTHING",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "msocbt2qqh0rn",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITIN FOR MATERIALS",
+      "site": "",
+      "date": "2026-08-11",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "18:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR MATERIALS",
+      "progress": ""
     }
   ]
 }
