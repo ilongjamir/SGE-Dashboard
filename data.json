@@ -181,6 +181,18 @@
       "end": "2026-08-10",
       "notes": "PWM INSTALLATION",
       "progressManual": 0
+    },
+    {
+      "id": "mso5xjnt617bg",
+      "name": "MOA AIER",
+      "customer": "MOA AIER",
+      "site": "",
+      "capacityKw": "3300",
+      "discom": "",
+      "status": "todo",
+      "start": "",
+      "end": "",
+      "notes": ""
     }
   ],
   "people": [
