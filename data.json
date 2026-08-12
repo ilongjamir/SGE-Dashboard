@@ -2987,6 +2987,37 @@
       "workDone": "PANEL CLEANING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mspy1ru54o29c",
+      "type": "repair",
+      "projectId": "",
+      "customName": "MOAMONGLA",
+      "site": "AOYIMTI H/N 67",
+      "date": "2026-08-12",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "12:30",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "BATTERY REPLACEMENT NEEDED",
+      "remarks": "CUSTOMERS EXISTING BATTERY SHOWS LOW GRAVITY",
+      "progress": ""
     }
   ]
 }
