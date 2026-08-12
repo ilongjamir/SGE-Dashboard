@@ -2962,6 +2962,31 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "mspy014htozx4",
+      "type": "project",
+      "projectId": "",
+      "customName": "DR. IMNANARO",
+      "site": "",
+      "date": "2026-08-12",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:30",
+      "crewEnd": "13:30",
+      "assignments": [
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "PANEL CLEANING",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
