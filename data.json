@@ -3160,6 +3160,24 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "msr5umyp3wmjl",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "",
+      "date": "2026-08-10",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "",
+      "crewEnd": "",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR MATERIALS",
+      "progress": ""
     }
   ]
 }
