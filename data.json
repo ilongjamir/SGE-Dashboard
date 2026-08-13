@@ -3142,6 +3142,24 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msr5sxmatdg83",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "",
+      "date": "2026-08-12",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "",
+      "crewEnd": "",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
