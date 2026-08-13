@@ -3154,11 +3154,11 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "",
-      "crewEnd": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
       "assignments": [],
       "workDone": "",
-      "remarks": "",
+      "remarks": "WAITING FOR MATERIALS",
       "progress": ""
     }
   ]
