@@ -3124,6 +3124,24 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msr5l2hn3t228",
+      "type": "repair",
+      "projectId": "",
+      "customName": "SHANKITHUNG",
+      "site": "NOTUN BOSTI",
+      "date": "2026-08-17",
+      "mode": "crew",
+      "notes": "PANEL SHIFTING",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
