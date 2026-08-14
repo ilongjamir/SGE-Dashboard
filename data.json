@@ -3266,6 +3266,28 @@
       "workDone": "LOAD ASSESMENT - 10KW",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "msswyumhdhh45",
+      "type": "repair",
+      "projectId": "",
+      "customName": "SOSANGMREN AOYIMTI CHAIRMAN",
+      "site": "",
+      "date": "2026-08-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "14:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
