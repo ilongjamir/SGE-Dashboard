@@ -3300,6 +3300,28 @@
       "workDone": "MAIN LINE CONNECTED",
       "remarks": "MAIN LINE WAS NOT CONNECTED",
       "progress": ""
+    },
+    {
+      "id": "mssx3tht9qxt4",
+      "type": "project",
+      "projectId": "mssx1hei855hn",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-17",
+      "mode": "crew",
+      "notes": "CUSTOMER WANT SOLAR INSTALLATION IN TWO METERS. NEED TO REVIST AND DO TECHNICAL ASSESMENT BASED ON TWO INSTALLATION. LAST VISIT INVOLVED INSTALLATION IN THREE METER",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "12:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
