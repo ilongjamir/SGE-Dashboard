@@ -3253,8 +3253,8 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "12:00",
-      "crewEnd": "13:00",
+      "crewStart": "16:00",
+      "crewEnd": "17:30",
       "assignments": [
         {
           "personId": "mqorpn4i4jonr"
@@ -3263,7 +3263,7 @@
           "personId": "mqorpkb0elkwu"
         }
       ],
-      "workDone": "LOAD ASSESMENT",
+      "workDone": "LOAD ASSESMENT - 10KW",
       "remarks": "",
       "progress": ""
     }
