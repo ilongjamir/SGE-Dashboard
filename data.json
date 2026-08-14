@@ -3178,6 +3178,37 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "mssujimdavhoo",
+      "type": "project",
+      "projectId": "msk0rnts0wnam",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
