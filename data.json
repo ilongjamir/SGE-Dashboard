@@ -3381,6 +3381,28 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mswz7xllc9uvp",
+      "type": "project",
+      "projectId": "mswz7lcvzi7on",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-18",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
