@@ -3359,6 +3359,34 @@
       "workDone": "PANEL SHIFTING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mswugbtaqi7vt",
+      "type": "project",
+      "projectId": "msk0rnts0wnam",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-17",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
