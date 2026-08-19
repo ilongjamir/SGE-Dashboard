@@ -3468,6 +3468,43 @@
       "workDone": "STABLIZER INSTALLATION COMPLETE",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mszwerq6nfd5w",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-18",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "STRUCTURE COMPLETED\nPANLES INSTALLED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
