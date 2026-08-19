@@ -3428,6 +3428,46 @@
       "workDone": "TAPPING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mszwdnnkylnph",
+      "type": "project",
+      "projectId": "",
+      "customName": "BUILDSMART/INNOTECH",
+      "site": "",
+      "date": "2026-08-19",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "STABLIZER INSTALLATION COMPLETE",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
