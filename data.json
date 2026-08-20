@@ -251,10 +251,11 @@
       "site": "MOKOKCHUNG",
       "capacityKw": "3300",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "2026-08-21",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -3538,6 +3539,34 @@
         }
       ],
       "workDone": "",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mt10mbm73azaz",
+      "type": "project",
+      "projectId": "mt10lefbqi14h",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-20",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "LEFT FOR MOKOKCHUNG FROM DIMAPUR",
       "remarks": "",
       "progress": "10"
     }
