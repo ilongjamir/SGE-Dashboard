@@ -226,10 +226,11 @@
       "site": "CIRCULAR ROAD",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     },
     {
       "id": "mswz7lcvzi7on",
@@ -3503,6 +3504,28 @@
         }
       ],
       "workDone": "STRUCTURE COMPLETED\nPANLES INSTALLED",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mt10gji8zifdq",
+      "type": "project",
+      "projectId": "mssx1hei855hn",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-20",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "11:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
       "remarks": "",
       "progress": "10"
     }
