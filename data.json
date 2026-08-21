@@ -239,10 +239,11 @@
       "site": "TIR VILLAGE",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     },
     {
       "id": "mt10lefbqi14h",
@@ -3567,6 +3568,34 @@
         }
       ],
       "workDone": "LEFT FOR MOKOKCHUNG FROM DIMAPUR",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mt2louvn0e1b2",
+      "type": "project",
+      "projectId": "mswz7lcvzi7on",
+      "customName": "",
+      "site": "TIR VILLAGE",
+      "date": "2026-08-21",
+      "mode": "crew",
+      "notes": "2 HYBRID SYSTEM:\n\nSYSTEM 1: 3KW HYBRID FOR HOME. 3KW PANEL, 3KW BATTERY\n\nSYSTEM 2: 5KW INVERTER, 3KW PANEL, 3KW BATTTERY\nLATER WILL PUT 2KW PANEL",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "11:30",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mrbsqvuqsibqt"
+        }
+      ],
+      "workDone": "SITE VISIT DONE",
       "remarks": "",
       "progress": "10"
     }
