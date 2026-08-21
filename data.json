@@ -3626,6 +3626,31 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mt2lq4gudxs1p",
+      "type": "project",
+      "projectId": "",
+      "customName": "STORE CLEANING",
+      "site": "",
+      "date": "2026-08-21",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
