@@ -265,10 +265,11 @@
       "site": "SINGRIJAN",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -3663,6 +3664,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mt34cn3w03vud",
+      "type": "project",
+      "projectId": "mt34c3fim2gt9",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-21",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "16:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "SITE VISIT",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
