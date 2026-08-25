@@ -189,10 +189,11 @@
       "site": "",
       "capacityKw": "3300",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     },
     {
       "id": "mso5ycey38z83",
@@ -3685,6 +3686,34 @@
       ],
       "workDone": "LA WIRING \nPANEL EARTHING WIRING\nDC WIRING \nDCDB CONNECTED",
       "remarks": "PROJECT IS NOW COMPLETED",
+      "progress": "10"
+    },
+    {
+      "id": "mt875sfy4dyto",
+      "type": "project",
+      "projectId": "mso5xz6jp239s",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-24",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
       "progress": "10"
     }
   ]
