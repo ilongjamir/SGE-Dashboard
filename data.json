@@ -3727,8 +3727,8 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "11:00",
-      "crewEnd": "16:00",
+      "crewStart": "12:30",
+      "crewEnd": "17:30",
       "assignments": [
         {
           "personId": "mqorp5sjp8179"
@@ -3749,7 +3749,7 @@
           "personId": "msfwbwm8behph"
         }
       ],
-      "workDone": "MONORAIL REACHED AT 10:30 AM",
+      "workDone": "MONORAIL REACHED AT 10:30 AM\nEARTHING INSTALLED\nAC WIRING DONE\nMONORAIL INSTALLED",
       "remarks": "",
       "progress": "10"
     }
