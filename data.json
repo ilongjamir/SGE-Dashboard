@@ -3689,34 +3689,6 @@
       "progress": "10"
     },
     {
-      "id": "mt875sfy4dyto",
-      "type": "project",
-      "projectId": "mso5xz6jp239s",
-      "customName": "",
-      "site": "",
-      "date": "2026-08-24",
-      "mode": "crew",
-      "notes": "",
-      "completed": true,
-      "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
-      "assignments": [
-        {
-          "personId": "mqorp5sjp8179"
-        },
-        {
-          "personId": "mqorpn4i4jonr"
-        },
-        {
-          "personId": "msfwbwm8behph"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": "10"
-    },
-    {
       "id": "mt87jhk4oacic",
       "type": "project",
       "projectId": "mso5xz6jp239s",
