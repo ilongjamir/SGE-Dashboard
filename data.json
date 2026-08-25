@@ -3752,6 +3752,28 @@
       "workDone": "MONORAIL REACHED AT 10:30 AM\nEARTHING INSTALLED\nAC WIRING DONE\nMONORAIL INSTALLED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mt8kkuchtkhhf",
+      "type": "project",
+      "projectId": "ms08x8d5togao",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-27",
+      "mode": "crew",
+      "notes": "NET METER CONNECTION",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
