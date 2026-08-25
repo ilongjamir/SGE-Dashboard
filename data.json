@@ -3639,7 +3639,7 @@
       "site": "",
       "date": "2026-08-22",
       "mode": "crew",
-      "notes": "PROJECT IS NOW COMPLETED",
+      "notes": "",
       "completed": true,
       "crewName": "",
       "crewStart": "09:00",
@@ -3656,7 +3656,7 @@
         }
       ],
       "workDone": "EARTHING COMPLETED\nTESTING DONE",
-      "remarks": "",
+      "remarks": "PROJECT IS NOW COMPLETED",
       "progress": "10"
     }
   ]
