@@ -3658,6 +3658,34 @@
       "workDone": "EARTHING COMPLETED\nTESTING DONE",
       "remarks": "PROJECT IS NOW COMPLETED",
       "progress": "10"
+    },
+    {
+      "id": "mt86m2u44wboh",
+      "type": "project",
+      "projectId": "msk0rnts0wnam",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-24",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "LA WIRING \nPANEL EARTHING WIRING\nDC WIRING \nDCDB CONNECTED",
+      "remarks": "PROJECT IS NOW COMPLETED",
+      "progress": "10"
     }
   ]
 }
