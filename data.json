@@ -270,7 +270,8 @@
       "status": "doing",
       "start": "2026-08-31",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -3786,6 +3787,43 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtgyesy2aygqa",
+      "type": "project",
+      "projectId": "mtgycy53f5lwm",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-31",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
