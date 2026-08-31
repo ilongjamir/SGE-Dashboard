@@ -3945,6 +3945,34 @@
       "workDone": "PANEL INSTALLED, PANEL WIRING",
       "remarks": "PROECT IS NOW COMPLETED",
       "progress": "10"
+    },
+    {
+      "id": "mth51bd5c8r2z",
+      "type": "project",
+      "projectId": "mr4omigdahih8",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-01",
+      "mode": "crew",
+      "notes": "",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
