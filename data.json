@@ -3824,6 +3824,37 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mtgyh3d7cjuai",
+      "type": "project",
+      "projectId": "",
+      "customName": "STORE CLEANING AND ARRANGEMENT",
+      "site": "",
+      "date": "2026-08-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
