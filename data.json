@@ -3886,6 +3886,31 @@
       "workDone": "RESGISTRATION",
       "remarks": "REGISTRATION PROBLEM. CONTACT VSOLE",
       "progress": "10"
+    },
+    {
+      "id": "mtgyolxwu9jzk",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-27",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "15:30",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "EARTHING WIRING, INVERTER AND SPD WIRING AND PIPING.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
