@@ -3911,6 +3911,40 @@
       "workDone": "EARTHING WIRING, INVERTER AND SPD WIRING AND PIPING.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mtgyqt9wb11lg",
+      "type": "project",
+      "projectId": "mso5xz6jp239s",
+      "customName": "",
+      "site": "",
+      "date": "2026-08-26",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "PANEL INSTALLED, PANEL WIRING",
+      "remarks": "PROECT IS NOW COMPLETED",
+      "progress": "10"
     }
   ]
 }
