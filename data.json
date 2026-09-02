@@ -4069,6 +4069,24 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mtjz64ubmcypi",
+      "type": "project",
+      "projectId": "mrul09lumioxb",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-02",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
