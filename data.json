@@ -4029,6 +4029,46 @@
       "workDone": "STABLIZER SHIFTING AND WIRING",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtjmkqsg9hkla",
+      "type": "project",
+      "projectId": "mr4omigdahih8",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-01",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "16:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
