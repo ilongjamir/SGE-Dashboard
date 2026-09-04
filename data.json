@@ -4199,6 +4199,28 @@
       "workDone": "INVERTER ISSUE RECTIFIED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mtmx9ah4z08xi",
+      "type": "project",
+      "projectId": "mr4omigdahih8",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "17:00",
+      "crewEnd": "17:50",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "INVERTER FAULT RECTIFIED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
