@@ -180,7 +180,7 @@
       "start": "2026-08-10",
       "end": "2026-08-10",
       "notes": "PWM INSTALLATION",
-      "progressManual": 0
+      "progressManual": 10
     },
     {
       "id": "mso5xz6jp239s",
@@ -4174,6 +4174,31 @@
       "workDone": "INVERTER BATTERY REPAIR",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtmx7lff1nvvv",
+      "type": "project",
+      "projectId": "msn3e23uqadz7",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "16:00",
+      "crewEnd": "17:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "INVERTER ISSUE RECTIFIED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
