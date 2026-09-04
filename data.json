@@ -4118,6 +4118,31 @@
       "workDone": "INVERTER SETTING, LINE CHECK",
       "remarks": "HOUSE ELECTRICIAN DID SOME WORK(DISTRIBUTION)",
       "progress": "10"
+    },
+    {
+      "id": "mtmx4uvb55bg2",
+      "type": "project",
+      "projectId": "",
+      "customName": "3S INFRA CHURCH MON BOSTI",
+      "site": "",
+      "date": "2026-09-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
