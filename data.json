@@ -4143,6 +4143,37 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtmx6ji7y86d4",
+      "type": "project",
+      "projectId": "",
+      "customName": "SYMBIOS AUTO",
+      "site": "",
+      "date": "2026-09-04",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "INVERTER BATTERY REPAIR",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
