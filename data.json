@@ -4087,6 +4087,37 @@
       "workDone": "ACDB, DCDB, EARTHING AND INVERTER INSTALLED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mtmgalq1ewps3",
+      "type": "project",
+      "projectId": "mrul09lumioxb",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-03",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "INVERTER SETTING, LINE CHECK",
+      "remarks": "HOUSE ELECTRICIAN DID SOME WORK(DDISTRIBUTION)",
+      "progress": "10"
     }
   ]
 }
