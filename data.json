@@ -4274,6 +4274,37 @@
       "workDone": "PWM REPLACEMENT",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mto3y3mpz2ky9",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-05",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "STRUCTURE COMPLETED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
