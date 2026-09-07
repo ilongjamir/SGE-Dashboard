@@ -4389,6 +4389,46 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtr3sxl4jakag",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "AOYIMTI",
+      "date": "2026-09-07",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "STRUCTURE COMPLETED, PLASTERED.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
