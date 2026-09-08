@@ -280,10 +280,11 @@
       "site": "SIGNAL ANGAMI",
       "capacityKw": "6540",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 0
     }
   ],
   "people": [
@@ -4327,18 +4328,24 @@
       "date": "2026-09-08",
       "mode": "crew",
       "notes": "",
-      "completed": false,
+      "completed": true,
       "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
+      "crewStart": "11:30",
+      "crewEnd": "14:00",
       "assignments": [
         {
           "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
         }
       ],
-      "workDone": "",
+      "workDone": "6 KW \nPLACEMENT NOT FINALISED",
       "remarks": "",
-      "progress": ""
+      "progress": "0"
     },
     {
       "id": "mtr3p1rt1qv5i",
