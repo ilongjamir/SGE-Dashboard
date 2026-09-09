@@ -4461,6 +4461,37 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mttnc4gqcbsr5",
+      "type": "project",
+      "projectId": "",
+      "customName": "SYMBIOS CREATION",
+      "site": "",
+      "date": "2026-09-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:00",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "AIR CONDITIONER CONNECTION",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
