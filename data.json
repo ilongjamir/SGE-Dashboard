@@ -4492,6 +4492,34 @@
       "workDone": "AIR CONDITIONER CONNECTION",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mtv09bgzknyvb",
+      "type": "project",
+      "projectId": "",
+      "customName": "PADUMPUKHRI",
+      "site": "",
+      "date": "2026-09-09",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "23:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
