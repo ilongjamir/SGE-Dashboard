@@ -4542,8 +4542,8 @@
     {
       "id": "mtv0brbwoctjw",
       "type": "project",
-      "projectId": "mqorn3t3le48z",
-      "customName": "",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
       "site": "",
       "date": "2026-09-03",
       "mode": "crew",
@@ -4555,7 +4555,7 @@
       "assignments": [],
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
-      "progress": "10"
+      "progress": ""
     }
   ]
 }
