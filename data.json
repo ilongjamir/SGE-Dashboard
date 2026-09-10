@@ -4610,6 +4610,24 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "mtv0d28hi0h3p",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "",
+      "date": "2026-09-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR MATERIALS",
+      "progress": ""
     }
   ]
 }
