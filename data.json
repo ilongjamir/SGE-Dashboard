@@ -4524,8 +4524,8 @@
     {
       "id": "mtv09pa60yaz4",
       "type": "project",
-      "projectId": "mqorn3t3le48z",
-      "customName": "",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
       "site": "",
       "date": "2026-09-09",
       "mode": "crew",
@@ -4537,7 +4537,7 @@
       "assignments": [],
       "workDone": "",
       "remarks": "NO MATERIALS\nWAITING FOR MATERIALS",
-      "progress": "10"
+      "progress": ""
     },
     {
       "id": "mtv0brbwoctjw",
