@@ -4720,6 +4720,31 @@
       "workDone": "EARTHING COMPLETED\nPANEL WIRING",
       "remarks": "RAIN DELAYS WORK STARTED AT 1 P.M.",
       "progress": "10"
+    },
+    {
+      "id": "mu0qe7r258u18",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:50",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
