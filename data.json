@@ -4782,6 +4782,28 @@
       "workDone": "",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mu0wmrj3k3yv1",
+      "type": "repair",
+      "projectId": "",
+      "customName": "SENTIMONGLA (3KW)",
+      "site": "CHUMUKEDIMA",
+      "date": "2026-09-15",
+      "mode": "crew",
+      "notes": "NOT SHOWING GENERATION",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "12:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
