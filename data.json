@@ -4686,6 +4686,40 @@
       "workDone": "STRUCTURE COMPLETED\nPANEL INSTALLED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mu0qbcnfz02bs",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-12",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:50",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "EARTHING COMPLETED\nPANEL WIRING",
+      "remarks": "RAIN DELAYS WORK STARTED AT 1 P.M.",
+      "progress": "10"
     }
   ]
 }
