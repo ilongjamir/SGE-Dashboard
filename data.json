@@ -4829,6 +4829,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mu18m82esb00s",
+      "type": "project",
+      "projectId": "",
+      "customName": "ST.MARY",
+      "site": "NYAMO LOTHA ROAD",
+      "date": "2026-09-15",
+      "mode": "crew",
+      "notes": "NEED TO CONNECT WIRES",
+      "completed": false,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
