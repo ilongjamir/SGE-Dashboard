@@ -4813,8 +4813,8 @@
       "site": "NYAMO LOTHA ROAD",
       "date": "2026-09-15",
       "mode": "crew",
-      "notes": "SPD DAMAGED\nTHEY WANT BATTERY SERVERCING",
-      "completed": false,
+      "notes": "",
+      "completed": true,
       "crewName": "",
       "crewStart": "13:40",
       "crewEnd": "14:12",
@@ -4827,7 +4827,7 @@
         }
       ],
       "workDone": "",
-      "remarks": "",
+      "remarks": "SPD DAMAGED\nTHEY WANT BATTERY SERVERCING",
       "progress": ""
     }
   ]
