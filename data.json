@@ -4807,20 +4807,23 @@
     },
     {
       "id": "mu18m82esb00s",
-      "type": "project",
+      "type": "repair",
       "projectId": "",
       "customName": "ST.MARY",
       "site": "NYAMO LOTHA ROAD",
       "date": "2026-09-15",
       "mode": "crew",
-      "notes": "NEED TO CONNECT WIRES",
+      "notes": "SPD DAMAGED\nTHEY WANT BATTERY SERVERCING",
       "completed": false,
       "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
+      "crewStart": "13:40",
+      "crewEnd": "14:12",
       "assignments": [
         {
-          "personId": "mqorpe5v0fd80"
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
         }
       ],
       "workDone": "",
