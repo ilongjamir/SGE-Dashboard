@@ -4806,31 +4806,6 @@
       "progress": ""
     },
     {
-      "id": "mu17mg7daikmz",
-      "type": "repair",
-      "projectId": "",
-      "customName": "ST.MARY SCHOOL",
-      "site": "NYAMO LOTHA ROAD",
-      "date": "2026-09-16",
-      "mode": "crew",
-      "notes": "SOLAR ISSUE",
-      "completed": false,
-      "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "12:00",
-      "assignments": [
-        {
-          "personId": "mqorp5sjp8179"
-        },
-        {
-          "personId": "mqorpn4i4jonr"
-        }
-      ],
-      "workDone": "",
-      "remarks": "",
-      "progress": ""
-    },
-    {
       "id": "mu18m82esb00s",
       "type": "project",
       "projectId": "",
