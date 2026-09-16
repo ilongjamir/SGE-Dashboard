@@ -4792,7 +4792,7 @@
       "date": "2026-09-15",
       "mode": "crew",
       "notes": "NOT SHOWING GENERATION",
-      "completed": false,
+      "completed": true,
       "crewName": "",
       "crewStart": "10:00",
       "crewEnd": "12:00",
