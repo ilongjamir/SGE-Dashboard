@@ -293,10 +293,11 @@
       "site": "",
       "capacityKw": "3",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -4895,6 +4896,31 @@
         }
       ],
       "workDone": "",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mu3v1m3ei1kne",
+      "type": "project",
+      "projectId": "mu3v0tql9nhrb",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-15",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "GI PIPE DROPPED AT SITE",
       "remarks": "",
       "progress": "10"
     }
