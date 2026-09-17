@@ -4923,6 +4923,49 @@
       "workDone": "GI PIPE DROPPED AT SITE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mu5gkypxrp4gc",
+      "type": "project",
+      "projectId": "mso5ycey38z83",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-17",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "12:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "Inverter wiring and testing completed\nLA installed",
+      "remarks": "PROJECT IS NOW COMPLETED",
+      "progress": "10"
     }
   ]
 }
