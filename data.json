@@ -4966,6 +4966,49 @@
       "workDone": "Inverter wiring and testing completed\nLA installed",
       "remarks": "PROJECT IS NOW COMPLETED",
       "progress": "10"
+    },
+    {
+      "id": "mu5gn390b2c2f",
+      "type": "project",
+      "projectId": "mu3v0tql9nhrb",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-17",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:30",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "STRUCTURE AND PLASTER COMPLETED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
