@@ -5009,6 +5009,49 @@
       "workDone": "STRUCTURE AND PLASTER COMPLETED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "muayurc6p3uz6",
+      "type": "project",
+      "projectId": "mu3v0tql9nhrb",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-18",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "LA WIRING DONE\nEARTHING WIRING DONE\nSOLAR DC WIRING DONE\nACBD/DCDB INSTALLED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
