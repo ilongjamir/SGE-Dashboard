@@ -5080,6 +5080,34 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "muc82ii2xmeyy",
+      "type": "repair",
+      "projectId": "",
+      "customName": "SENTIMONGLA",
+      "site": "",
+      "date": "2026-09-19",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mrbsqvuqsibqt"
+        }
+      ],
+      "workDone": "CHECKED LOAD",
+      "remarks": "SOLAR IS OK",
+      "progress": ""
     }
   ]
 }
