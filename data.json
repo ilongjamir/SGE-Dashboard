@@ -5108,6 +5108,34 @@
       "workDone": "CHECKED LOAD",
       "remarks": "SOLAR IS OK",
       "progress": ""
+    },
+    {
+      "id": "muc841trd0i3b",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-09-21",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
