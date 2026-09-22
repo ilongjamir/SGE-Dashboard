@@ -5167,6 +5167,46 @@
       "workDone": "WENT TO MARKET TO PROCURE SOME MATERIALS",
       "remarks": "MATERIAL DELAY",
       "progress": "10"
+    },
+    {
+      "id": "muc8f2o5utyfh",
+      "type": "project",
+      "projectId": "mtgycy53f5lwm",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-16",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "3KW PANEL INSTALLED",
+      "remarks": "WAITING FOR MATERIALS",
+      "progress": "10"
     }
   ]
 }
