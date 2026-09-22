@@ -5297,6 +5297,24 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "muc8h9exyoboc",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "",
+      "date": "2026-09-22",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "WAITING FOR MATERIALS",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
