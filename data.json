@@ -5052,6 +5052,34 @@
       "workDone": "LA WIRING DONE\nEARTHING WIRING DONE\nSOLAR DC WIRING DONE\nACBD/DCDB INSTALLED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "muc7zv9eujvza",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-09-22",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
