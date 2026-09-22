@@ -306,10 +306,11 @@
       "site": "",
       "capacityKw": "60000",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -5399,6 +5400,28 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "muc8kpnkcn8ms",
+      "type": "project",
+      "projectId": "muc8k6jnojc7l",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-21",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "13:30",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
