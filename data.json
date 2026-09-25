@@ -5422,6 +5422,37 @@
       "workDone": "",
       "remarks": "SITE VISIT",
       "progress": "10"
+    },
+    {
+      "id": "muggoljjlloku",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-09-25",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "BATTERY CONNECTION",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
