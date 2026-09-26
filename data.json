@@ -5554,6 +5554,37 @@
       "workDone": "LOWER ELEVATION",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mui1yqmjzcvwi",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-09-26",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "BATTERY CONNECTION",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
