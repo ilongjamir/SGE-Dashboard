@@ -5532,6 +5532,28 @@
       "workDone": "SPD REPLACED",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mui1vd2c77mxa",
+      "type": "project",
+      "projectId": "muc8k6jnojc7l",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-26",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:50",
+      "crewEnd": "11:50",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
