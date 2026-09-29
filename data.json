@@ -5672,6 +5672,31 @@
       "workDone": "SITE VISIT",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mumecpkbxs1yv",
+      "type": "project",
+      "projectId": "",
+      "customName": "SENTIMONGLA",
+      "site": "",
+      "date": "2026-09-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "METER INSTALLED",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
