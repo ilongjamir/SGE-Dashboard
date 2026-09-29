@@ -5722,6 +5722,28 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mumeiu97207i7",
+      "type": "project",
+      "projectId": "",
+      "customName": "SAMUEL LEMTURE",
+      "site": "",
+      "date": "2026-09-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "INVERTER ISSUE - COULD NOT REPAIR DUE TO DC FUSE OUT OF STOCK",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
