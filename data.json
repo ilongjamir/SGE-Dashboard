@@ -5697,6 +5697,31 @@
       "workDone": "METER INSTALLED",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mumehdnu5mq2s",
+      "type": "project",
+      "projectId": "",
+      "customName": "MD'S RESIDENCE",
+      "site": "",
+      "date": "2026-09-29",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
