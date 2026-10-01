@@ -345,10 +345,11 @@
       "site": "",
       "capacityKw": "",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -5900,6 +5901,31 @@
       ],
       "workDone": "SITE VISIT",
       "remarks": "SITE VISIT",
+      "progress": "10"
+    },
+    {
+      "id": "mupaiwja9hme5",
+      "type": "project",
+      "projectId": "mupahaqtzyc8p",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-01",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:30",
+      "crewEnd": "13:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "SITE VISIT DONE",
+      "remarks": "4KW LOAD\nPROPOSED BATTERY SIZE:\n96V x 150Ah",
       "progress": "10"
     }
   ]
