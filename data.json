@@ -5826,6 +5826,31 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "mup8cpv9lg45o",
+      "type": "project",
+      "projectId": "ms08x8d5togao",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "13:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "WIFI ISSUE RESOLVED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
