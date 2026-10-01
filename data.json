@@ -5780,6 +5780,34 @@
       "workDone": "",
       "remarks": "ALL TEAM MEMBERS AT SYMBIOS CREATION OFFICE",
       "progress": ""
+    },
+    {
+      "id": "mup5dm4bp30d6",
+      "type": "project",
+      "projectId": "",
+      "customName": "INNOTECH",
+      "site": "",
+      "date": "2026-10-01",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
