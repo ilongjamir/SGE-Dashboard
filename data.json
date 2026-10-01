@@ -332,10 +332,11 @@
       "site": "",
       "capacityKw": "6000",
       "discom": "",
-      "status": "todo",
+      "status": "doing",
       "start": "",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -5862,6 +5863,31 @@
       ],
       "workDone": "WIFI ISSUE RESOLVED",
       "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mup8emwf32jvx",
+      "type": "project",
+      "projectId": "mup8de6qx68nn",
+      "customName": "",
+      "site": "",
+      "date": "2026-09-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "14:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "SITE VISIT",
+      "remarks": "SITE VISIT",
       "progress": "10"
     }
   ]
