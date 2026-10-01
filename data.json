@@ -5744,6 +5744,24 @@
       "workDone": "INVERTER ISSUE - COULD NOT REPAIR DUE TO DC FUSE OUT OF STOCK",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "mup5cj6z1aov1",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "",
+      "date": "2026-09-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "WAITING FOR MATERIALS",
+      "progress": ""
     }
   ]
 }
