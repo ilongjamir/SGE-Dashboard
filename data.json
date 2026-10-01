@@ -5762,6 +5762,24 @@
       "workDone": "",
       "remarks": "WAITING FOR MATERIALS",
       "progress": ""
+    },
+    {
+      "id": "mup5cyhutzf8o",
+      "type": "project",
+      "projectId": "",
+      "customName": "ALL TEAM MEMBERS AT SYMBIOS CREATION OFFICE",
+      "site": "",
+      "date": "2026-09-30",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "ALL TEAM MEMBERS AT SYMBIOS CREATION OFFICE",
+      "progress": ""
     }
   ]
 }
