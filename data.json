@@ -5927,6 +5927,24 @@
       "workDone": "SITE VISIT DONE",
       "remarks": "4KW LOAD,\nPROPOSED BATTERY SIZE:\n96V x 150Ah",
       "progress": "10"
+    },
+    {
+      "id": "murwx5wx5hkq0",
+      "type": "project",
+      "projectId": "",
+      "customName": "WAITING FOR MATERIALS",
+      "site": "WAITING FOR MATERIALS",
+      "date": "2026-10-03",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
