@@ -5945,6 +5945,46 @@
       "workDone": "",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "muv4v0eml1nv1",
+      "type": "project",
+      "projectId": "mtr2wb3ykkg2h",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-05",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
