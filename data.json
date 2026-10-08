@@ -6068,6 +6068,43 @@
       "workDone": "PANELS INSTALLED",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "muz0k6brwccu6",
+      "type": "project",
+      "projectId": "mtgycy53f5lwm",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:30",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "PANELS INSTALLED\nWIRING COMPLETED",
+      "remarks": "PROJECT IS NOW COMPLETED",
+      "progress": "10"
     }
   ]
 }
