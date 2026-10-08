@@ -6133,6 +6133,31 @@
       "workDone": "LOAD CHECKED \nFULL LOAD - 20.9 KW\nVOLTAGE: R - 237, Y - 238, B - 235\nR - 29.7a, Y - 28.9a, B - 30a",
       "remarks": "",
       "progress": ""
+    },
+    {
+      "id": "muzi0hfmlsrl9",
+      "type": "project",
+      "projectId": "mr4omigdahih8",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "16:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mrbsqvuqsibqt"
+        }
+      ],
+      "workDone": "INVERTER ZERO EXPORT RECTIFIED",
+      "remarks": "SHOWING ZERO EXPORT",
+      "progress": "10"
     }
   ]
 }
