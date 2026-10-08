@@ -6025,6 +6025,49 @@
       "workDone": "WIRING DONE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "muz0j2mgnkkya",
+      "type": "project",
+      "projectId": "mu3v0tql9nhrb",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-06",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "04:30",
+      "crewEnd": "17:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "PANELS INSTALLED",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
