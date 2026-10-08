@@ -6105,6 +6105,34 @@
       "workDone": "PANELS INSTALLED\nWIRING COMPLETED\nTESTING DONE",
       "remarks": "PROJECT IS NOW COMPLETED",
       "progress": "10"
+    },
+    {
+      "id": "muz4kppvimemt",
+      "type": "project",
+      "projectId": "",
+      "customName": "NUILAND BLOCK FACTORY",
+      "site": "",
+      "date": "2026-10-08",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "14:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "LOAD CHECKED",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
