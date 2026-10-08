@@ -6022,8 +6022,8 @@
           "personId": "mqorp5sjp8179"
         }
       ],
-      "workDone": "WIRING DONE",
-      "remarks": "",
+      "workDone": "WIRING DONE\nTESTING DONE",
+      "remarks": "PROJECT IS NOW COMPLETED",
       "progress": "10"
     },
     {
