@@ -6219,6 +6219,28 @@
       "workDone": "RMS TESTED",
       "remarks": "NO WIFI CONNECTIVITY AT SITE",
       "progress": "10"
+    },
+    {
+      "id": "mv20at9ei8e0z",
+      "type": "repair",
+      "projectId": "",
+      "customName": "IMTIKUMLA",
+      "site": "",
+      "date": "2026-10-10",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "23:30",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "CUSTOMER ASKED TO COME IN THE EVENING",
+      "remarks": "",
+      "progress": ""
     }
   ]
 }
