@@ -361,7 +361,8 @@
       "status": "doing",
       "start": "2026-10-12",
       "end": "",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -6273,6 +6274,34 @@
         },
         {
           "personId": "mqorpkb0elkwu"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
+    },
+    {
+      "id": "mv69wce202by7",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-12",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "12:00",
+      "crewEnd": "15:00",
+      "assignments": [
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
         }
       ],
       "workDone": "",
