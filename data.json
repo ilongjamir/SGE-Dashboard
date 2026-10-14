@@ -6335,6 +6335,31 @@
       "workDone": "JUNGLE CLEARING",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mv7yqupi6f6oz",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-13",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "15:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "SIMON, VITO AND ENGINEER LEFT FOR KOHIMA",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
