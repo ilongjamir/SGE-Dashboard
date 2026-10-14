@@ -6360,6 +6360,34 @@
       "workDone": "SIMON, VITO AND ENGINEER LEFT FOR KOHIMA",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mv7yt6i400ezj",
+      "type": "project",
+      "projectId": "",
+      "customName": "PHULONI NABEN",
+      "site": "",
+      "date": "2026-10-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        }
+      ],
+      "workDone": "PANEL INSTALLED\nBATTERY INSTALLED\nPWM INSTALLED\nTESTING DONE",
+      "remarks": "PROJECT IS NOW COMPLETE",
+      "progress": ""
     }
   ]
 }
