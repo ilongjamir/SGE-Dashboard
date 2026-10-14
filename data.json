@@ -6307,6 +6307,34 @@
       "workDone": "REACHED SITE",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mv7yppgew0syg",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-13",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "JUNGLE CLEARING",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
