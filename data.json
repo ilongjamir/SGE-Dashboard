@@ -6319,8 +6319,8 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "10:00",
-      "crewEnd": "16:00",
+      "crewStart": "08:00",
+      "crewEnd": "16:30",
       "assignments": [
         {
           "personId": "mqorq03mdy6ja"
