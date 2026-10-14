@@ -6388,6 +6388,40 @@
       "workDone": "PANEL INSTALLED\nBATTERY INSTALLED\nPWM INSTALLED\nTESTING DONE",
       "remarks": "PROJECT IS NOW COMPLETE",
       "progress": ""
+    },
+    {
+      "id": "mv85udehjhvk6",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-14",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "07:30",
+      "crewEnd": "17:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "5 PANEL STRING WIRING COMPLETED\nJUNGLE CLEARING\nSAMUEL AND SIMON WENT TO KOHIMA TOWN TO GET SOME MATERIALS(PVC PIPE JOINT) 1:30PM - 3PM\nENGINEER WAS ON SITE FROM 8AM - 4PM\nWORKED UNDER HIS SUPERVISION.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
