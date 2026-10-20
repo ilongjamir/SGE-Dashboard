@@ -6422,6 +6422,31 @@
       "workDone": "5 PANEL STRING WIRING COMPLETED\nJUNGLE CLEARING\nSAMUEL AND SIMON WENT TO KOHIMA TOWN TO GET SOME MATERIALS(PVC PIPE JOINT) 1:30PM - 3PM\nENGINEER WAS ON SITE FROM 8AM - 4PM\nWORKED UNDER HIS SUPERVISION.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvgemdoluoom9",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-16",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:30",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mrbsqvuqsibqt"
+        }
+      ],
+      "workDone": "Reached Kohima at around 1pm.\nVisual inspection, Shadow analysis, checked Voc and Isc of panels, wire length and size calculation for input and output of inverter.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
