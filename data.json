@@ -6586,6 +6586,49 @@
       "workDone": "Simul - All 15 string lug joined at DCDB \nHosheto and Vito worked on string sizing \n330Wp panel connected (5 string connected)\nHeka and Vito was on welding part.\n4 panels 545Wp had to join on one structure to complete 15 string.\n6 parlin welded. Remaining 4 parlin to be welded \nSafik and Sayu reported at site.",
       "remarks": "Work incomplete due to load shedding",
       "progress": "10"
+    },
+    {
+      "id": "mvroesrrndx6o",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-21",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "18:15",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorp5sjp8179"
+        }
+      ],
+      "workDone": "Heka and Simul went to Dimapur 5:30 a.m to pick up Battery\nBattery reached Kohima at 4:00 pm\n\nBattery placement at inverter room completed",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
