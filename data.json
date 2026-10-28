@@ -6447,6 +6447,43 @@
       "workDone": "Reached Kohima at around 1pm.\nVisual inspection, Shadow analysis, checked Voc and Isc of panels, wire length and size calculation for input and output of inverter.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvrnpss0flum0",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-16",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "08:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "Structure parlin extension and refixing.\nPanel String wire piping",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
