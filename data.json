@@ -6484,6 +6484,40 @@
       "workDone": "Structure parlin extension and refixing.\nPanel String wire piping",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvrnrnluw5us5",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-17",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "08:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "String wire piping.\n15 string wiring piping completed till DCDB",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
