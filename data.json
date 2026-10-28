@@ -6641,11 +6641,33 @@
       "notes": "",
       "completed": true,
       "crewName": "",
-      "crewStart": "09:00",
-      "crewEnd": "16:00",
-      "assignments": [],
-      "workDone": "Sayu, Hosheto and Sekuzo - 5 string of 545Wp connected \nSimul and Safik worked on inverter part, all DCDB string wiring piping to inverter.\nSeko and Heka worked on welding part - 4 parlin welded\nRemaining 2 parlin on other structures.\nSamuel report at kohima around 5:30 \nWith 120 Mtrs 120mm cables.",
-      "remarks": "",
+      "crewStart": "08:00",
+      "crewEnd": "18:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "Sayu, Hosheto and Sekuzo - 5 string of 545Wp connected \nSimul and Safik worked on inverter part, all DCDB string wiring piping to inverter.\nSeko and Heka worked on welding part - 4 parlin welded\n\nSamuel report at kohima around 5:30 \nWith 120 Mtrs 120sqmm cables.",
+      "remarks": "2 parlin left for welding",
       "progress": "10"
     }
   ]
