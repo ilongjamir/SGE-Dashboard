@@ -6669,6 +6669,49 @@
       "workDone": "Sayu, Hosheto and Sekuzo - 5 string of 545Wp connected \nSimul and Safik worked on inverter part, all DCDB string wiring piping to inverter.\nSeko and Heka worked on welding part - 4 parlin welded\n\nSamuel report at kohima around 5:30 \nWith 120 Mtrs 120sqmm cables.",
       "remarks": "2 parlin left for welding",
       "progress": "10"
+    },
+    {
+      "id": "mvrvfj2iye1qe",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-23",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        }
+      ],
+      "workDone": "Sekuzo ,Simul ,Samuel ,Heka , Vito and Sayu - 120sqmm armoured cable pulled from hostel to inverter room.\n\nHeka and sekuzo completed remaining parlin welding.\n\n545Wp Panels installation completed. All 10 string complete.\n\nAfter food break 12 pm.\nHosheto , Vito, Samuel and Sayu started connecting string wires .\nAll string joining complete.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
