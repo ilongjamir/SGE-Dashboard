@@ -6629,6 +6629,24 @@
       "workDone": "Heka and Simul went to Dimapur 5:30 a.m to pick up Battery\nBattery reached Kohima at 4:00 pm\n\nBattery placement at inverter room completed",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvrolqloaomu4",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-22",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:00",
+      "assignments": [],
+      "workDone": "Sayu, Hosheto and Sekuzo - 5 string of 545Wp connected \nSimul and Safik worked on inverter part, all DCDB string wiring piping to inverter.\nSeko and Heka worked on welding part - 4 parlin welded\nRemaining 2 parlin on other structures.\nSamuel report at kohima around 5:30 \nWith 120 Mtrs 120mm cables.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
