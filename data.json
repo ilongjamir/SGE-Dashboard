@@ -6552,6 +6552,40 @@
       "workDone": "Hosheto and Vito worked on panel string making\nHeka and Sekuzo worked on parlin welding for panel extension.\nParlin welding and panel installed.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvrocpu17f59v",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-20",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "Simul - All 15 string lug joined at DCDB \nHosheto and Vito worked on string sizing \n330Wp panel connected (5 string connected)\nHeka and Vito was on welding part.\n4 panels 545Wp had to join on one structure to complete 15 string.\n6 parlin welded. Remaining 4 parlin to be welded \nSafik and Sayu reported at site.",
+      "remarks": "Work incomplete due to load shedding",
+      "progress": "10"
     }
   ]
 }
