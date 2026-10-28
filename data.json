@@ -6518,6 +6518,40 @@
       "workDone": "String wire piping.\n15 string wiring piping completed till DCDB",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvrnv4neo87v4",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-19",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpe5v0fd80"
+        }
+      ],
+      "workDone": "Hosheto and Vito worked on panel string making\nHeka and Sekuzo worked on parlin welding for panel extension.\nParlin welding and panel installed.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
