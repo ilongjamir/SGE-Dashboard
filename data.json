@@ -6712,6 +6712,31 @@
       "workDone": "Sekuzo ,Simul ,Samuel ,Heka , Vito and Sayu - 120sqmm armoured cable pulled from hostel to inverter room.\n\nHeka and sekuzo completed remaining parlin welding.\n\n545Wp Panels installation completed. All 10 string complete.\n\nAfter food break 12 pm.\nHosheto , Vito, Samuel and Sayu started connecting string wires .\nAll string joining complete.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mvuvmnn5j68r3",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-30",
+      "mode": "crew",
+      "notes": "Inverter-Battery communication repairs",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:30",
+      "crewEnd": "17:00",
+      "assignments": [
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        }
+      ],
+      "workDone": "Samuel, Sayu and Enertech engineer left for Kohima around 11:30 a.m.",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
