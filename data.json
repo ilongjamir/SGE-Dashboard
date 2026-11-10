@@ -6771,6 +6771,24 @@
       "workDone": "Earthing installation\nHeka, Samuel and Seko - Structure earthing\nHosheto and Vito - Inverter Earthing\nSayu, Samuel, Seko and Heka - Earth dugged for LA and two other Earthing\nBattery received and placed at the inverter room\nReceived armoured cable 95sqmm at 5:40pm\nOutput wire routed from hostel to inverter room",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mwacwux7eqpnm",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-27",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "08:00",
+      "crewEnd": "20:40",
+      "assignments": [],
+      "workDone": "Inverter ACDB installed, DCDB installed\nInput and output, wiring and crimping \nArmoured cable grid line installed till hostel - Wiring done by Safik\nAJB box, DCDB box, ACDB box, Inverter earthing done.\nAll danger sign installed",
+      "remarks": "LA installation delayed due to rain and load shedding",
+      "progress": "10"
     }
   ]
 }
