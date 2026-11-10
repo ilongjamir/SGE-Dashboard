@@ -6737,6 +6737,40 @@
       "workDone": "Samuel, Sayu and Enertech engineer left for Kohima around 11:30 a.m.",
       "remarks": "",
       "progress": "10"
+    },
+    {
+      "id": "mwacnp9syoqo5",
+      "type": "project",
+      "projectId": "mv68y4e4nminj",
+      "customName": "",
+      "site": "",
+      "date": "2026-10-24",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "09:00",
+      "crewEnd": "20:30",
+      "assignments": [
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "Earthing installation\nHeka, Samuel and Seko - Structure earthing\nHosheto and Vito - Inverter Earthing\nSayu, Samuel, Seko and Heka - Earth dugged for LA and two other Earthing\nBattery received and placed at the inverter room\nReceived armoured cable 95sqmm at 5:40pm\nOutput wire routed from hostel to inverter room",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
