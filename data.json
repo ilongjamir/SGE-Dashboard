@@ -6793,9 +6793,9 @@
     {
       "id": "mwbs76c4kpf17",
       "type": "project",
-      "projectId": "mqorn3t3le48z",
-      "customName": "",
-      "site": "Symbios Auto",
+      "projectId": "",
+      "customName": "Symbios Auto",
+      "site": "",
       "date": "2026-11-11",
       "mode": "crew",
       "notes": "",
@@ -6813,7 +6813,7 @@
       ],
       "workDone": "Fuse blown up, terminal was loose\nwire arrangement done",
       "remarks": "",
-      "progress": "10"
+      "progress": ""
     }
   ]
 }
