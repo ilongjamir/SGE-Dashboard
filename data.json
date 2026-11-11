@@ -6789,6 +6789,31 @@
       "workDone": "Inverter ACDB installed, DCDB installed\nInput and output, wiring and crimping \nArmoured cable grid line installed till hostel - Wiring done by Safik\nAJB box, DCDB box, ACDB box, Inverter earthing done.\nAll danger sign installed",
       "remarks": "LA installation delayed due to rain and load shedding",
       "progress": "10"
+    },
+    {
+      "id": "mwbs76c4kpf17",
+      "type": "project",
+      "projectId": "mqorn3t3le48z",
+      "customName": "",
+      "site": "Symbios Auto",
+      "date": "2026-11-11",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "11:00",
+      "crewEnd": "12:40",
+      "assignments": [
+        {
+          "personId": "mqorp5sjp8179"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        }
+      ],
+      "workDone": "Fuse blown up, terminal was loose\nwire arrangement done",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
