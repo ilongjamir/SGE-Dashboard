@@ -374,7 +374,8 @@
       "status": "done",
       "start": "2026-11-09",
       "end": "2026-11-10",
-      "notes": ""
+      "notes": "",
+      "progressManual": 10
     }
   ],
   "people": [
@@ -6826,6 +6827,46 @@
       "workDone": "Fuse blown up, terminal was loose\nWire arrangement done",
       "remarks": "Problem resolved",
       "progress": ""
+    },
+    {
+      "id": "mwbsg6zzbfz6g",
+      "type": "project",
+      "projectId": "mwbsfkdoz0t1a",
+      "customName": "",
+      "site": "",
+      "date": "2026-11-09",
+      "mode": "crew",
+      "notes": "",
+      "completed": true,
+      "crewName": "",
+      "crewStart": "10:00",
+      "crewEnd": "16:30",
+      "assignments": [
+        {
+          "personId": "mqorpe5v0fd80"
+        },
+        {
+          "personId": "mqorpkb0elkwu"
+        },
+        {
+          "personId": "mqorpn4i4jonr"
+        },
+        {
+          "personId": "mqorpuf1klkz1"
+        },
+        {
+          "personId": "mqorpwby6y00f"
+        },
+        {
+          "personId": "mqorq03mdy6ja"
+        },
+        {
+          "personId": "msfwbwm8behph"
+        }
+      ],
+      "workDone": "",
+      "remarks": "",
+      "progress": "10"
     }
   ]
 }
